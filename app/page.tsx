@@ -45,7 +45,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Маємо кваліфікованих бухгалтерів з рекомендаціями</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Україномовні бухгалтери в Польщі </h1>
               <p className="text-xl mb-8 text-blue-100">
                 Професійні бухгалтерські послуги онлайн. Досвідчені спеціалісти з перевіреною репутацією для вашого
                 бізнесу.
