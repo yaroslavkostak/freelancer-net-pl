@@ -1,0 +1,135 @@
+{
+  "images": {
+    "hero": {
+      "src": "/images/hero-accountants.png",
+      "alt": "Професійні бухгалтери онлайн в Україні",
+      "width": 1200,
+      "height": 800,
+      "format": "PNG",
+      "optimized": true,
+      "mobile_friendly": true,
+      "seo_keywords": ["бухгалтери", "онлайн", "україна", "професійні"]
+    },
+    "accountants": [
+      {
+        "src": "/images/accountant-1.png",
+        "alt": "Олена Петренко - Старший бухгалтер",
+        "width": 300,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/accountant-2.png",
+        "alt": "Андрій Коваленко - Головний бухгалтер",
+        "width": 300,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/accountant-3.png",
+        "alt": "Марія Шевченко - Бухгалтер-консультант",
+        "width": 300,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/accountant-4.png",
+        "alt": "Віктор Мельник - Податковий консультант",
+        "width": 300,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/accountant-5.png",
+        "alt": "Наталія Бондаренко - Аудитор",
+        "width": 300,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/accountant-6.png",
+        "alt": "Олександр Іваненко - Фінансовий аналітик",
+        "width": 300,
+        "height": 300,
+        "format": "PNG"
+      }
+    ],
+    "interface": {
+      "src": "/images/dashboard-interface.png",
+      "alt": "Інтерфейс системи управління бухгалтерським обліком",
+      "width": 1200,
+      "height": 800,
+      "format": "PNG",
+      "mobile_optimized": true
+    },
+    "services": [
+      {
+        "src": "/images/business-documents.png",
+        "alt": "Ведення бухгалтерського обліку та документообіг",
+        "width": 400,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/calculator-taxes.png",
+        "alt": "Розрахунок податків та звітність",
+        "width": 400,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/consultation-meeting.png",
+        "alt": "Консультації з бухгалтерського обліку",
+        "width": 400,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/24-7-support.png",
+        "alt": "Цілодобова підтримка клієнтів",
+        "width": 400,
+        "height": 300,
+        "format": "PNG"
+      }
+    ],
+    "features": [
+      {
+        "src": "/images/mobile-app-preview.png",
+        "alt": "Мобільний додаток для бухгалтерського обліку",
+        "width": 600,
+        "height": 800,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/secure-data.png",
+        "alt": "Безпечне зберігання даних",
+        "width": 400,
+        "height": 300,
+        "format": "PNG"
+      },
+      {
+        "src": "/images/team-collaboration.png",
+        "alt": "Командна робота та співпраця",
+        "width": 400,
+        "height": 300,
+        "format": "PNG"
+      }
+    ],
+    "branding": {
+      "logo": {
+        "src": "/images/logo-bukhonline.png",
+        "alt": "БухОнлайн - логотип",
+        "width": 200,
+        "height": 60,
+        "format": "SVG"
+      }
+    }
+  },
+  "seo_optimization": {
+    "alt_text_language": "uk",
+    "mobile_optimized": true,
+    "webp_support": true,
+    "lazy_loading": true,
+    "structured_data": true
+  }
+}

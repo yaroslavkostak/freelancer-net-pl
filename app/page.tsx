@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calculator, FileText, Shield, Clock, Users, CheckCircle, Star, Phone, Mail, MapPin } from "lucide-react"
-import Image from "next/image"
+import { Calculator, FileText, Users, CheckCircle, Star, Phone, Mail, MapPin } from "lucide-react"
 import Link from "next/link"
+import { ImagePlaceholder } from "@/components/image-placeholder"
+import { ServiceIcons } from "@/components/service-icons"
+import { FeaturesShowcase } from "@/components/features-showcase"
+import { VisualCTASection } from "@/components/visual-cta-section"
 
 export default function HomePage() {
   return (
@@ -63,11 +66,11 @@ export default function HomePage() {
               </div>
             </div>
             <div className="relative">
-              <Image
-                src="/placeholder.svg?height=400&width=500"
-                alt="Професійні бухгалтери"
+              <ImagePlaceholder
                 width={500}
                 height={400}
+                alt="Професійні бухгалтери онлайн в Україні"
+                type="hero"
                 className="rounded-lg shadow-2xl"
               />
             </div>
@@ -85,18 +88,50 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
-              <Card key={i} className="text-center p-6 hover:shadow-lg transition-shadow">
+            {[
+              {
+                id: 1,
+                name: "Олена Петренко",
+                title: "Старший бухгалтер",
+                image: "/placeholder.svg?height=120&width=120",
+              },
+              {
+                id: 2,
+                name: "Андрій Коваленко",
+                title: "Головний бухгалтер",
+                image: "/placeholder.svg?height=120&width=120",
+              },
+              {
+                id: 3,
+                name: "Марія Шевченко",
+                title: "Бухгалтер-консультант",
+                image: "/placeholder.svg?height=120&width=120",
+              },
+              {
+                id: 4,
+                name: "Віктор Мельник",
+                title: "Податковий консультант",
+                image: "/placeholder.svg?height=120&width=120",
+              },
+              { id: 5, name: "Наталія Бондаренко", title: "Аудитор", image: "/placeholder.svg?height=120&width=120" },
+              {
+                id: 6,
+                name: "Олександр Іваненко",
+                title: "Фінансовий аналітик",
+                image: "/placeholder.svg?height=120&width=120",
+              },
+            ].map((accountant) => (
+              <Card key={accountant.id} className="text-center p-6 hover:shadow-lg transition-shadow">
                 <CardContent className="p-0">
-                  <Image
-                    src="/placeholder.svg?height=120&width=120"
-                    alt={`Бухгалтер ${i}`}
+                  <ImagePlaceholder
                     width={120}
                     height={120}
+                    alt={`${accountant.name} - ${accountant.title}`}
+                    type="profile"
                     className="rounded-full mx-auto mb-4"
                   />
-                  <h3 className="font-semibold text-gray-900 mb-2">Олена Петренко</h3>
-                  <p className="text-sm text-gray-600 mb-3">Старший бухгалтер</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{accountant.name}</h3>
+                  <p className="text-sm text-gray-600 mb-3">{accountant.title}</p>
                   <div className="flex justify-center mb-3">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <Star key={star} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -112,92 +147,12 @@ export default function HomePage() {
 
       {/* Services */}
       <section id="services" className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FileText className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Ведення обліку</h3>
-              <p className="text-gray-600 text-sm">Повне ведення бухгалтерського обліку вашого підприємства</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calculator className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Розрахунок податків</h3>
-              <p className="text-gray-600 text-sm">Точний розрахунок та своєчасна подача податкової звітності</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Консультації</h3>
-              <p className="text-gray-600 text-sm">Професійні консультації з питань оподаткування та обліку</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="h-8 w-8 text-blue-600" />
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Цілодобова підтримка</h3>
-              <p className="text-gray-600 text-sm">Підтримка та відповіді на питання в будь-який час</p>
-            </div>
-          </div>
-        </div>
+        <ServiceIcons />
       </section>
 
       {/* Application + Accountants */}
       <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Додаток + Бухгалтери</h2>
-            <p className="text-gray-600">Поєднання сучасних технологій та професійного досвіду</p>
-          </div>
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Додаток</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
-                  <span className="text-gray-700">Автоматичне створення документів</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
-                  <span className="text-gray-700">Інтеграція з банківськими системами</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
-                  <span className="text-gray-700">Мобільний доступ до документів</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
-                  <span className="text-gray-700">Безпечне зберігання даних</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">Бухгалтери</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
-                  <span className="text-gray-700">Персональний підхід до кожного клієнта</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
-                  <span className="text-gray-700">Досвід роботи з різними галузями</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
-                  <span className="text-gray-700">Постійне навчання та підвищення кваліфікації</span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5" />
-                  <span className="text-gray-700">Відповідальність за якість послуг</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <FeaturesShowcase />
       </section>
 
       {/* Business Management */}
@@ -208,11 +163,11 @@ export default function HomePage() {
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Інтерфейс системи управління"
+              <ImagePlaceholder
                 width={600}
                 height={400}
+                alt="Інтерфейс системи управління бухгалтерським обліком"
+                type="dashboard"
                 className="rounded-lg shadow-lg"
               />
             </div>
@@ -354,6 +309,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Visual CTA */}
+      <VisualCTASection />
 
       {/* Contact */}
       <section id="contact" className="py-16">

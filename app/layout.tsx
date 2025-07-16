@@ -17,13 +17,21 @@ export const metadata: Metadata = {
       "Кваліфіковані бухгалтери з досвідом для вашого бізнесу. Ведення обліку, податкова звітність, консультації.",
     type: "website",
     locale: "uk_UA",
+    images: [
+      {
+        url: "/images/hero-accountants.png",
+        width: 1200,
+        height: 630,
+        alt: "БухОнлайн - Професійні бухгалтерські послуги",
+      },
+    ],
   },
   robots: {
     index: true,
     follow: true,
   },
   viewport: "width=device-width, initial-scale=1",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
