@@ -18,10 +18,7 @@ const nextConfig = {
   // output: 'export',
   // trailingSlash: true,
   // distDir: 'out',
-  // Налаштування для HTTPS локальної розробки
-  devIndicators: {
-    buildActivity: true,
-  },
+
   // Налаштування редіректів
   async redirects() {
     return [
