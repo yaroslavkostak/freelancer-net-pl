@@ -6,9 +6,9 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Freelancer.net.pl",
-    "url": "https://freelancer.net.pl",
-    "logo": "https://freelancer.net.pl/images/logo.png",
+    "name": "Freelancer.org.pl",
+    "url": "https://freelancer.org.pl",
+    "logo": "https://freelancer.org.pl/images/logo.png",
     "description": "Онлайн-бухгалтерія для українців у Польщі: реєстрація ФОП, ведення обліку, звіти та підтримка українською.",
     "address": {
       "@type": "PostalAddress",

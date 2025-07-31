@@ -61,10 +61,10 @@ export default function Error({
                     Контакти
                   </Link>
                   <a 
-                    href="mailto:info@freelancer.net.pl" 
+                    href="mailto:info@freelancer.org.pl" 
                     className="text-blue-600 hover:text-blue-800"
                   >
-                    info@freelancer.net.pl
+                    info@freelancer.org.pl
                   </a>
                 </div>
               </div>

@@ -51,9 +51,9 @@ export function middleware(request: NextRequest) {
   }
 
   // Редірект зі старих доменів
-  if (host === 'buh-online.pl' || host === 'www.buh-online.pl') {
+  if (host === 'buh-online.pl' || host === 'www.buh-online.pl' || host === 'freelancer.net.pl' || host === 'www.freelancer.net.pl') {
     const url = request.nextUrl.clone()
-    url.host = 'freelancer.net.pl'
+    url.host = 'freelancer.org.pl'
     return NextResponse.redirect(url, 301)
   }
 

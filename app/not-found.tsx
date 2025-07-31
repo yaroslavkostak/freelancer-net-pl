@@ -49,7 +49,7 @@ export default function NotFound() {
                     Умови використання
                   </Link>
                   <a 
-                    href="https://freelancer.net.pl" 
+                    href="https://freelancer.org.pl" 
                     className="text-blue-600 hover:text-blue-800"
                     target="_blank"
                     rel="noopener noreferrer"

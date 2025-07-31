@@ -115,5 +115,5 @@ pm2 restart freelancer-net-pl
 
 ## 📞 Підтримка
 
-- **Email:** info@freelancer.net.pl
+- **Email:** info@freelancer.org.pl
 - **Документація:** `DEPLOYMENT_LITESPEED.md` 

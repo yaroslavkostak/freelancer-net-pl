@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p>
-                Ця Політика конфіденційності описує, як ми збираємо, використовуємо та захищаємо вашу особисту інформацію при використанні нашого веб-сайту freelancer.net.pl.
+                Ця Політика конфіденційності описує, як ми збираємо, використовуємо та захищаємо вашу особисту інформацію при використанні нашого веб-сайту freelancer.org.pl.
               </p>
               <p>
                 Ми зобов'язуємося захищати вашу конфіденційність та забезпечувати безпечне використання нашого сайту відповідно до Регламенту ЄС 2016/679 (GDPR) та інших застосовних законів про захист даних.
@@ -32,7 +32,7 @@ export default function PrivacyPolicyPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p>
-                <strong>freelancer.net.pl</strong> - це інформаційний сайт, створений для надання корисної інформації про бухгалтерські послуги у Польщі. Наш сайт є партнерським майданчиком сервісу inFakt.
+                <strong>freelancer.org.pl</strong> - це інформаційний сайт, створений для надання корисної інформації про бухгалтерські послуги у Польщі. Наш сайт є партнерським майданчиком сервісу inFakt.
               </p>
               <p>
                 Сайт надає детальну інформацію про послуги inFakt, включаючи:
@@ -203,7 +203,7 @@ export default function PrivacyPolicyPage() {
             <CardContent className="space-y-4">
               <p>Якщо у вас є питання щодо цієї Політики конфіденційності або обробки ваших даних, зв'яжіться з нами:</p>
               <div className="space-y-2">
-                <p><strong>Email:</strong> info@freelancer.net.pl</p>
+                <p><strong>Email:</strong> info@freelancer.org.pl</p>
                 <p><strong>Адреса inFakt:</strong></p>
                 <p>inFakt Sp. z o.o.</p>
                 <p>31-153 Kraków, ul. Szlak 49</p>

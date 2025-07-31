@@ -11,7 +11,7 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['freelancer.net.pl'],
+    domains: ['freelancer.org.pl'],
   },
   // Налаштування для статичного експорту (GitHub Pages)
   // Розкоментуйте наступні рядки для GitHub Pages:
@@ -90,7 +90,7 @@ const nextConfig = {
         destination: '/contact',
         permanent: true,
       },
-      // Редірект з buh-online.pl на freelancer.net.pl
+      // Редірект зі старих доменів на freelancer.org.pl
       {
         source: '/:path*',
         has: [
@@ -99,7 +99,18 @@ const nextConfig = {
             value: 'buh-online.pl',
           },
         ],
-        destination: 'https://freelancer.net.pl/:path*',
+        destination: 'https://freelancer.org.pl/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'freelancer.net.pl',
+          },
+        ],
+        destination: 'https://freelancer.org.pl/:path*',
         permanent: true,
       },
     ]

@@ -2,7 +2,7 @@
 
 ## Опис проекту
 
-**freelancer.net.pl** - це інформаційний сайт, створений для надання корисної інформації про бухгалтерські послуги у Польщі. Сайт працює як партнерський майданчик сервісу inFakt.
+**freelancer.org.pl** - це інформаційний сайт, створений для надання корисної інформації про бухгалтерські послуги у Польщі. Сайт працює як партнерський майданчик сервісу inFakt.
 
 ### Основні функції
 
@@ -24,7 +24,7 @@
 ## Структура проекту
 
 ```
-freelancer.net.pl/
+freelancer.org.pl/
 ├── app/
 │   ├── contact/          # Сторінка контактів
 │   ├── privacy-policy/   # Політика конфіденційності
@@ -50,7 +50,7 @@ freelancer.net.pl/
 1. Клонуйте репозиторій:
 ```bash
 git clone [repository-url]
-cd freelancer.net.pl
+cd freelancer.org.pl
 ```
 
 2. Встановіть залежності:
@@ -80,7 +80,7 @@ npm run dev
 3. Замініть `GA_MEASUREMENT_ID` в `app/analytics.tsx`
 
 ### 3. Домен та SSL
-- Налаштуйте домен `freelancer.net.pl`
+- Налаштуйте домен `freelancer.org.pl`
 - Встановіть SSL сертифікат
 - Оновіть `public/sitemap.xml` з правильним доменом (вже оновлено)
 
@@ -140,5 +140,5 @@ npm run build
 ## Контакти
 
 Для питань щодо проекту:
-- **Email:** info@freelancer.net.pl
+- **Email:** info@freelancer.org.pl
 - **Адреса inFakt:** inFakt Sp. z o.o., 31-153 Kraków, ul. Szlak 49

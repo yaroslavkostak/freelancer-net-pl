@@ -18,7 +18,7 @@ export default function TermsPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p>
-                Ці Умови використання регулюють використання веб-сайту freelancer.net.pl та всіх пов'язаних з ним послуг.
+                Ці Умови використання регулюють використання веб-сайту freelancer.org.pl та всіх пов'язаних з ним послуг.
               </p>
               <p>
                 Використовуючи наш сайт, ви погоджуєтеся з цими умовами. Якщо ви не згодні з будь-якою частиною цих умов, будь ласка, не використовуйте наш сайт.
@@ -70,7 +70,7 @@ export default function TermsPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p>
-                <strong>freelancer.net.pl</strong> - це інформаційний сайт, який:
+                <strong>freelancer.org.pl</strong> - це інформаційний сайт, який:
               </p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                 <li>Надають корисну інформацію про бухгалтерські послуги у Польщі</li>
@@ -171,7 +171,7 @@ export default function TermsPage() {
             <CardContent className="space-y-4">
               <p>Якщо у вас є питання щодо цих умов, зв'яжіться з нами:</p>
               <div className="space-y-2">
-                <p><strong>Email:</strong> info@freelancer.net.pl</p>
+                <p><strong>Email:</strong> info@freelancer.org.pl</p>
                 <p><strong>Адреса inFakt:</strong></p>
                 <p>inFakt Sp. z o.o.</p>
                 <p>31-153 Kraków, ul. Szlak 49</p>

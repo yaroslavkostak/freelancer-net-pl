@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://freelancer.net.pl/sitemap.xml
+Sitemap: https://freelancer.org.pl/sitemap.xml
 
 # Disallow admin areas (if any)
 Disallow: /admin/

@@ -25,7 +25,7 @@ export function VisualCTASection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="https://freelancer.net.pl/" target="_blank" className="flex items-center">
+                <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="nofollow noopener noreferrer" className="flex items-center">
                   Замовити бухгалтера онлайн
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>

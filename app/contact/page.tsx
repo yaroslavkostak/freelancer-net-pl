@@ -10,7 +10,6 @@ export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: '',
     message: ''
   })
 
@@ -82,25 +81,7 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                      Тема запиту
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      <option value="">Оберіть тему</option>
-                      <option value="business-registration">Реєстрація бізнесу</option>
-                      <option value="accounting-services">Бухгалтерські послуги</option>
-                      <option value="tax-consultation">Податкові консультації</option>
-                      <option value="general-question">Загальне питання</option>
-                      <option value="partnership">Партнерство</option>
-                    </select>
-                  </div>
+
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
@@ -170,7 +151,6 @@ export default function ContactPage() {
                       <p className="font-medium text-gray-900">Адреса</p>
                       <p className="text-gray-600">inFakt Sp. z o.o.</p>
                       <p className="text-gray-600">31-153 Kraków, ul. Szlak 49</p>
-                      <p className="text-gray-600">NIP: 945-212-16-81</p>
                     </div>
                   </div>
                 </CardContent>
@@ -182,7 +162,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                                 <p className="text-gray-600 mb-4">
-                Сайт freelancer.net.pl є інформаційним ресурсом та партнерським майданчиком сервісу inFakt. 
+                                 Сайт freelancer.org.pl є інформаційним ресурсом та партнерським майданчиком сервісу inFakt. 
                 Ми надаємо інформацію про бухгалтерські послуги у Польщі та допомагаємо 
                 підприємцям знайти відповідні рішення.
               </p>

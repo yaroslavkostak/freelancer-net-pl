@@ -45,14 +45,15 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <head>
-        <link rel="canonical" href="https://freelancer.net.pl" />
+        <link rel="canonical" href="https://freelancer.org.pl" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e40af" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Freelancer.net.pl" />
+        <meta name="apple-mobile-web-app-title" content="Freelancer.org.pl" />
         <meta name="geo.region" content="PL" />
         <meta name="geo.placename" content="Poland" />
+        <meta name="google-site-verification" content="QWKDWq93I0NI6T_OE8oyuLlFz7kMAQIatHxti9IfXX4" />
       </head>
       <body className={inter.className}>
         {children}
