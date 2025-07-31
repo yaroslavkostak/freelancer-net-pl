@@ -9,15 +9,15 @@ import StructuredData from "@/components/structured-data"
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: "Онлайн-бухгалтерія для українців у Польщі – inFakt",
+  title: "Онлайн-бухгалтерія для українців у Польщі 2025 - inFakt",
   description:
-    "Зручна онлайн-бухгалтерія для українців у Польщі: реєстрація ФОП, ведення обліку, звіти та підтримка українською.",
+    "Зручна онлайн-бухгалтерія для українців у Польщі з Infakt: реєстрація ФОП, ведення обліку, звіти та підтримка українською.",
   keywords:
     "бухгалтерія польща, фоп польща, бухгалтер українською, infakt, ведення обліку польща, реєстрація бізнесу польща",
   openGraph: {
-    title: "Онлайн-бухгалтерія для українців у Польщі – inFakt",
+    title: "Онлайн-бухгалтерія для українців у Польщі 2025 - inFakt",
     description:
-      "Зручна онлайн-бухгалтерія для українців у Польщі: реєстрація ФОП, ведення обліку, звіти та підтримка українською.",
+      "Зручна онлайн-бухгалтерія для українців у Польщі з Infakt: реєстрація ФОП, ведення обліку, звіти та підтримка українською.",
     type: "website",
     locale: "uk_UA",
     images: [
@@ -45,6 +45,8 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <head>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="canonical" href="https://freelancer.org.pl/" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e40af" />
