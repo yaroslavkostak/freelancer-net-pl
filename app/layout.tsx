@@ -45,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <head>
-        <link rel="canonical" href="https://freelancer.org.pl" />
+        <link rel="canonical" href="https://freelancer.org.pl/" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#1e40af" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

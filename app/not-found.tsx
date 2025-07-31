@@ -54,7 +54,7 @@ export default function NotFound() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Freelancer.net.pl
+                    Freelancer.org.pl
                   </a>
                 </div>
               </div>
