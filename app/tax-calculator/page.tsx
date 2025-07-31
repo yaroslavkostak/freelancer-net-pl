@@ -24,13 +24,14 @@ export default function TaxCalculatorPage() {
     let totalTax = 0
 
     if (businessType === 'jdg') {
-      // JDG (ФОП) розрахунки
-      if (incomeNum <= 30000) {
-        tax = incomeNum * 0.12
-      } else if (incomeNum <= 120000) {
-        tax = 30000 * 0.12 + (incomeNum - 30000) * 0.32
+      // JDG (ФОП) розрахунки з вільною сумою 30,000 PLN
+      const freeAmount = 30000
+      const taxableIncome = Math.max(0, incomeNum - freeAmount)
+      
+      if (taxableIncome <= 30000) {
+        tax = taxableIncome * 0.12
       } else {
-        tax = 30000 * 0.12 + 90000 * 0.32 + (incomeNum - 120000) * 0.32
+        tax = 30000 * 0.12 + (taxableIncome - 30000) * 0.32
       }
       
       socialContributions = Math.min(incomeNum * 0.0976, 30000 * 0.0976)
@@ -250,9 +251,10 @@ export default function TaxCalculatorPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">JDG (Індивідуальне підприємництво)</h3>
                   <ul className="space-y-2 text-gray-600">
-                    <li>• Податкова ставка 12% для доходів до 30,000 PLN</li>
-                    <li>• Податкова ставка 32% для доходів понад 30,000 PLN</li>
-                    <li>• Соціальні внески 9.76% від бази</li>
+                    <li>• Вільна сума 30,000 PLN (не оподатковується)</li>
+                    <li>• Податкова ставка 12% для доходів 30,000-60,000 PLN</li>
+                    <li>• Податкова ставка 32% для доходів понад 60,000 PLN</li>
+                    <li>• Соціальні внески 9.76% від бази (макс. 30,000 PLN)</li>
                     <li>• Медичне страхування 9% від доходу</li>
                   </ul>
                 </div>
