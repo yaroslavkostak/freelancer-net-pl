@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import Script from 'next/script'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
@@ -58,7 +59,47 @@ export default function TaxCalculatorPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Script
+        id="tax-calculator-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "Калькулятор податкових змін 2025 року",
+            "description": "Розрахуйте податки для JDG та Spółka z o.o. в Польщі з урахуванням нових змін 2025 року",
+            "url": "https://freelancer.org.pl/tax-calculator",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web Browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "PLN"
+            },
+            "author": {
+              "@type": "Organization",
+              "name": "inFakt",
+              "url": "https://www.infakt.pl"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Freelancer.org.pl",
+              "url": "https://freelancer.org.pl"
+            },
+            "featureList": [
+              "Розрахунок податків для JDG",
+              "Розрахунок податків для Spółka z o.o.",
+              "Вільна сума 30,000 PLN",
+              "Нові податкові ставки 2025",
+              "Розрахунок соціальних внесків"
+            ],
+            "screenshot": "https://freelancer.org.pl/images/tax-calculator-screenshot.jpg",
+            "inLanguage": "uk"
+          })
+        }}
+      />
+      <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -344,6 +385,7 @@ export default function TaxCalculatorPage() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   )
 } 

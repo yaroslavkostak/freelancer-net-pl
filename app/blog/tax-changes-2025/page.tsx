@@ -2,10 +2,55 @@ import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import Script from 'next/script'
 
 export default function TaxChangesBlogPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <Script
+        id="tax-changes-article-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Податкові зміни 2025 року в Польщі: що змінюється для підприємців",
+            "description": "Детальний аналіз податкових змін 2025 року в Польщі для JDG та Spółka z o.o. Нові ставки, вільна сума 30,000 PLN, калькулятор податків.",
+            "image": "https://freelancer.org.pl/images/tax-changes-2025-og.jpg",
+            "author": {
+              "@type": "Organization",
+              "name": "inFakt",
+              "url": "https://www.infakt.pl"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Freelancer.org.pl",
+              "url": "https://freelancer.org.pl",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://freelancer.org.pl/favicon.svg"
+              }
+            },
+            "datePublished": "2024-12-15T00:00:00.000Z",
+            "dateModified": "2024-12-19T00:00:00.000Z",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://freelancer.org.pl/blog/tax-changes-2025"
+            },
+            "articleSection": "Податки",
+            "keywords": "податкові зміни 2025, польща, jdg, spółka z o.o., податки, бухгалтерія",
+            "wordCount": 2500,
+            "timeRequired": "PT8M",
+            "inLanguage": "uk",
+            "isAccessibleForFree": true,
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2", "h3", "p"]
+            }
+          })
+        }}
+      />
+      <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -425,6 +470,7 @@ export default function TaxChangesBlogPage() {
           </div>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   )
 } 
