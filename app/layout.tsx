@@ -2,19 +2,22 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import Analytics from "./analytics"
+import CookieConsent from "@/components/cookie-consent"
+import StructuredData from "@/components/structured-data"
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: "БухОнлайн - Професійні бухгалтерські послуги онлайн | Замовити бухгалтера",
+  title: "Онлайн-бухгалтерія для українців у Польщі – inFakt",
   description:
-    "Професійні бухгалтерські послуги онлайн в Україні. Кваліфіковані бухгалтери з досвідом. Ведення обліку, податкова звітність, консультації. Замовити бухгалтера онлайн.",
+    "Зручна онлайн-бухгалтерія для українців у Польщі: реєстрація ФОП, ведення обліку, звіти та підтримка українською.",
   keywords:
-    "бухгалтер онлайн, бухгалтерські послуги, ведення обліку, податкова звітність, бухгалтер україна, замовити бухгалтера",
+    "бухгалтерія польща, фоп польща, бухгалтер українською, infakt, ведення обліку польща, реєстрація бізнесу польща",
   openGraph: {
-    title: "БухОнлайн - Професійні бухгалтерські послуги онлайн",
+    title: "Онлайн-бухгалтерія для українців у Польщі – inFakt",
     description:
-      "Кваліфіковані бухгалтери з досвідом для вашого бізнесу. Ведення обліку, податкова звітність, консультації.",
+      "Зручна онлайн-бухгалтерія для українців у Польщі: реєстрація ФОП, ведення обліку, звіти та підтримка українською.",
     type: "website",
     locale: "uk_UA",
     images: [
@@ -22,7 +25,7 @@ export const metadata: Metadata = {
         url: "/images/hero-accountants.png",
         width: 1200,
         height: 630,
-        alt: "БухОнлайн - Професійні бухгалтерські послуги",
+        alt: "Онлайн-бухгалтерія для українців у Польщі",
       },
     ],
   },
@@ -42,11 +45,21 @@ export default function RootLayout({
   return (
     <html lang="uk">
       <head>
-        <link rel="canonical" href="https://your-domain.com" />
-        <meta name="geo.region" content="UA" />
-        <meta name="geo.placename" content="Ukraine" />
+        <link rel="canonical" href="https://freelancer.net.pl" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#1e40af" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Freelancer.net.pl" />
+        <meta name="geo.region" content="PL" />
+        <meta name="geo.placename" content="Poland" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+        <CookieConsent />
+        <StructuredData />
+      </body>
     </html>
   )
 }

@@ -1,0 +1,27 @@
+{
+  "name": "Freelancer.net.pl - Бухгалтерія для українців у Польщі",
+  "short_name": "Freelancer.net.pl",
+  "description": "Онлайн-бухгалтерія для українців у Польщі: реєстрація ФОП, ведення обліку, звіти та підтримка українською",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["business", "finance", "productivity"],
+  "lang": "uk",
+  "dir": "ltr"
+} 

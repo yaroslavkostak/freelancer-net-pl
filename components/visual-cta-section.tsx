@@ -25,7 +25,7 @@ export function VisualCTASection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="https://www.infakt.pl/ref=123" target="_blank" className="flex items-center">
+                <Link href="https://freelancer.net.pl/" target="_blank" className="flex items-center">
                   Замовити бухгалтера онлайн
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -36,14 +36,14 @@ export function VisualCTASection() {
               </div>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative w-full max-w-[500px] mx-auto overflow-hidden">
             <ImagePlaceholder
               width={500}
               height={400}
               alt="Успішні клієнти БухОнлайн"
               type="feature"
               icon="users"
-              className="rounded-lg shadow-2xl"
+              className="rounded-lg shadow-2xl w-full h-auto max-w-full"
             />
             <div className="absolute -bottom-4 -right-4 bg-white text-gray-900 p-4 rounded-lg shadow-lg">
               <div className="text-2xl font-bold text-green-600">98%</div>
