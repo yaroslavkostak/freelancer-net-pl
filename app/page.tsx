@@ -8,6 +8,7 @@ import { ServiceIcons } from "@/components/service-icons"
 import { VisualCTASection } from "@/components/visual-cta-section"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { useState } from "react"
+import { DynamicYear } from "@/components/dynamic-year"
 
 export default function HomePage() {
   return (
@@ -18,39 +19,34 @@ export default function HomePage() {
           <div className="flex items-center space-x-2">
             {/* Noun Project icon: calculator */}
             <svg className="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
-                            <Link href="https://freelancer.org.pl/" className="text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors">Рекомендую inFakt</Link>
+                            <Link href="https://freelancer.org.pl/" className="text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors" rel="nofollow">Рекомендую inFakt</Link>
           </div>
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center space-x-10 justify-center flex-1">
-            <Link href="#company-choice" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+            <Link href="#company-choice/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
               {/* Noun Project icon: building */}
               <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 21h18M3 7h18M3 3h18M7 21V11M17 21V11"/></svg>
               Види діяльності
             </Link>
-            <Link href="#accountants" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+            <Link href="#accountants/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
               {/* Noun Project icon: user group */}
               <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><circle cx="17" cy="17" r="4"/><path d="M17 13a4 4 0 0 0-8 0"/></svg>
               Бухгалтери
             </Link>
-            <Link href="#business-management" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+            <Link href="#business-management/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
               {/* Noun Project icon: calculator */}
               <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
               Бухгалтерський облік
             </Link>
-            <Link href="#accounting-services" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+            <Link href="#accounting-services/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
               {/* Noun Project icon: briefcase */}
               <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
               Послуги
             </Link>
-            <Link href="#faq" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+            <Link href="#faq/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
               {/* Noun Project icon: question mark */}
               <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>
               Питання
-            </Link>
-            <Link href="/tax-calculator" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
-              {/* Noun Project icon: calculator */}
-              <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
-              Калькулятор
             </Link>
           </nav>
           {/* Mobile Menu */}
@@ -66,7 +62,7 @@ export default function HomePage() {
           <div className="flex flex-col-reverse lg:flex-row gap-12 items-center">
             <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
               <h1 className="text-4xl md:text-5xl font-semibold mb-6">Онлайн-бухгалтерія для українців в Польщі</h1>
-              <p className="text-xl mb-8 text-blue-100 max-w-xl">Відкрийте для себе сучасний сервіс бухгалтерського обліку. Бухгалтери в Польщі від Infakt допоможуть разом з Вами  вести Ваш бізнес. Довірте облік професіоналам та зосередьтесь на розвитку бізнесу. Вам потрібно буде лише виставляти рахунки-фактури.</p>
+              <p className="text-xl mb-8 text-blue-100 max-w-xl">Відкрийте для себе сучасний сервіс бухгалтерського обліку. Бухгалтери в Польщі від Infakt допоможуть Вам відкрити приватного підприємця чи фірму і допоможуть вести бухгалтерський облік від 190 zł. Довірте облік професіоналам та зосередьтесь на розвитку бізнесу. Вам потрібно буде лише виставляти рахунки-фактури.</p>
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-6 font-semibold shadow-lg">
                   <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank">
@@ -79,7 +75,7 @@ export default function HomePage() {
                   className="border-white text-white hover:bg-white hover:text-blue-600 bg-transparent text-lg px-8 py-6 font-semibold"
                   asChild
                 >
-                  <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="nofollow noopener noreferrer">
+                  <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="sponsored noopener noreferrer">
                     Відвідайте сайт
                   </Link>
                 </Button>
@@ -149,15 +145,15 @@ export default function HomePage() {
               <div className="space-y-3 mb-4">
                 <div className="flex items-baseline">
                   <span className="text-gray-700 mr-2 text-sm">Вартість відкриття JDG -</span>
-                  <span className="text-xl font-bold text-gray-900">0,00 PLN</span>
+                  <span className="text-xl font-bold text-gray-900">0,00 zł</span>
                 </div>
                 <div className="flex items-baseline">
                   <span className="text-gray-700 mr-2 text-sm">Ведення бухгалтерського обліку -</span>
-                  <span className="text-gray-700 text-sm">від <span className="text-xl font-bold">189,00 PLN</span></span>
+                  <span className="text-gray-700 text-sm">від <span className="text-xl font-bold">189,00 zł</span></span>
                 </div>
               </div>
-              <a href="https://www.infakt.pl/polecam/yaroslav-kostak" className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 mb-2 transition" target="_blank" rel="nofollow noopener noreferrer">Почати індивідуальну підприємницьку діяльність</a>
-              <a href="https://www.infakt.pl/polecam/yaroslav-kostak" className="block w-full text-center bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold rounded-lg py-3 mb-4 transition" target="_blank" rel="nofollow noopener noreferrer">Дізнатися більше</a>
+              <a href="https://www.infakt.pl/polecam/yaroslav-kostak" className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 mb-2 transition" target="_blank" rel="sponsored noopener noreferrer">Почати індивідуальну підприємницьку діяльність</a>
+              <a href="https://www.infakt.pl/polecam/yaroslav-kostak" className="block w-full text-center bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold rounded-lg py-3 mb-4 transition" target="_blank" rel="sponsored noopener noreferrer">Дізнатися більше</a>
               <ul className="text-gray-700 text-base space-y-2 mt-auto">
                 <li className="flex items-center"><span className="text-blue-600 mr-2">•</span>Безкоштовний запуск бізнесу</li>
                 <li className="flex items-center"><span className="text-blue-600 mr-2">•</span>Постійна турбота бухгалтера</li>
@@ -178,15 +174,15 @@ export default function HomePage() {
               <div className="space-y-3 mb-4">
                 <div className="flex items-baseline">
                   <span className="text-gray-700 mr-2 text-sm">Вартість відкриття Spółka z o.o. -</span>
-                  <span className="text-xl font-bold text-gray-900">199,00 PLN</span>
+                  <span className="text-xl font-bold text-gray-900">199,00 zł</span>
                 </div>
                 <div className="flex items-baseline">
                   <span className="text-gray-700 mr-2 text-sm">Ведення бухгалтерського обліку -</span>
-                  <span className="text-gray-700 text-sm">від <span className="text-xl font-bold">619,00 PLN</span></span>
+                  <span className="text-gray-700 text-sm">від <span className="text-xl font-bold">619,00 zł</span></span>
                 </div>
               </div>
-              <a href="https://www.infakt.pl/polecam/yaroslav-kostak" className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 mb-2 transition" target="_blank" rel="nofollow noopener noreferrer">Створити товариство з обмеженою відповідальністю</a>
-              <a href="https://www.infakt.pl/polecam/yaroslav-kostak" className="block w-full text-center bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold rounded-lg py-3 mb-4 transition" target="_blank" rel="nofollow noopener noreferrer">Дізнатися більше</a>
+              <a href="https://www.infakt.pl/polecam/yaroslav-kostak" className="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg py-3 mb-2 transition" target="_blank" rel="sponsored noopener noreferrer">Створити товариство з обмеженою відповідальністю</a>
+              <a href="https://www.infakt.pl/polecam/yaroslav-kostak" className="block w-full text-center bg-blue-50 hover:bg-blue-100 text-blue-700 font-semibold rounded-lg py-3 mb-4 transition" target="_blank" rel="sponsored noopener noreferrer">Дізнатися більше</a>
               <ul className="text-gray-700 text-base space-y-2 mt-auto">
                 <li className="flex items-center"><span className="text-blue-600 mr-2">•</span>Зручне створення компанії</li>
                 <li className="flex items-center"><span className="text-blue-600 mr-2">•</span>Постійна турбота бухгалтера</li>
@@ -212,7 +208,7 @@ export default function HomePage() {
                 name: "Irina Halko",
                 rating: 9.8,
                 reviews: 77,
-                price: "від 279 PLN / міс.",
+                price: "від 279 zł / міс.",
                 image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/3ed99a5d-3b30-4f87-962b-5182d8278b38/small_avatar.png",
                 isVip: true,
               },
@@ -221,7 +217,7 @@ export default function HomePage() {
                 name: "Iryna Kim",
                 rating: 9.8,
                 reviews: 22,
-                price: "від 299 PLN / міс.",
+                price: "від 299 zł / міс.",
                 image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/05e8ecc1-2b8c-4217-a997-eb1a6865409c/small_avatar(2).jpg",
                 isVip: false,
               },
@@ -230,7 +226,7 @@ export default function HomePage() {
                 name: "Olha Leonova",
                 rating: 9.5,
                 reviews: 21,
-                price: "від 349 PLN / міс.",
+                price: "від 349 zł / міс.",
                 image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/edee1182-d3bc-4e2f-9010-6af1b9e6d5af/small_avatar.jpg",
                 isVip: false,
               },
@@ -239,7 +235,7 @@ export default function HomePage() {
                 name: "Liudmyla Vasylkiv",
                 rating: 10.0,
                 reviews: 43,
-                price: "від ~189 PLN / міс.",
+                price: "від ~189 zł / міс.",
                 image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/fc124e90-ae00-4d3a-bd49-a9e843108476/small_avatar(2).png",
                 isVip: false,
               },
@@ -248,7 +244,7 @@ export default function HomePage() {
                 name: "Alina Mysan",
                 rating: 9.8,
                 reviews: 19,
-                price: "400 PLN / міс.",
+                price: "400 zł / міс.",
                 image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/a652c1ee-aec8-4928-b3a6-388c183fc817/small_avatar(2).png",
                 isVip: false,
               },
@@ -257,7 +253,7 @@ export default function HomePage() {
                 name: "Justyna Kulikowska",
                 rating: 9.0,
                 reviews: 0,
-                price: "1200 PLN / міс.",
+                price: "1200 zł / міс.",
                 image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/74e6bde0-f1e9-4b7a-8c49-9673dfeb05a1/small_avatar(2).png",
                 isVip: false,
               },
@@ -305,7 +301,7 @@ export default function HomePage() {
               size="lg" 
               className="bg-green-600 hover:bg-green-700 text-white font-semibold text-lg px-8 py-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
             >
-              <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="nofollow noopener noreferrer">
+              <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="sponsored noopener noreferrer">
                 Знайти свого бухгалтера
               </Link>
             </Button>
@@ -664,24 +660,25 @@ export default function HomePage() {
             <div className="col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <svg className="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
-                <span className="text-lg font-semibold">Freelancer.org.pl</span>
+                <Link href="https://freelancer.org.pl/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-sm max-w-2xl">
-                                 Сайт freelancer.org.pl є інформаційним ресурсом у межах партнерської програми inFakt. Метою сайту є ознайомлення з сервісом та його можливостями для підприємців в Польщі.
+                Сайт freelancer.org.pl є інформаційним ресурсом у межах партнерської програми inFakt. Метою сайту є ознайомлення з сервісом та його можливостями для підприємців в Польщі.
               </p>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-4">Швидкі посилання</h3>
-                             <ul className="space-y-2">
-                 <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Контакти</Link></li>
-                 <li><Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Політика конфіденційності</Link></li>
-                 <li><Link href="/terms" className="text-gray-400 hover:text-white transition-colors">Умови використання</Link></li>
-               </ul>
+              <ul className="space-y-2">
+                <li><Link href="/contact/" className="text-gray-400 hover:text-white transition-colors">Контакти</Link></li>
+                <li><Link href="/privacy-policy/" className="text-gray-400 hover:text-white transition-colors">Політика конфіденційності</Link></li>
+                <li><Link href="/terms/" className="text-gray-400 hover:text-white transition-colors">Умови використання</Link></li>
+                <li><Link href="/blog/" className="text-gray-400 hover:text-white transition-colors">Всі статті</Link></li>
+              </ul>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-4">Контакти</h3>
               <ul className="space-y-2 text-gray-400">
-                                 <li>Email: info@freelancer.org.pl</li>
+                <li>Email: info@freelancer.org.pl</li>
                 <li>Адреса inFakt:</li>
                 <li>inFakt Sp. z o.o.</li>
                 <li>31-153 Kraków, ul. Szlak 49</li>
@@ -689,7 +686,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-                         <p>&copy; 2024 Freelancer.org.pl. Всі права захищені.</p>
+                         <p>&copy; {DynamicYear()} Freelancer.org.pl. Всі права захищені.</p>
           </div>
         </div>
       </footer>

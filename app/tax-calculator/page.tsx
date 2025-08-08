@@ -1,13 +1,14 @@
 "use client"
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Script from 'next/script'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
-import Link from 'next/link'
+import { DynamicYear } from '@/components/dynamic-year'
 
 export default function TaxCalculatorPage() {
   const [income, setIncome] = useState('')
@@ -331,18 +332,11 @@ export default function TaxCalculatorPage() {
               <p className="text-xl mb-6 opacity-90">
                 Наші бухгалтери допоможуть оптимізувати податки та зекономити ваші кошти
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                  <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="nofollow noopener noreferrer">
-                    Отримати консультацію
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600">
-                  <Link href="/">
-                    Повернутися на головну
-                  </Link>
-                </Button>
-              </div>
+              <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="nofollow noopener noreferrer">
+                  Отримати консультацію
+                </Link>
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -356,7 +350,7 @@ export default function TaxCalculatorPage() {
             <div className="col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <svg className="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
-                <span className="text-lg font-semibold">Freelancer.org.pl</span>
+                <Link href="https://freelancer.org.pl/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-sm max-w-2xl">
                 Сайт freelancer.org.pl є інформаційним ресурсом у межах партнерської програми inFakt. Метою сайту є ознайомлення з сервісом та його можливостями для підприємців в Польщі.
@@ -381,7 +375,7 @@ export default function TaxCalculatorPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 Freelancer.org.pl. Всі права захищені.</p>
+            <p>&copy; {DynamicYear()} Freelancer.org.pl. Всі права захищені.</p>
           </div>
         </div>
       </footer>

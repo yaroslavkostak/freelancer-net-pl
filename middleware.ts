@@ -12,8 +12,8 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301)
   }
 
-  // Редірект з HTTP на HTTPS
-  if (request.headers.get('x-forwarded-proto') === 'http') {
+  // Редірект з HTTP на HTTPS (тільки для продакшену)
+  if (request.headers.get('x-forwarded-proto') === 'http' && !host.includes('localhost') && !host.includes('127.0.0.1')) {
     const url = request.nextUrl.clone()
     url.protocol = 'https'
     return NextResponse.redirect(url, 301)

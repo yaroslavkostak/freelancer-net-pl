@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { DynamicYear } from '@/components/dynamic-year'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -31,8 +32,8 @@ export default function TaxChangesBlogPage() {
                 "url": "https://freelancer.org.pl/favicon.svg"
               }
             },
-            "datePublished": "2024-12-15T00:00:00.000Z",
-            "dateModified": "2024-12-19T00:00:00.000Z",
+            "datePublished": "2025-01-27T00:00:00.000Z",
+            "dateModified": "2025-01-27T00:00:00.000Z",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://freelancer.org.pl/blog/tax-changes-2025"
@@ -102,15 +103,46 @@ export default function TaxChangesBlogPage() {
       {/* Main Content */}
       <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-100">
       <div className="container mx-auto px-4 py-16">
+        {/* Breadcrumbs */}
+        <div className="max-w-4xl mx-auto mb-6">
+          <nav className="flex" aria-label="Breadcrumb">
+            <ol className="inline-flex items-center space-x-1 md:space-x-3">
+              <li className="inline-flex items-center">
+                <Link href="/" className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
+                  <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                  </svg>
+                  Головна
+                </Link>
+              </li>
+              <li>
+                <div className="flex items-center">
+                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <Link href="/blog" className="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2">Статті</Link>
+                </div>
+              </li>
+              <li aria-current="page">
+                <div className="flex items-center">
+                  <svg className="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path>
+                  </svg>
+                  <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2">Податкові зміни 2025</span>
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+        
         {/* Header */}
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
-            <Badge variant="secondary" className="mb-4">Податки</Badge>
             <h1 className="text-4xl font-bold text-gray-900 mb-4">
               Податкові зміни 2025 року: що змінюється для підприємців у Польщі
             </h1>
             <div className="flex items-center gap-4 text-gray-600 mb-6">
-              <span>📅 15 грудня 2024</span>
+                              <span>📅 27 січня 2025</span>
               <span>⏱️ 8 хв читання</span>
               <span>👁️ 2,847 переглядів</span>
             </div>
@@ -135,11 +167,33 @@ export default function TaxChangesBlogPage() {
             </div>
           </div>
 
+          {/* Table of Contents */}
+          <div className="bg-gray-50 rounded-lg p-6 mb-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">📋 Зміст статті</h3>
+            <ul className="space-y-2 text-sm">
+              <li><a href="#jdg-changes" className="text-blue-600 hover:text-blue-800 transition-colors">Основні зміни для JDG</a></li>
+              <li><a href="#new-tax-rates" className="text-blue-600 hover:text-blue-800 transition-colors ml-4">• Нові податкові ставки</a></li>
+              <li><a href="#spolka-changes" className="text-blue-600 hover:text-blue-800 transition-colors">Зміни для Spółka z o.o.</a></li>
+              <li><a href="#practical-examples" className="text-blue-600 hover:text-blue-800 transition-colors">Практичні приклади</a></li>
+              <li><a href="#comparison" className="text-blue-600 hover:text-blue-800 transition-colors">Порівняння з попередніми правилами</a></li>
+            </ul>
+          </div>
+
           {/* Article Content */}
-          <article className="prose prose-lg max-w-none">
-            <h2>Основні зміни для JDG (Індивідуальне підприємництво)</h2>
+          <article className="prose prose-lg max-w-none space-y-6">
+            <h2 id="jdg-changes" className="group">
+              <a href="#jdg-changes" className="flex items-center hover:text-blue-600 transition-colors">
+                Основні зміни для JDG (Індивідуальне підприємництво)
+                <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500">#</span>
+              </a>
+            </h2>
             
-            <h3>Нові податкові ставки</h3>
+            <h3 id="new-tax-rates" className="group">
+              <a href="#new-tax-rates" className="flex items-center hover:text-blue-600 transition-colors">
+                Нові податкові ставки
+                <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500">#</span>
+              </a>
+            </h3>
             <p>
               З 1 січня 2025 року вводяться нові податкові ставки для індивідуальних підприємців:
             </p>
@@ -161,10 +215,15 @@ export default function TaxChangesBlogPage() {
             </p>
             <ul>
               <li>Соціальні внески: <strong>9.76%</strong> від бази (максимум 30,000 PLN)</li>
-              <li>Медичне страхування: <strong>9%</strong> від доходу</li>
+              <li><Link href="/blog/skladka-zdrowotna-guide/" className="text-blue-600 hover:text-blue-800 transition-colors">Складка zdrowotna (медичне страхування)</Link>: <strong>9%</strong> від доходу</li>
             </ul>
 
-            <h2>Зміни для Spółka z o.o. (ТОВ)</h2>
+            <h2 id="spolka-changes" className="group">
+              <a href="#spolka-changes" className="flex items-center hover:text-blue-600 transition-colors">
+                Зміни для Spółka z o.o. (ТОВ)
+                <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500">#</span>
+              </a>
+            </h2>
             
             <h3>Податок на прибуток</h3>
             <p>
@@ -196,18 +255,23 @@ export default function TaxChangesBlogPage() {
             </ul>
 
             <h3>Вплив на різні групи підприємців</h3>
-            <p>
-              <strong>Для підприємців з низьким доходом (до 30,000 PLN):</strong><br/>
-              Зменшення податкового навантаження з 17% до 12% - це економія до 1,500 PLN на рік.
-            </p>
-            <p>
-              <strong>Для підприємців з середнім доходом (30,000-120,000 PLN):</strong><br/>
-              Збільшення податкового навантаження з 17% до 32% для частини доходу понад 30,000 PLN.
-            </p>
-            <p>
-              <strong>Для підприємців з високим доходом (понад 120,000 PLN):</strong><br/>
-              Ставка 32% застосовується до всієї суми понад 30,000 PLN.
-            </p>
+            
+            <div className="space-y-4">
+              <p>
+                <strong>Для підприємців з низьким доходом (до 30,000 PLN):</strong><br/>
+                Зменшення податкового навантаження з 17% до 12% - це економія до 1,500 PLN на рік.
+              </p>
+              
+              <p>
+                <strong>Для підприємців з середнім доходом (30,000-120,000 PLN):</strong><br/>
+                Збільшення податкового навантаження з 17% до 32% для частини доходу понад 30,000 PLN.
+              </p>
+              
+              <p>
+                <strong>Для підприємців з високим доходом (понад 120,000 PLN):</strong><br/>
+                Ставка 32% застосовується до всієї суми понад 30,000 PLN.
+              </p>
+            </div>
 
             <h3>Соціальні внески та страхування</h3>
             <p>
@@ -242,7 +306,12 @@ export default function TaxChangesBlogPage() {
               <li><strong>Міжнародні угоди:</strong> Відповідність стандартам OECD</li>
             </ul>
 
-            <h2>Практичні приклади розрахунків</h2>
+            <h2 id="practical-examples" className="group">
+              <a href="#practical-examples" className="flex items-center hover:text-blue-600 transition-colors">
+                Практичні приклади розрахунків
+                <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500">#</span>
+              </a>
+            </h2>
             
             <h3>Приклад 1: JDG з доходом 50,000 PLN</h3>
             <div className="bg-gray-50 p-6 rounded-lg my-6">
@@ -279,7 +348,12 @@ export default function TaxChangesBlogPage() {
               </ul>
             </div>
 
-            <h2>Порівняння з попередніми правилами</h2>
+            <h2 id="comparison" className="group">
+              <a href="#comparison" className="flex items-center hover:text-blue-600 transition-colors">
+                Порівняння з попередніми правилами
+                <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-blue-500">#</span>
+              </a>
+            </h2>
 
             <h3>JDG - порівняння 2024 vs 2025</h3>
             <div className="overflow-x-auto">
@@ -375,30 +449,32 @@ export default function TaxChangesBlogPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <Badge variant="outline" className="mb-3">Бухгалтерія</Badge>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    Як відкрити JDG в Польщі: покрокова інструкція
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    Детальний гід з реєстрації індивідуального підприємництва для українців
-                  </p>
-                  <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium">
-                    Читати далі →
+                  <Link href="/blog/jdg-registration-guide/" className="block">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
+                      Як відкрити JDG в Польщі: покрокова інструкція
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      Детальний гід з реєстрації індивідуального підприємництва для українців
+                    </p>
+                    <span className="text-blue-600 hover:text-blue-800 font-medium">
+                      Читати далі →
+                    </span>
                   </Link>
                 </CardContent>
               </Card>
               
               <Card className="hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <Badge variant="outline" className="mb-3">Податки</Badge>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    VAT в Польщі: основні правила для підприємців
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    Все про податок на додану вартість для українських підприємців
-                  </p>
-                  <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium">
-                    Читати далі →
+                  <Link href="/blog/vat-poland-guide/" className="block">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors">
+                      VAT в Польщі: основні правила для підприємців
+                    </h3>
+                    <p className="text-gray-600 mb-4">
+                      Все про податок на додану вартість для українських підприємців
+                    </p>
+                    <span className="text-blue-600 hover:text-blue-800 font-medium">
+                      Читати далі →
+                    </span>
                   </Link>
                 </CardContent>
               </Card>
@@ -413,17 +489,12 @@ export default function TaxChangesBlogPage() {
                   Потрібна допомога з податками?
                 </h2>
                 <p className="text-xl mb-6 opacity-90">
-                  Наші бухгалтери допоможуть оптимізувати податки та зекономити ваші кошти
+                  Професійний <Link href="https://freelancer.org.pl/" className="text-white underline hover:text-blue-200 transition-colors">бухгалтер в Польщі</Link> допоможе правильно застосувати нові податкові правила та оптимізувати ваші витрати
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex justify-center">
                   <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
                     <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="nofollow noopener noreferrer">
                       Отримати консультацію
-                    </Link>
-                  </Button>
-                  <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600">
-                    <Link href="/">
-                      Повернутися на головну
                     </Link>
                   </Button>
                 </div>
@@ -441,19 +512,20 @@ export default function TaxChangesBlogPage() {
             <div className="col-span-2">
               <div className="flex items-center space-x-2 mb-4">
                 <svg className="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
-                <span className="text-lg font-semibold">Freelancer.org.pl</span>
+                <Link href="https://freelancer.org.pl/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-sm max-w-2xl">
                 Сайт freelancer.org.pl є інформаційним ресурсом у межах партнерської програми inFakt. Метою сайту є ознайомлення з сервісом та його можливостями для підприємців в Польщі.
               </p>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-4">Швидкі посилання</h3>
-              <ul className="space-y-2">
-                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Контакти</Link></li>
-                <li><Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Політика конфіденційності</Link></li>
-                <li><Link href="/terms" className="text-gray-400 hover:text-white transition-colors">Умови використання</Link></li>
-              </ul>
+                          <h3 className="text-white font-semibold mb-4">Швидкі посилання</h3>
+            <ul className="space-y-2">
+              <li><Link href="/contact/" className="text-gray-400 hover:text-white transition-colors">Контакти</Link></li>
+              <li><Link href="/privacy-policy/" className="text-gray-400 hover:text-white transition-colors">Політика конфіденційності</Link></li>
+              <li><Link href="/terms/" className="text-gray-400 hover:text-white transition-colors">Умови використання</Link></li>
+              <li><Link href="/blog/" className="text-gray-400 hover:text-white transition-colors">Всі статті</Link></li>
+            </ul>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-4">Контакти</h3>
@@ -466,7 +538,7 @@ export default function TaxChangesBlogPage() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 Freelancer.org.pl. Всі права захищені.</p>
+            <p>&copy; {DynamicYear()} Freelancer.org.pl. Всі права захищені.</p>
           </div>
         </div>
       </footer>
