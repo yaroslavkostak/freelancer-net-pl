@@ -531,9 +531,7 @@ export default function TaxChangesBlogPage() {
               <h3 className="text-white font-semibold mb-4">Контакти</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Email: info@freelancer.org.pl</li>
-                <li>Адреса inFakt:</li>
-                <li>inFakt Sp. z o.o.</li>
-                <li>31-153 Kraków, ul. Szlak 49</li>
+                <li>Адреса: 31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2</li>
               </ul>
             </div>
           </div>

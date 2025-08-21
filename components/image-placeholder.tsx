@@ -56,7 +56,7 @@ export function ImagePlaceholder({
       {type === "hero" ? (
         <div className="text-center text-white">
           <Calculator className="w-16 h-16 mx-auto mb-4" />
-          <p className="text-sm font-medium">Професійні бухгалтери</p>
+          <p className="text-sm font-medium">Професійні послуги</p>
         </div>
       ) : type === "profile" ? (
         <div className="text-center">

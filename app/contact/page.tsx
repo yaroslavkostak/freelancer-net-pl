@@ -149,8 +149,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">Адреса</p>
-                      <p className="text-gray-600">inFakt Sp. z o.o.</p>
-                      <p className="text-gray-600">31-153 Kraków, ul. Szlak 49</p>
+                      
+                      <p className="text-gray-600">31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2</p>
                     </div>
                   </div>
                 </CardContent>

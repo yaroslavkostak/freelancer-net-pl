@@ -172,12 +172,10 @@ export default function TermsPage() {
               <p>Якщо у вас є питання щодо цих умов, зв'яжіться з нами:</p>
               <div className="space-y-2">
                 <p><strong>Email:</strong> info@freelancer.org.pl</p>
-                <p><strong>Адреса inFakt:</strong></p>
-                <p>inFakt Sp. z o.o.</p>
-                <p>31-153 Kraków, ul. Szlak 49</p>
+                <p><strong>Адреса:</strong> 31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2</p>
               </div>
               <p className="text-sm text-gray-600 mt-4">
-                <strong>Примітка:</strong> Для отримання бухгалтерських послуг звертайтеся безпосередньо до inFakt за контактами, вказаними на сторінці "Контакти".
+                <strong>Примітка:</strong> Для отримання бухгалтерських послуг звертайтеся безпосередньо на офіційний сайт <a href="https://www.infakt.pl/" target="_blank" rel="nofollow" className="text-blue-600 hover:text-blue-800 underline">https://www.infakt.pl/</a>
               </p>
             </CardContent>
           </Card>

@@ -1,0 +1,83 @@
+# 301 редіректи для старого сайту freelancer.org.pl
+
+# Редіректи для старих slug
+/kontakty /contact 301
+/polityka-konfidencjalnosti /privacy-policy 301
+/umovy-vykorystannya /terms 301
+/terms-of-use /terms 301
+/privacy /privacy-policy 301
+/contacts /contact 301
+/kontakt /contact 301
+/polityka /privacy-policy 301
+/umovy /terms 301
+/regulamin /terms 301
+/o-nas / 301
+/about / 301
+/uslugi / 301
+/services / 301
+/cennik / 301
+/pricing / 301
+/blog /blog 301
+/artykuly /blog 301
+/articles /blog 301
+/kalkulator /tax-calculator 301
+/calculator /tax-calculator 301
+/podatki /tax-calculator 301
+/taxes /tax-calculator 301
+
+# Редіректи для старих файлів
+/contact.tsx /contact 301
+/privacy-policy.tsx /privacy-policy 301
+/terms.tsx /terms 301
+/contact.html /contact 301
+/privacy-policy.html /privacy-policy 301
+/terms.html /terms 301
+/index.html / 301
+/index.php / 301
+/kontakt.html /contact 301
+/kontakt.php /contact 301
+/polityka.html /privacy-policy 301
+/polityka.php /privacy-policy 301
+/umovy.html /terms 301
+/umovy.php /terms 301
+/regulamin.html /terms 301
+/regulamin.php /terms 301
+/o-nas.html / 301
+/o-nas.php / 301
+/about.html / 301
+/about.php / 301
+/uslugi.html / 301
+/uslugi.php / 301
+/services.html / 301
+/services.php / 301
+/cennik.html / 301
+/cennik.php / 301
+/pricing.html / 301
+/pricing.php / 301
+/blog.html /blog 301
+/blog.php /blog 301
+/artykuly.html /blog 301
+/artykuly.php /blog 301
+/articles.html /blog 301
+/articles.php /blog 301
+/kalkulator.html /tax-calculator 301
+/kalkulator.php /tax-calculator 301
+/calculator.html /tax-calculator 301
+/calculator.php /tax-calculator 301
+/podatki.html /tax-calculator 301
+/podatki.php /tax-calculator 301
+/taxes.html /tax-calculator 301
+/taxes.php /tax-calculator 301
+
+# Редіректи для старих доменів
+# Ці редіректи потрібно налаштувати на рівні DNS або сервера
+# https://buh-online.pl/* https://freelancer.org.pl/:splat 301
+# https://www.buh-online.pl/* https://freelancer.org.pl/:splat 301
+# https://freelancer.net.pl/* https://freelancer.org.pl/:splat 301
+# https://www.freelancer.net.pl/* https://freelancer.org.pl/:splat 301
+
+# Редірект з www на без www (для основного домену)
+# https://www.freelancer.org.pl/* https://freelancer.org.pl/:splat 301
+
+# Редірект з HTTP на HTTPS
+# http://freelancer.org.pl/* https://freelancer.org.pl/:splat 301

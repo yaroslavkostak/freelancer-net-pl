@@ -10,6 +10,117 @@
   to = "/index.html"
   status = 200
 
+# 301 редіректи для старого сайту freelancer.org.pl
+[[redirects]]
+  from = "/kontakty"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/polityka-konfidencjalnosti"
+  to = "/privacy-policy"
+  status = 301
+
+[[redirects]]
+  from = "/umovy-vykorystannya"
+  to = "/terms"
+  status = 301
+
+[[redirects]]
+  from = "/terms-of-use"
+  to = "/terms"
+  status = 301
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy-policy"
+  status = 301
+
+[[redirects]]
+  from = "/contacts"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/kontakt"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/polityka"
+  to = "/privacy-policy"
+  status = 301
+
+[[redirects]]
+  from = "/umovy"
+  to = "/terms"
+  status = 301
+
+[[redirects]]
+  from = "/regulamin"
+  to = "/terms"
+  status = 301
+
+[[redirects]]
+  from = "/o-nas"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/uslugi"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/services"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/cennik"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/pricing"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/artykuly"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/articles"
+  to = "/blog"
+  status = 301
+
+[[redirects]]
+  from = "/kalkulator"
+  to = "/tax-calculator"
+  status = 301
+
+[[redirects]]
+  from = "/calculator"
+  to = "/tax-calculator"
+  status = 301
+
+[[redirects]]
+  from = "/podatki"
+  to = "/tax-calculator"
+  status = 301
+
+[[redirects]]
+  from = "/taxes"
+  to = "/tax-calculator"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

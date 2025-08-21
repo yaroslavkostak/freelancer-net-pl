@@ -209,7 +209,6 @@ export default function HomePage() {
                 rating: 9.8,
                 reviews: 77,
                 price: "від 279 zł / міс.",
-                image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/3ed99a5d-3b30-4f87-962b-5182d8278b38/small_avatar.png",
                 isVip: true,
               },
               {
@@ -218,7 +217,6 @@ export default function HomePage() {
                 rating: 9.8,
                 reviews: 22,
                 price: "від 299 zł / міс.",
-                image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/05e8ecc1-2b8c-4217-a997-eb1a6865409c/small_avatar(2).jpg",
                 isVip: false,
               },
               {
@@ -227,7 +225,6 @@ export default function HomePage() {
                 rating: 9.5,
                 reviews: 21,
                 price: "від 349 zł / міс.",
-                image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/edee1182-d3bc-4e2f-9010-6af1b9e6d5af/small_avatar.jpg",
                 isVip: false,
               },
               {
@@ -236,7 +233,6 @@ export default function HomePage() {
                 rating: 10.0,
                 reviews: 43,
                 price: "від ~189 zł / міс.",
-                image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/fc124e90-ae00-4d3a-bd49-a9e843108476/small_avatar(2).png",
                 isVip: false,
               },
               {
@@ -245,7 +241,6 @@ export default function HomePage() {
                 rating: 9.8,
                 reviews: 19,
                 price: "400 zł / міс.",
-                image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/a652c1ee-aec8-4928-b3a6-388c183fc817/small_avatar(2).png",
                 isVip: false,
               },
               {
@@ -254,7 +249,6 @@ export default function HomePage() {
                 rating: 9.0,
                 reviews: 0,
                 price: "1200 zł / міс.",
-                image: "https://accountant-panel-production.s3.eu-central-1.amazonaws.com/system/accountant/avatar/74e6bde0-f1e9-4b7a-8c49-9673dfeb05a1/small_avatar(2).png",
                 isVip: false,
               },
             ].map((accountant) => (
@@ -266,11 +260,12 @@ export default function HomePage() {
                     </div>
                   )}
                   <div className="relative">
-                    <img
-                      src={accountant.image}
+                    <ImagePlaceholder
+                      width={120}
+                      height={120}
                       alt={`${accountant.name} - бухгалтер`}
+                      type="profile"
                       className="rounded-full mx-auto mb-4 w-full max-w-[120px] h-[120px] object-cover flex-shrink-0"
-                      loading="lazy"
                     />
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">{accountant.name}</h3>
@@ -679,9 +674,7 @@ export default function HomePage() {
               <h3 className="text-white font-semibold mb-4">Контакти</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Email: info@freelancer.org.pl</li>
-                <li>Адреса inFakt:</li>
-                <li>inFakt Sp. z o.o.</li>
-                <li>31-153 Kraków, ul. Szlak 49</li>
+                <li>Адреса: 31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2</li>
               </ul>
             </div>
           </div>

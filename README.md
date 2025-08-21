@@ -99,7 +99,7 @@ npm run dev
 На сайті надаються офіційні контакти inFakt:
 - **Infolinia:** 22 307 19 18
 - **Email:** info@infakt.pl
-- **Адреса:** inFakt Sp. z o.o., 31-153 Kraków, ul. Szlak 49
+- **Адреса:** 31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2
 - **NIP:** 945-212-16-81
 
 ### Інформаційний сайт
@@ -141,4 +141,4 @@ npm run build
 
 Для питань щодо проекту:
 - **Email:** info@freelancer.org.pl
-- **Адреса inFakt:** inFakt Sp. z o.o., 31-153 Kraków, ul. Szlak 49
+- **Адреса:** 31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2
