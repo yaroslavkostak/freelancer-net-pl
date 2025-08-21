@@ -61,8 +61,8 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col-reverse lg:flex-row gap-12 items-center">
             <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
-              <h1 className="text-4xl md:text-5xl font-semibold mb-6">Онлайн-бухгалтерія для українців в Польщі</h1>
-              <p className="text-xl mb-8 text-blue-100 max-w-xl">Відкрийте для себе сучасний сервіс бухгалтерського обліку. Бухгалтери в Польщі від Infakt допоможуть Вам відкрити приватного підприємця чи фірму і допоможуть вести бухгалтерський облік від 190 zł. Довірте облік професіоналам та зосередьтесь на розвитку бізнесу. Вам потрібно буде лише виставляти рахунки-фактури.</p>
+                      <h1 className="text-4xl md:text-5xl font-semibold mb-6">Бухгалтер в Польщі для українців | Бухгалтер Варшава, Краків, Вроцлав, Познань 2025</h1>
+        <p className="text-xl mb-8 text-blue-100 max-w-xl">Професійний бухгалтер в Польщі для українців. Бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань. Русскоязычный бухгалтер в Польше. Реєстрація ФОП (JDG) та ТОВ, ведення бухгалтерського обліку, податкові консультації українською мовою. Бухгалтер для ФОП від 189 zł/міс.</p>
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
                 <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-6 font-semibold shadow-lg">
                   <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank">
@@ -198,7 +198,7 @@ export default function HomePage() {
       <section id="accountants" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-4">Рекомендовані бухгалтери в Польщі для українців</h2>
+            <h2 className="text-3xl font-semibold text-gray-900 mb-4">Бухгалтер в Польщі - Рекомендовані бухгалтери Варшава, Краків, Вроцлав, Познань</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Ви можете вирішити всі свої бухгалтерські потреби персонально по телефону або електронною поштою. Є бугалтери, які добре розуміють українську мову!</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -308,7 +308,7 @@ export default function HomePage() {
       <section id="business-management" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-4">Всі справи фірми в одному місці</h2>
+            <h2 className="text-3xl font-semibold text-gray-900 mb-4">Бухгалтер в Польщі - Всі справи фірми в одному місці</h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="w-full max-w-[600px] mx-auto overflow-hidden">
@@ -357,7 +357,7 @@ export default function HomePage() {
       <section id="accounting-services" className="py-16 bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-semibold text-gray-900 mb-4">Ведення бухгалтерського обліку в Польщі</h2>
+            <h2 className="text-3xl font-semibold text-gray-900 mb-4">Бухгалтер в Польщі - Ведення бухгалтерського обліку та консультації</h2>
           </div>
           <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             
@@ -683,6 +683,63 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+
+      {/* SEO Content Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Бухгалтер в Польщі для українців - Бухгалтер Варшава, Краків, Вроцлав, Познань</h2>
+            
+            <div className="prose prose-lg max-w-none">
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Чому потрібен бухгалтер в Польщі для українців?</h3>
+              <p className="text-gray-700 mb-6">
+                Бухгалтер в Польщі для українців - це не просто послуга, а необхідність для успішного ведення бізнесу. Бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань - всі ці міста мають свої особливості податкового законодавства. Русскоязычный бухгалтер в Польше допоможе українцям орієнтуватися в системі оподаткування, звітності та реєстрації.
+              </p>
+
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Які послуги надає бухгалтер в Польщі?</h3>
+              <ul className="list-disc list-inside text-gray-700 mb-6 space-y-2">
+                <li><strong>Реєстрація бізнесу:</strong> Бухгалтер в Польщі допоможе зареєструвати ФОП (JDG) або ТОВ (Spółka z o.o.). Бухгалтер для ФОП - це спеціаліст, який знає всі нюанси реєстрації.</li>
+                <li><strong>Ведення обліку:</strong> Повний бухгалтерський облік та податкова звітність. Бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань надають однаково якісні послуги.</li>
+                <li><strong>Податкові консультації:</strong> Консультації з податків, знижок та оптимізації від русскоязычного бухгалтера в Польше</li>
+                <li><strong>Звітність:</strong> Підготовка та подача всіх необхідних звітів</li>
+                <li><strong>Банківські послуги:</strong> Допомога з відкриттям рахунків та інтеграцією</li>
+              </ul>
+
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Бухгалтер в Польщі українською мовою</h3>
+              <p className="text-gray-700 mb-6">
+                Один з ключових переваг - бухгалтер в Польщі, який розуміє українську мову. Русскоязычный бухгалтер в Польше та бухгалтер в Польщі для украинцев - це спеціалісти, які дозволяють українським підприємцям отримувати консультації рідною мовою. Це особливо важливо для тих, хто ще не володіє польською вільно. Бухгалтер в Польщі українською мовою допоможе зрозуміти всі нюанси польського законодавства та правильно організувати бізнес.
+              </p>
+
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Скільки коштує бухгалтер в Польщі?</h3>
+              <p className="text-gray-700 mb-6">
+                Вартість послуг бухгалтера в Польщі залежить від форми діяльності та обсягу робіт. Бухгалтер для ФОП - ціни починаються від 189 zł на місяць, для ТОВ (Spółka z o.o.) - від 619 zł на місяць. Бухгалтер в Польщі для українців, бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань надають прозорі ціни без прихованих комісій.
+              </p>
+
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Як знайти надійного бухгалтера в Польщі?</h3>
+              <p className="text-gray-700 mb-6">
+                Для пошуку бухгалтера в Польщі рекомендуємо звертатися до перевірених сервісів, які мають досвід роботи з українськими підприємцями. Бухгалтер в Польщі, бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань повинен мати відповідні сертифікати, знати польське законодавство та мати можливість спілкуватися українською мовою. Русскоязычный бухгалтер в Польше - це гарантія якісного обслуговування.
+              </p>
+
+              <h3 className="text-2xl font-semibold text-gray-800 mb-4">Переваги онлайн-бухгалтерії в Польщі</h3>
+              <p className="text-gray-700 mb-6">
+                Сучасний бухгалтер в Польщі надає послуги онлайн, що дозволяє підприємцям отримувати консультації та вести облік з будь-якого місця. Онлайн-бухгалтерія в Польщі економить час та кошти, надає доступ до всіх документів 24/7 та забезпечує швидку комунікацію з бухгалтером. Бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань - всі надають сучасні онлайн-послуги.
+              </p>
+
+              <div className="bg-blue-50 p-6 rounded-lg mt-8">
+                <h4 className="text-xl font-semibold text-blue-900 mb-3">Шукаєте бухгалтера в Польщі?</h4>
+                <p className="text-blue-800 mb-4">
+                  Наші партнери з inFakt надають професійні бухгалтерські послуги для українців у Польщі. Бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань - всі ці міста мають кваліфікованих спеціалістів. Русскоязычный бухгалтер в Польше допоможе вам з усіма питаннями. Отримайте безкоштовну консультацію та дізнайтеся, як бухгалтер в Польщі може допомогти вашому бізнесу.
+                </p>
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="sponsored noopener noreferrer">
+                    Знайти бухгалтера в Польщі
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

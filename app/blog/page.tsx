@@ -142,9 +142,9 @@ export default function BlogPage() {
         </div>
         
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Блог про бухгалтерію в Польщі</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Блог про бухгалтерію в Польщі - Бухгалтер Варшава, Краків, Вроцлав, Познань</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Корисні статті про ведення бізнесу, податки та бухгалтерський облік для українців у Польщі
+            Корисні статті про ведення бізнесу, податки та бухгалтерський облік для українців у Польщі. Русскоязычный бухгалтер в Польше. Бухгалтер для ФОП.
           </p>
         </div>
 
@@ -202,6 +202,55 @@ export default function BlogPage() {
           </div>
         </div>
       </div>
+
+      {/* Related Articles & Internal Linking */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Корисні матеріали про бухгалтерію в Польщі</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Реєстрація та відкриття бізнесу</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li><Link href="/blog/jdg-registration-guide" className="text-blue-600 hover:text-blue-800 underline">Реєстрація ФОП (JDG) у Польщі для українців</Link></li>
+                  <li><Link href="/blog/tax-changes-2025" className="text-blue-600 hover:text-blue-800 underline">Податкові зміни 2025 року в Польщі</Link></li>
+                  <li><Link href="/blog/stawki-ryczalt-2025" className="text-blue-600 hover:text-blue-800 underline">Ставки річного податку 2025 для ФОП</Link></li>
+                </ul>
+              </div>
+              
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Податки та звітність</h3>
+                <ul className="space-y-3 text-gray-700">
+                  <li><Link href="/blog/vat-poland-guide" className="text-blue-600 hover:text-blue-800 underline">Податок VAT у Польщі - Повний посібник</Link></li>
+                  <li><Link href="/blog/skladka-zdrowotna-guide" className="text-blue-600 hover:text-blue-800 underline">Страховий внесок (składka zdrowotna) у Польщі</Link></li>
+                  <li><Link href="/blog/zwrot-podatku-guide" className="text-blue-600 hover:text-blue-800 underline">Як отримати повернення податку в Польщі</Link></li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="bg-blue-50 p-8 rounded-lg text-center">
+              <h3 className="text-2xl font-semibold text-blue-900 mb-4">Шукаєте бухгалтера в Польщі?</h3>
+              <p className="text-blue-800 mb-6 max-w-2xl mx-auto">
+                Наші партнери з inFakt надають професійні бухгалтерські послуги для українців у Польщі. 
+                Отримайте безкоштовну консультацію та дізнайтеся, як бухгалтер в Польщі може допомогти вашому бізнесу.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+                  <Link href="https://www.infakt.pl/polecam/yaroslav-kostak" target="_blank" rel="sponsored noopener noreferrer">
+                    Знайти бухгалтера в Польщі
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+                  <Link href="/tax-calculator">
+                    Калькулятор податків
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
