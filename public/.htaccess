@@ -1,47 +1,54 @@
 RewriteEngine On
 
+# Загальне правило: додавання закритого слеша до всіх URL (крім файлів та кореневого)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
+
 # 301 редіректи для старого сайту freelancer.org.pl
-Redirect 301 /kontakty https://freelancer.org.pl/contact
-Redirect 301 /polityka-konfidencjalnosti https://freelancer.org.pl/privacy-policy
-Redirect 301 /umovy-vykorystannya https://freelancer.org.pl/terms
-Redirect 301 /terms-of-use https://freelancer.org.pl/terms
-Redirect 301 /privacy https://freelancer.org.pl/privacy-policy
-Redirect 301 /contacts https://freelancer.org.pl/contact
-Redirect 301 /kontakt https://freelancer.org.pl/contact
-Redirect 301 /polityka https://freelancer.org.pl/privacy-policy
-Redirect 301 /umovy https://freelancer.org.pl/terms
-Redirect 301 /regulamin https://freelancer.org.pl/terms
+Redirect 301 /kontakty https://freelancer.org.pl/contact/
+Redirect 301 /polityka-konfidencjalnosti https://freelancer.org.pl/privacy-policy/
+Redirect 301 /umovy-vykorystannya https://freelancer.org.pl/terms/
+Redirect 301 /terms-of-use https://freelancer.org.pl/terms/
+Redirect 301 /privacy https://freelancer.org.pl/privacy-policy/
+Redirect 301 /contacts https://freelancer.org.pl/contact/
+Redirect 301 /kontakt https://freelancer.org.pl/contact/
+Redirect 301 /polityka https://freelancer.org.pl/privacy-policy/
+Redirect 301 /umovy https://freelancer.org.pl/terms/
+Redirect 301 /regulamin https://freelancer.org.pl/terms/
 Redirect 301 /o-nas https://freelancer.org.pl/
 Redirect 301 /about https://freelancer.org.pl/
 Redirect 301 /uslugi https://freelancer.org.pl/
 Redirect 301 /services https://freelancer.org.pl/
 Redirect 301 /cennik https://freelancer.org.pl/
 Redirect 301 /pricing https://freelancer.org.pl/
-Redirect 301 /blog https://freelancer.org.pl/blog
-Redirect 301 /artykuly https://freelancer.org.pl/blog
-Redirect 301 /articles https://freelancer.org.pl/blog
-Redirect 301 /kalkulator https://freelancer.org.pl/tax-calculator
-Redirect 301 /calculator https://freelancer.org.pl/tax-calculator
-Redirect 301 /podatki https://freelancer.org.pl/tax-calculator
-Redirect 301 /taxes https://freelancer.org.pl/tax-calculator
+# Redirect 301 /blog https://freelancer.org.pl/blog/
+# Redirect 301 /artykuly https://freelancer.org.pl/blog/
+# Redirect 301 /articles https://freelancer.org.pl/blog/
+Redirect 301 /kalkulator https://freelancer.org.pl/tax-calculator/
+Redirect 301 /calculator https://freelancer.org.pl/tax-calculator/
+Redirect 301 /podatki https://freelancer.org.pl/tax-calculator/
+Redirect 301 /taxes https://freelancer.org.pl/tax-calculator/
 
 # Редіректи для старих файлів
-Redirect 301 /contact.tsx https://freelancer.org.pl/contact
-Redirect 301 /privacy-policy.tsx https://freelancer.org.pl/privacy-policy
-Redirect 301 /terms.tsx https://freelancer.org.pl/terms
-Redirect 301 /contact.html https://freelancer.org.pl/contact
-Redirect 301 /privacy-policy.html https://freelancer.org.pl/privacy-policy
-Redirect 301 /terms.html https://freelancer.org.pl/terms
+Redirect 301 /contact.tsx https://freelancer.org.pl/contact/
+Redirect 301 /privacy-policy.tsx https://freelancer.org.pl/privacy-policy/
+Redirect 301 /terms.tsx https://freelancer.org.pl/terms/
+Redirect 301 /contact.html https://freelancer.org.pl/contact/
+Redirect 301 /privacy-policy.html https://freelancer.org.pl/privacy-policy/
+Redirect 301 /terms.html https://freelancer.org.pl/terms/
 Redirect 301 /index.html https://freelancer.org.pl/
 Redirect 301 /index.php https://freelancer.org.pl/
-Redirect 301 /kontakt.html https://freelancer.org.pl/contact
-Redirect 301 /kontakt.php https://freelancer.org.pl/contact
-Redirect 301 /polityka.html https://freelancer.org.pl/privacy-policy
-Redirect 301 /polityka.php https://freelancer.org.pl/privacy-policy
-Redirect 301 /umovy.html https://freelancer.org.pl/terms
-Redirect 301 /umovy.php https://freelancer.org.pl/terms
-Redirect 301 /regulamin.html https://freelancer.org.pl/terms
-Redirect 301 /regulamin.php https://freelancer.org.pl/terms
+Redirect 301 /kontakt.html https://freelancer.org.pl/contact/
+Redirect 301 /kontakt.php https://freelancer.org.pl/contact/
+Redirect 301 /polityka.html https://freelancer.org.pl/privacy-policy/
+Redirect 301 /polityka.php https://freelancer.org.pl/privacy-policy/
+Redirect 301 /umovy.html https://freelancer.org.pl/terms/
+Redirect 301 /umovy.php https://freelancer.org.pl/terms/
+Redirect 301 /regulamin.html https://freelancer.org.pl/terms/
+Redirect 301 /regulamin.php https://freelancer.org.pl/terms/
 Redirect 301 /o-nas.html https://freelancer.org.pl/
 Redirect 301 /o-nas.php https://freelancer.org.pl/
 Redirect 301 /about.html https://freelancer.org.pl/
@@ -54,20 +61,20 @@ Redirect 301 /cennik.html https://freelancer.org.pl/
 Redirect 301 /cennik.php https://freelancer.org.pl/
 Redirect 301 /pricing.html https://freelancer.org.pl/
 Redirect 301 /pricing.php https://freelancer.org.pl/
-Redirect 301 /blog.html https://freelancer.org.pl/blog
-Redirect 301 /blog.php https://freelancer.org.pl/blog
-Redirect 301 /artykuly.html https://freelancer.org.pl/blog
-Redirect 301 /artykuly.php https://freelancer.org.pl/blog
-Redirect 301 /articles.html https://freelancer.org.pl/blog
-Redirect 301 /articles.php https://freelancer.org.pl/blog
-Redirect 301 /kalkulator.html https://freelancer.org.pl/tax-calculator
-Redirect 301 /kalkulator.php https://freelancer.org.pl/tax-calculator
-Redirect 301 /calculator.html https://freelancer.org.pl/tax-calculator
-Redirect 301 /calculator.php https://freelancer.org.pl/tax-calculator
-Redirect 301 /podatki.html https://freelancer.org.pl/tax-calculator
-Redirect 301 /podatki.php https://freelancer.org.pl/tax-calculator
-Redirect 301 /taxes.html https://freelancer.org.pl/tax-calculator
-Redirect 301 /taxes.php https://freelancer.org.pl/tax-calculator
+# Redirect 301 /blog.html https://freelancer.org.pl/blog/
+# Redirect 301 /blog.php https://freelancer.org.pl/blog/
+# Redirect 301 /artykuly.html https://freelancer.org.pl/blog/
+# Redirect 301 /artykuly.php https://freelancer.org.pl/blog/
+# Redirect 301 /articles.html https://freelancer.org.pl/blog/
+# Redirect 301 /articles.php https://freelancer.org.pl/blog/
+Redirect 301 /kalkulator.html https://freelancer.org.pl/tax-calculator/
+Redirect 301 /kalkulator.php https://freelancer.org.pl/tax-calculator/
+Redirect 301 /calculator.html https://freelancer.org.pl/tax-calculator/
+Redirect 301 /calculator.php https://freelancer.org.pl/tax-calculator/
+Redirect 301 /podatki.html https://freelancer.org.pl/tax-calculator/
+Redirect 301 /podatki.php https://freelancer.org.pl/tax-calculator/
+Redirect 301 /taxes.html https://freelancer.org.pl/tax-calculator/
+Redirect 301 /taxes.php https://freelancer.org.pl/tax-calculator/
 
 
 

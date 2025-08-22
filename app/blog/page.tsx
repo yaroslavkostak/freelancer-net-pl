@@ -213,18 +213,18 @@ export default function BlogPage() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Реєстрація та відкриття бізнесу</h3>
                 <ul className="space-y-3 text-gray-700">
-                  <li><Link href="/blog/jdg-registration-guide" className="text-blue-600 hover:text-blue-800 underline">Реєстрація ФОП (JDG) у Польщі для українців</Link></li>
-                  <li><Link href="/blog/tax-changes-2025" className="text-blue-600 hover:text-blue-800 underline">Податкові зміни 2025 року в Польщі</Link></li>
-                  <li><Link href="/blog/stawki-ryczalt-2025" className="text-blue-600 hover:text-blue-800 underline">Ставки річного податку 2025 для ФОП</Link></li>
+                  <li><Link href="/blog/jdg-registration-guide/" className="text-blue-600 hover:text-blue-800 underline">Реєстрація ФОП (JDG) у Польщі для українців</Link></li>
+                  <li><Link href="/blog/tax-changes-2025/" className="text-blue-600 hover:text-blue-800 underline">Податкові зміни 2025 року в Польщі</Link></li>
+                  <li><Link href="/blog/stawki-ryczalt-2025/" className="text-blue-600 hover:text-blue-800 underline">Ставки річного податку 2025 для ФОП</Link></li>
                 </ul>
               </div>
               
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Податки та звітність</h3>
                 <ul className="space-y-3 text-gray-700">
-                  <li><Link href="/blog/vat-poland-guide" className="text-blue-600 hover:text-blue-800 underline">Податок VAT у Польщі - Повний посібник</Link></li>
-                  <li><Link href="/blog/skladka-zdrowotna-guide" className="text-blue-600 hover:text-blue-800 underline">Страховий внесок (składka zdrowotna) у Польщі</Link></li>
-                  <li><Link href="/blog/zwrot-podatku-guide" className="text-blue-600 hover:text-blue-800 underline">Як отримати повернення податку в Польщі</Link></li>
+                  <li><Link href="/blog/vat-poland-guide/" className="text-blue-600 hover:text-blue-800 underline">Податок VAT у Польщі - Повний посібник</Link></li>
+                  <li><Link href="/blog/skladka-zdrowotna-guide/" className="text-blue-600 hover:text-blue-800 underline">Страховий внесок (składka zdrowotna) у Польщі</Link></li>
+                  <li><Link href="/blog/zwrot-podatku-guide/" className="text-blue-600 hover:text-blue-800 underline">Як отримати повернення податку в Польщі</Link></li>
                 </ul>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function BlogPage() {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-                  <Link href="/tax-calculator">
+                  <Link href="/tax-calculator/">
                     Калькулятор податків
                   </Link>
                 </Button>

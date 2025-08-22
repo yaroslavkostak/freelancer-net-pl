@@ -2,7 +2,7 @@
 const nextConfig = {
   // Налаштування для розгортання на LiteSpeed сервері
   output: 'standalone',
-  trailingSlash: false,
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -25,33 +25,33 @@ const nextConfig = {
       // Редірект зі старих URL на нові
       {
         source: '/contact.tsx',
-        destination: '/contact',
+        destination: '/contact/',
         permanent: true,
       },
       {
         source: '/privacy-policy.tsx',
-        destination: '/privacy-policy',
+        destination: '/privacy-policy/',
         permanent: true,
       },
       {
         source: '/terms.tsx',
-        destination: '/terms',
+        destination: '/terms/',
         permanent: true,
       },
       // Редірект зі старих HTML файлів
       {
         source: '/contact.html',
-        destination: '/contact',
+        destination: '/contact/',
         permanent: true,
       },
       {
         source: '/privacy-policy.html',
-        destination: '/privacy-policy',
+        destination: '/privacy-policy/',
         permanent: true,
       },
       {
         source: '/terms.html',
-        destination: '/terms',
+        destination: '/terms/',
         permanent: true,
       },
       {
@@ -62,32 +62,32 @@ const nextConfig = {
       // Редірект зі старих slug
       {
         source: '/kontakty',
-        destination: '/contact',
+        destination: '/contact/',
         permanent: true,
       },
       {
         source: '/polityka-konfidencjalnosti',
-        destination: '/privacy-policy',
+        destination: '/privacy-policy/',
         permanent: true,
       },
       {
         source: '/umovy-vykorystannya',
-        destination: '/terms',
+        destination: '/terms/',
         permanent: true,
       },
       {
         source: '/terms-of-use',
-        destination: '/terms',
+        destination: '/terms/',
         permanent: true,
       },
       {
         source: '/privacy',
-        destination: '/privacy-policy',
+        destination: '/privacy-policy/',
         permanent: true,
       },
       {
         source: '/contacts',
-        destination: '/contact',
+        destination: '/contact/',
         permanent: true,
       },
       // Редірект зі старих доменів на freelancer.org.pl
