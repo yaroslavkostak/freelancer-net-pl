@@ -132,6 +132,18 @@ export default function BabcioweGuidePage() {
               Повна інструкція про babciowe (активне батьківство) в Польщі для українців. 
               Дізнайтеся про умови, суми виплат, необхідні документи та як правильно подати wniosek o babciowe.
             </p>
+            
+            {/* Article Image */}
+            <div className="my-8">
+              <img
+                src="/images/webp/babciowe-guide.webp"
+                alt="Babciowe 2025 - догляд за дитиною в Польщі"
+                className="w-1/2 h-auto rounded-lg shadow-lg mx-auto"
+              />
+              <p className="text-sm text-gray-500 text-center mt-2">
+                Пособие на догляд за дитиною для українських підприємців у Польщі
+              </p>
+            </div>
           </div>
 
           {/* Important Alert */}

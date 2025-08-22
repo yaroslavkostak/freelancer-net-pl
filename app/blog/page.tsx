@@ -13,7 +13,7 @@ export default function BlogPage() {
           excerpt: 'Актуальні stawki ryczałtu ewidencjonowanego на 2025 рік в Польщі для українських підприємців. Повна таблиця ставок, умови застосування та практичні приклади розрахунків.',
           date: '27 січня 2025',
           readTime: '12 хв',
-          image: '/images/stawki-ryczalt-2025.jpg'
+          image: '/images/webp/stawki-ryczalt-2025.webp'
         },
         {
           id: 'zasilek-chorobowy-guide',
@@ -21,7 +21,7 @@ export default function BlogPage() {
           excerpt: 'Повний гід з розрахунку zasiłek chorobowy (лікарняних) для українських підприємців JDG в Польщі. Калькулятор, умови, ставки та практичні приклади.',
           date: '27 січня 2025',
           readTime: '14 хв',
-          image: '/images/zasilek-chorobowy-guide.jpg'
+          image: '/images/webp/zasilek-chorobowy-guide.webp'
         },
         {
           id: 'skladka-zdrowotna-guide',
@@ -29,7 +29,7 @@ export default function BlogPage() {
           excerpt: 'Повний гід з składka zdrowotna (внесок на охорону здоров\'я) в Польщі для українських підприємців. Розрахунки, ставки, терміни оплати та льготи для JDG.',
           date: '27 січня 2025',
           readTime: '13 хв',
-          image: '/images/skladka-zdrowotna-guide.jpg'
+          image: '/images/webp/skladka-zdrowotna-guide.webp'
         },
         {
           id: 'babciowe-guide',
@@ -37,7 +37,7 @@ export default function BlogPage() {
           excerpt: 'Повна інструкція про babciowe (активне батьківство) в Польщі для українців. Умови, суми виплат, необхідні документи та як правильно подати wniosek o babciowe.',
           date: '27 січня 2025',
           readTime: '11 хв',
-          image: '/images/babciowe-guide.jpg'
+          image: '/images/webp/babciowe-guide.webp'
         },
         {
           id: 'zwrot-podatku-guide',
@@ -45,7 +45,7 @@ export default function BlogPage() {
           excerpt: 'Детальна інструкція як отримати повернення податку в Польщі для українців. Умови, документи, терміни та покрокова процедура з поясненням польських термінів.',
           date: '27 січня 2025',
           readTime: '12 хв',
-          image: '/images/zwrot-podatku-guide.jpg'
+          image: '/images/webp/zwrot-podatku-guide.webp'
         },
         {
           id: 'tax-calculator-guide',
@@ -53,7 +53,7 @@ export default function BlogPage() {
           excerpt: 'Детальний гід з усіх типів податкових калькуляторів в Польщі для українців. Розрахуйте PIT, VAT, ZUS та інші податки з актуальними ставками 2025 року.',
           date: '27 січня 2025',
           readTime: '10 хв',
-          image: '/images/tax-calculator-guide.jpg'
+          image: '/images/webp/tax-calculator-guide.webp'
         },
         {
           id: 'tax-changes-2025',
@@ -61,7 +61,7 @@ export default function BlogPage() {
           excerpt: 'Детальний огляд нових податкових правил, які вступають в силу з 1 січня 2025 року. Зміни в оподаткуванні для індивідуальних підприємців та компаній.',
           date: '27 січня 2025',
           readTime: '8 хв',
-          image: '/images/tax-changes-2025.jpg'
+          image: '/images/webp/tax-changes-2025.webp'
         },
         {
           id: 'jdg-registration-guide',
@@ -69,7 +69,7 @@ export default function BlogPage() {
           excerpt: 'Повний гід з реєстрації індивідуального підприємництва (JDG) в Польщі для українців. Від підготовки документів до початку діяльності.',
           date: '27 січня 2025',
           readTime: '12 хв',
-          image: '/images/jdg-registration.jpg'
+          image: '/images/webp/jdg-registration.webp'
         },
         {
           id: 'vat-poland-guide',
@@ -77,7 +77,7 @@ export default function BlogPage() {
           excerpt: 'Детальний гід з податку на додану вартість (VAT) в Польщі. Всі важливі правила, ставки, обов\'язки та особливості для підприємців.',
           date: '27 січня 2025',
           readTime: '10 хв',
-          image: '/images/vat-guide.jpg'
+          image: '/images/webp/vat-guide.webp'
         }
       ]
 
@@ -142,7 +142,7 @@ export default function BlogPage() {
         </div>
         
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Блог про бухгалтерію в Польщі - Бухгалтер Варшава, Краків, Вроцлав, Познань</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Блог про бухгалтерію в Польщі</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Корисні статті про ведення бізнесу, податки та бухгалтерський облік для українців у Польщі. Бухгалтер для ФОП. Бугалтери платформи Infakt все зроблять, як треба!
           </p>
@@ -172,11 +172,12 @@ export default function BlogPage() {
                     </span>
                   </div>
                 </div>
-                <div className="md:w-1/3 bg-gray-100 flex items-center justify-center p-6">
-                  <div className="text-center">
-                    <div className="text-lg font-semibold text-gray-500 mb-1">Freelancer</div>
-                    <div className="text-sm text-gray-400">freelancer.org.pl</div>
-                  </div>
+                <div className="md:w-1/3 bg-gray-100 flex items-center justify-center p-3">
+                  <img
+                    src={article.image}
+                    alt={article.title}
+                    className="w-full h-32 object-cover rounded"
+                  />
                 </div>
               </div>
             </Link>

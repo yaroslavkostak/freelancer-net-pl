@@ -132,6 +132,18 @@ export default function ZasilekChorobowyGuidePage() {
               Повний гід з розрахунку zasiłek chorobowy (лікарняних) для українських підприємців JDG в Польщі. 
               Дізнайтеся про умови, ставки, терміни та як правильно розрахувати суму виплат у 2025 році.
             </p>
+            
+            {/* Article Image */}
+            <div className="my-8">
+              <img
+                src="/images/webp/zasilek-chorobowy-guide.webp"
+                alt="Zasiłek chorobowy для JDG 2025 - розрахунок лікарняних в Польщі"
+                className="w-1/2 h-auto rounded-lg shadow-lg mx-auto"
+              />
+              <p className="text-sm text-gray-500 text-center mt-2">
+                Калькулятор лікарняних виплат для українських підприємців у Польщі
+              </p>
+            </div>
           </div>
 
           {/* Important Alert */}

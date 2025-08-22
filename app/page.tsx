@@ -55,7 +55,7 @@ export default function HomePage() {
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center space-x-10 justify-center flex-1">
             <Link
-              href="#company-choice/"
+              href="#company-choice"
               className="flex items-center gap-2 text-gray-600 hover:text-blue-600"
             >
               {/* Noun Project icon: building */}
@@ -68,10 +68,10 @@ export default function HomePage() {
               >
                 <path d="M3 21h18M3 7h18M3 3h18M7 21V11M17 21V11" />
               </svg>
-              Види діяльності
+              Оберіть рішення
             </Link>
             <Link
-              href="#accountants/"
+              href="#recommended-accountants"
               className="flex items-center gap-2 text-gray-600 hover:text-blue-600"
             >
               {/* Noun Project icon: user group */}
@@ -89,7 +89,7 @@ export default function HomePage() {
               Бухгалтери
             </Link>
             <Link
-              href="#business-management/"
+              href="#business-management"
               className="flex items-center gap-2 text-gray-600 hover:text-blue-600"
             >
               {/* Noun Project icon: calculator */}
@@ -105,10 +105,10 @@ export default function HomePage() {
                 <rect x="7" y="14" width="3" height="3" />
                 <rect x="14" y="14" width="3" height="3" />
               </svg>
-              Бухгалтерський облік
+              Облік
             </Link>
             <Link
-              href="#accounting-services/"
+              href="#business-guide"
               className="flex items-center gap-2 text-gray-600 hover:text-blue-600"
             >
               {/* Noun Project icon: briefcase */}
@@ -122,10 +122,10 @@ export default function HomePage() {
                 <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
                 <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
               </svg>
-              Послуги
+              Покроковий гід
             </Link>
             <Link
-              href="#faq/"
+              href="#faq"
               className="flex items-center gap-2 text-gray-600 hover:text-blue-600"
             >
               {/* Noun Project icon: question mark */}
@@ -465,7 +465,7 @@ export default function HomePage() {
       </section>
 
       {/* Recommended Accountants */}
-      <section id="accountants" className="py-16 bg-gray-50">
+      <section id="recommended-accountants" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold text-gray-900 text-center mb-10">
@@ -539,13 +539,13 @@ export default function HomePage() {
                     </div>
                   )}
                   <div className="relative">
-                    <ImagePlaceholder
-                      width={120}
-                      height={120}
-                      alt={`${accountant.name} - бухгалтер`}
-                      type="profile"
-                      className="rounded-full mx-auto mb-4 w-full max-w-[120px] h-[120px] object-cover flex-shrink-0"
-                    />
+                    <div className="w-[120px] h-[120px] mx-auto mb-4 rounded-full bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/images/girl-icon.png"
+                        alt={`${accountant.name} - бухгалтер`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">
                     {accountant.name}
@@ -612,6 +612,18 @@ export default function HomePage() {
                 type="dashboard"
                 className="rounded-lg shadow-lg w-full h-auto max-w-full"
               />
+              <div className="mt-2 text-center">
+                <p className="text-xs text-gray-500">
+                  <a
+                    href="https://www.infakt.pl/polecam/yaroslav-kostak"
+                    target="_blank"
+                    rel="sponsored noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline"
+                  >
+                    inFakt.pl
+                  </a>
+                </p>
+              </div>
             </div>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
@@ -1053,7 +1065,7 @@ export default function HomePage() {
       </section>
 
       {/* Business Guide Section */}
-      <section className="py-16 bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50">
+      <section id="business-guide" className="py-16 bg-gradient-to-r from-indigo-50 via-purple-50 to-pink-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold text-gray-900 mb-4">
@@ -1084,7 +1096,7 @@ export default function HomePage() {
                   <p>
                     <strong>Для старту достатньо мати:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-blue-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>Паспорт або карту перебування</li>
                     <li>Номер PESEL</li>
                     <li>Адресу проживання</li>
@@ -1113,7 +1125,7 @@ export default function HomePage() {
                     <strong>ТОВ (Sp. z o.o.)</strong> — зручне для партнерського
                     бізнесу, інтернет-магазинів, компаній з більшими оборотами.
                   </p>
-                  <p className="text-xs text-gray-600">
+                  <p className="text-xs text-gray-900">
                     JDG реєструється безкоштовно онлайн через CEIDG, тоді як Sp.
                     z o.o. потребує подання до KRS та стартового капіталу у 5000
                     zł.
@@ -1135,12 +1147,12 @@ export default function HomePage() {
                   <p>
                     <strong>Система оподаткування:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-purple-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>Прогресивна шкала: 12% і 32% із пільгою 30 000 zł</li>
                     <li>Лінійний податок: 19%</li>
                     <li>Ричалт: фіксований відсоток від виручки</li>
                   </ul>
-                  <p className="text-xs text-gray-600">
+                  <p className="text-xs text-gray-900">
                     Перші 6 місяців діє "ulga na start" — тільки медичний внесок
                     (314,96 zł).
                   </p>
@@ -1161,7 +1173,7 @@ export default function HomePage() {
                   <p>
                     <strong>Реєстрація VAT:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-orange-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>Якщо оборот менше 200 000 zł — можна без VAT</li>
                     <li>Для співпраці з ЄС — краще зареєструватися</li>
                     <li>Інтернет-магазини — система OSS для всього ЄС</li>
@@ -1183,12 +1195,12 @@ export default function HomePage() {
                   <p>
                     <strong>Банківський рахунок:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-red-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>ФОП може працювати з особистим рахунком</li>
                     <li>Для безпеки — краще бізнес-рахунок</li>
                     <li>Автоматична інтеграція з бухгалтерією</li>
                   </ul>
-                  <p className="text-xs text-gray-600">
+                  <p className="text-xs text-gray-900">
                     Сервіс inFakt забезпечує онлайн-доступ до всіх документів.
                   </p>
                 </div>
@@ -1208,14 +1220,14 @@ export default function HomePage() {
                   <p>
                     <strong>Щомісячні звіти:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-teal-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>JPK_V7 (для платників VAT)</li>
                     <li>Сплата податків та внесків до ZUS</li>
                   </ul>
                   <p>
                     <strong>Дедлайни:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-teal-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>20 число: ZUS та PIT</li>
                     <li>25 число: VAT</li>
                   </ul>
@@ -1236,14 +1248,14 @@ export default function HomePage() {
                   <p>
                     <strong>Ведення обліку:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-indigo-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>ФОП: від 189 zł на місяць</li>
                     <li>ТОВ: від 619 zł на місяць</li>
                   </ul>
                   <p>
                     <strong>Реєстрація:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-indigo-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>JDG через CEIDG: безкоштовно</li>
                     <li>Sp. z o.o. у KRS: 250 zł + 100 zł публікація</li>
                   </ul>
@@ -1268,7 +1280,7 @@ export default function HomePage() {
                   <p>
                     <strong>Найзручніше рішення:</strong>
                   </p>
-                  <ul className="list-disc list-inside space-y-1 ml-3 text-pink-600">
+                  <ul className="list-disc list-inside space-y-1 ml-3 text-gray-900">
                     <li>Українськомовний бухгалтер</li>
                     <li>Підкаже правильну форму оподаткування</li>
                     <li>Зареєструє бізнес</li>

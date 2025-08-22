@@ -64,12 +64,23 @@ export function ImagePlaceholder({
           <div className="w-8 h-1 bg-blue-600 mx-auto rounded"></div>
         </div>
       ) : type === "dashboard" ? (
-        <div className="text-center">
-          <BarChart3 className="w-12 h-12 text-blue-600 mx-auto mb-2" />
-          <div className="grid grid-cols-3 gap-1 mt-2">
-            {[...Array(6)].map((_, i) => (
-              <div key={i} className="w-4 h-2 bg-blue-300 rounded"></div>
-            ))}
+        <div className="w-full h-full">
+          <img
+            src="/images/dashboard-screenshot.jpg"
+            alt="Інтерфейс системи управління бухгалтерським обліком"
+            className="w-full h-full object-cover rounded-lg"
+          />
+          <div className="mt-2 text-center">
+            <p className="text-xs text-gray-500">
+              <a
+                href="https://www.infakt.pl/polecam/yaroslav-kostak"
+                target="_blank"
+                rel="sponsored noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 underline"
+              >
+                inFakt.pl
+              </a>
+            </p>
           </div>
         </div>
       ) : (

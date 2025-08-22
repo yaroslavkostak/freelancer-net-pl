@@ -132,6 +132,18 @@ export default function TaxCalculatorGuidePage() {
               Детальний гід з усіх типів податкових калькуляторів в Польщі для українців. 
               Розрахуйте PIT, VAT, ZUS та інші податки з актуальними ставками 2025 року.
             </p>
+            
+            {/* Article Image */}
+            <div className="my-8">
+              <img
+                src="/images/webp/tax-calculator-guide.webp"
+                alt="Калькулятор податків для JDG в Польщі"
+                className="w-1/2 h-auto rounded-lg shadow-lg mx-auto"
+              />
+              <p className="text-sm text-gray-500 text-center mt-2">
+                Онлайн калькулятор податків для українських підприємців у Польщі
+              </p>
+            </div>
           </div>
 
           {/* Table of Contents */}

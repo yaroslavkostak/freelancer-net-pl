@@ -132,6 +132,18 @@ export default function StawkiRyczaltGuidePage() {
               Актуальні stawki ryczałtu ewidencjonowanego на 2025 рік в Польщі для українських підприємців. 
               Повна таблиця ставок, умови застосування та практичні приклади розрахунків податку.
             </p>
+            
+            {/* Article Image */}
+            <div className="my-8">
+              <img
+                src="/images/webp/stawki-ryczalt-2025.webp"
+                alt="Stawki ryczałtu 2025 в Польщі - податкові ставки для українських підприємців"
+                className="w-1/2 h-auto rounded-lg shadow-lg mx-auto"
+              />
+              <p className="text-sm text-gray-500 text-center mt-2">
+                Актуальні податкові ставки ryczałtu 2025 для українців у Польщі
+              </p>
+            </div>
           </div>
 
           {/* Important Alert */}

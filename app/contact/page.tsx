@@ -28,9 +28,42 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-100 py-16">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-100">
+      {/* Header */}
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <div className="flex items-center space-x-2">
+            <svg className="h-8 w-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
+            <a href="https://freelancer.org.pl/" className="text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors">Рекомендую inFakt</a>
+          </div>
+          <nav className="hidden md:flex items-center space-x-10 justify-center flex-1">
+            <a href="/#company-choice/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+              <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M3 21h18M3 7h18M3 3h18M7 21V11M17 21V11"/></svg>
+              Види діяльності
+            </a>
+            <a href="/#accountants/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+              <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><circle cx="17" cy="17" r="4"/><path d="M17 13a4 4 0 0 0-8 0"/></svg>
+              Бухгалтери
+            </a>
+            <a href="/#business-management/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+              <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
+              Бухгалтерський облік
+            </a>
+            <a href="/#accounting-services/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+              <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              Послуги
+            </a>
+            <a href="/#faq/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+              <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>
+              Питання
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <div className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Зв'яжіться з нами</h1>
             <p className="text-xl text-gray-600">
@@ -38,8 +71,8 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            {/* Контактна форма */}
+          {/* Контактна форма по центру */}
+          <div className="max-w-2xl mx-auto">
             <Card className="bg-white shadow-lg">
               <CardHeader>
                 <CardTitle>Надішліть нам повідомлення</CardTitle>
@@ -81,8 +114,6 @@ export default function ContactPage() {
                     />
                   </div>
 
-
-
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                       Повідомлення *
@@ -105,99 +136,70 @@ export default function ContactPage() {
                 </form>
               </CardContent>
             </Card>
+          </div>
 
-            {/* Контактна інформація */}
-            <div className="space-y-6">
-              <Card className="bg-white shadow-lg">
-                <CardHeader>
-                  <CardTitle>Контакти inFakt</CardTitle>
-                  <CardDescription>
-                    Офіційні контакти сервісу inFakt для отримання бухгалтерських послуг
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Infolinia</p>
-                      <p className="text-gray-600">22 307 19 18</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Email</p>
-                      <p className="text-gray-600">info@infakt.pl</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                      <svg className="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900">Адреса</p>
-                      
-                      <p className="text-gray-600">31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white shadow-lg">
-                <CardHeader>
-                  <CardTitle>Про наш сайт</CardTitle>
-                </CardHeader>
-                <CardContent>
-                                <p className="text-gray-600 mb-4">
-                                 Сайт freelancer.org.pl є інформаційним ресурсом та партнерським майданчиком сервісу inFakt. 
-                Ми надаємо інформацію про бухгалтерські послуги у Польщі та допомагаємо 
-                підприємцям знайти відповідні рішення.
-              </p>
-              <p className="text-gray-600">
-                <strong>Важливо:</strong> Безпосередні бухгалтерські послуги надає inFakt. 
-                Для отримання послуг звертайтеся за офіційними контактами inFakt.
-              </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white shadow-lg">
-                <CardHeader>
-                  <CardTitle>Час роботи inFakt</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Понеділок - П'ятниця</span>
-                      <span className="font-medium">8:00 - 18:00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Субота</span>
-                      <span className="font-medium">9:00 - 14:00</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Неділя</span>
-                      <span className="font-medium">Вихідний</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+          {/* Про наш сайт - опущено нижче */}
+          <div className="mt-12 max-w-4xl mx-auto">
+            <Card className="bg-white shadow-lg">
+              <CardHeader>
+                <CardTitle>Про наш сайт</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Сайт freelancer.org.pl є інформаційним ресурсом та партнерським майданчиком сервісу inFakt. 
+                  Ми надаємо інформацію про бухгалтерські послуги у Польщі та допомагаємо 
+                  підприємцям знайти відповідні рішення.
+                </p>
+                <p className="text-gray-600">
+                  <strong>Важливо:</strong> Безпосередні бухгалтерські послуги надає inFakt. 
+                  Для отримання послуг звертайтеся за офіційними контактами inFakt.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div className="col-span-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <svg className="h-6 w-6 text-blue-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <rect x="7" y="7" width="10" height="3"/>
+                  <rect x="7" y="14" width="3" height="3"/>
+                  <rect x="14" y="14" width="3" height="3"/>
+                </svg>
+                <a href="https://freelancer.org.pl/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</a>
+              </div>
+              <p className="text-gray-400 text-sm max-w-2xl">
+                Сайт freelancer.org.pl є інформаційним ресурсом у межах партнерської програми inFakt. Метою сайту є ознайомлення з сервісом та його можливостями для підприємців в Польщі.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-white font-semibold mb-4">Швидкі посилання</h3>
+              <ul className="space-y-2">
+                <li><a href="/contact/" className="text-gray-400 hover:text-white transition-colors">Контакти</a></li>
+                <li><a href="/privacy-policy/" className="text-gray-400 hover:text-white transition-colors">Політика конфіденційності</a></li>
+                <li><a href="/terms/" className="text-gray-400 hover:text-white transition-colors">Умови використання</a></li>
+                <li><a href="/blog/" className="text-gray-400 hover:text-white transition-colors">Всі статті</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-white font-semibold mb-4">Контакти</h3>
+              <ul className="space-y-2 text-gray-400">
+                <li>Email: info@freelancer.org.pl</li>
+                <li>Адреса: 31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2</li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+            <p>© 2025 Freelancer.org.pl. Всі права захищені.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 } 
