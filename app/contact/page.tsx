@@ -64,98 +64,99 @@ export default function ContactPage() {
       <div className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">Зв'яжіться з нами</h1>
-            <p className="text-xl text-gray-600">
-              Маєте питання щодо бухгалтерських послуг у Польщі? Ми готові допомогти!
-            </p>
-          </div>
+            <div className="text-center mb-12">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">Зв'яжіться з нами</h1>
+              <p className="text-xl text-gray-600">
+                Маєте питання щодо бухгалтерських послуг у Польщі? Ми готові допомогти!
+              </p>
+            </div>
 
-          {/* Контактна форма по центру */}
-          <div className="max-w-2xl mx-auto">
-            <Card className="bg-white shadow-lg">
-              <CardHeader>
-                <CardTitle>Надішліть нам повідомлення</CardTitle>
-                <CardDescription>
-                  Заповніть форму нижче, і ми зв'яжемося з вами найближчим часом
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Ім'я *
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Ваше ім'я"
-                      className="w-full"
-                    />
-                  </div>
+            {/* Контактна форма по центру */}
+            <div className="max-w-2xl mx-auto">
+              <Card className="bg-white shadow-lg">
+                <CardHeader>
+                  <CardTitle>Надішліть нам повідомлення</CardTitle>
+                  <CardDescription>
+                    Заповніть форму нижче, і ми зв'яжемося з вами найближчим часом
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                        Ім'я *
+                      </label>
+                      <Input
+                        id="name"
+                        name="name"
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Ваше ім'я"
+                        className="w-full"
+                      />
+                    </div>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email *
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="your@email.com"
-                      className="w-full"
-                    />
-                  </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                        Email *
+                      </label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="your@email.com"
+                        className="w-full"
+                      />
+                    </div>
 
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                      Повідомлення *
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Опишіть ваше питання або запит..."
-                      rows={5}
-                      className="w-full"
-                    />
-                  </div>
+                    <div>
+                      <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                        Повідомлення *
+                      </label>
+                      <Textarea
+                        id="message"
+                        name="message"
+                        required
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Опишіть ваше питання або запит..."
+                        rows={5}
+                        className="w-full"
+                      />
+                    </div>
 
-                  <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
-                    Надіслати повідомлення
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
+                    <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
+                      Надіслати повідомлення
+                    </Button>
+                  </form>
+                </CardContent>
+              </Card>
+            </div>
 
-          {/* Про наш сайт - опущено нижче */}
-          <div className="mt-12 max-w-4xl mx-auto">
-            <Card className="bg-white shadow-lg">
-              <CardHeader>
-                <CardTitle>Про наш сайт</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 mb-4">
-                  Сайт freelancer.org.pl є інформаційним ресурсом та партнерським майданчиком сервісу inFakt. 
-                  Ми надаємо інформацію про бухгалтерські послуги у Польщі та допомагаємо 
-                  підприємцям знайти відповідні рішення.
-                </p>
-                <p className="text-gray-600">
-                  <strong>Важливо:</strong> Безпосередні бухгалтерські послуги надає inFakt. 
-                  Для отримання послуг звертайтеся за офіційними контактами inFakt.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Про наш сайт - опущено нижче */}
+            <div className="mt-12 max-w-4xl mx-auto">
+              <Card className="bg-white shadow-lg">
+                <CardHeader>
+                  <CardTitle>Про наш сайт</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Сайт freelancer.org.pl є інформаційним ресурсом та партнерським майданчиком сервісу inFakt. 
+                    Ми надаємо інформацію про бухгалтерські послуги у Польщі та допомагаємо 
+                    підприємцям знайти відповідні рішення.
+                  </p>
+                  <p className="text-gray-600">
+                    <strong>Важливо:</strong> Безпосередні бухгалтерські послуги надає inFakt. 
+                    Для отримання послуг звертайтеся за офіційними контактами inFakt.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
@@ -202,4 +203,4 @@ export default function ContactPage() {
       </footer>
     </div>
   )
-} 
+}
