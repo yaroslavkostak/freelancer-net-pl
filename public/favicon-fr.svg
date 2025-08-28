@@ -3,9 +3,9 @@
   <rect width="32" height="32" rx="6" fill="#1e40af"/>
   
   <!-- Літера F -->
-  <path d="M8 8h12v3H11v3h8v3H11v5H8V8z" fill="white"/>
+  <path d="M8 8h10v3H11v3h6v3H11v5H8V8z" fill="white"/>
   
-  <!-- Літера O -->
-  <path d="M18 8h6c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2h-6c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2z" fill="white"/>
-  <path d="M20 10v12h2V10h-2z" fill="#1e40af"/>
-</svg> 
+  <!-- Літера R -->
+  <path d="M20 8h4c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2h-2l3 5h-3l-2-4v4h-2V8z" fill="white"/>
+  <path d="M22 10v4h2v-4h-2z" fill="#1e40af"/>
+</svg>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Калькулятор податкових змін 2025 року в Польщі - JDG та Spółka z o.o. | inFakt",
+  title: "Калькулятор податків 2025 | JDG та Spółka z o.o.",
   description: "Розрахуйте податки для JDG та Spółka z o.o. в Польщі з урахуванням нових змін 2025 року. Вільна сума 30,000 PLN, нові ставки 12% та 32%. Безкоштовний калькулятор від inFakt.",
   keywords: [
     "калькулятор податків польща 2025",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "розрахунок соціальних внесків польща"
   ],
   openGraph: {
-    title: "Калькулятор податкових змін 2025 року в Польщі - JDG та Spółka z o.o.",
+    title: "Калькулятор податків 2025 | JDG та Spółka z o.o.",
     description: "Розрахуйте податки для JDG та Spółka z o.o. в Польщі з урахуванням нових змін 2025 року. Вільна сума 30,000 PLN, нові ставки.",
     type: "website",
     locale: "uk_UA",

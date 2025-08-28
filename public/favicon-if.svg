@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <!-- Фон - синій квадрат з заокругленими кутами -->
+  <rect width="32" height="32" rx="6" fill="#1e40af"/>
+  
+  <!-- Літера I -->
+  <path d="M10 8h12v3H10V8z" fill="white"/>
+  <path d="M15 11v10h2V11h-2z" fill="white"/>
+  <path d="M10 19h12v3H10v-3z" fill="white"/>
+  
+  <!-- Літера F -->
+  <path d="M18 8h4v3h-4V8z" fill="white"/>
+  <path d="M18 11v3h3v2h-3v5h-2V11h2z" fill="white"/>
+</svg>

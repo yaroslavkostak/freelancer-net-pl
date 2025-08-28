@@ -8,6 +8,14 @@ import { DynamicYear } from '@/components/dynamic-year'
 export default function BlogPage() {
         const articles = [
         {
+          id: 'systema-opodatkuvannia-frilanser-2025',
+          title: 'Система оподаткування для фрілансерів у Польщі у 2025 році - Яку обрати?',
+          excerpt: 'Повний гід по системах оподаткування для фрілансерів у Польщі у 2025 році. Ryczałt, лінійний PIT, загальна шкала - що вигідніше? Консультації українською.',
+          date: '23 серпня 2025',
+          readTime: '8 хв',
+          image: '/images/webp/tax-system-guide.webp'
+        },
+        {
           id: 'stawki-ryczalt-2025',
           title: 'Stawki ryczałtu 2025 в Польщі: нові ставки та розрахунки для українців',
           excerpt: 'Актуальні stawki ryczałtu ewidencjonowanego на 2025 рік в Польщі для українських підприємців. Повна таблиця ставок, умови застосування та практичні приклади розрахунків.',

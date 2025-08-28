@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Stawki ryczałtu 2025 в Польщі: нові ставки та розрахунки для українців",
+  title: "Stawki ryczałtu 2025 в Польщі | Нові ставки для українців",
   description: "Актуальні stawki ryczałtu ewidencjonowanego на 2025 рік в Польщі для українських підприємців. Повна таблиця ставок, умови застосування та практичні приклади розрахунків.",
   keywords: "stawki ryczałtu 2025, ryczałt ewidencjonowany, JDG ryczałt, українці польща, податки 2025, paušalny podatok, tabela stawek",
   openGraph: {
-    title: "Stawki ryczałtu 2025 в Польщі: нові ставки та розрахунки для українців",
+    title: "Stawki ryczałtu 2025 в Польщі | Нові ставки для українців",
     description: "Актуальні stawki ryczałtu ewidencjonowanego на 2025 рік в Польщі для українських підприємців. Повна таблиця ставок, умови застосування та практичні приклади розрахунків.",
     type: "article",
     locale: "uk_UA",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stawki ryczałtu 2025 в Польщі: нові ставки та розрахунки для українців",
+    title: "Stawki ryczałtu 2025 в Польщі | Нові ставки для українців",
     description: "Актуальні stawki ryczałtu ewidencjonowanego на 2025 рік в Польщі для українських підприємців. Повна таблиця ставок, умови застосування та практичні приклади розрахунків.",
     images: ["https://freelancer.org.pl/images/stawki-ryczalt-2025-og.jpg"],
   },

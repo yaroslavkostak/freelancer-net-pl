@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Контакти - Freelancer.org.pl | Зв'язок з inFakt для бухгалтерських послуг",
+  title: "Контакти | Freelancer.org.pl",
   description: "Контактна інформація inFakt для українців у Польщі. Зверніться до нас з питань бухгалтерії, реєстрації JDG, ведення обліку та податкових консультацій українською мовою.",
   keywords: "контакти infakt, бухгалтер українською польща, консультації бухгалтерія, зв'язок infakt, підтримка українською, краków infakt",
   openGraph: {
