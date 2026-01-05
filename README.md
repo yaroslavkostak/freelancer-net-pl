@@ -135,3 +135,5 @@ npm run build
 Для питань щодо проекту:
 - **Email:** info@freelancer.org.pl
 - **Адреса:** 31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2
+
+<!-- Build trigger: 2026-01-06 00:16:39 -->
