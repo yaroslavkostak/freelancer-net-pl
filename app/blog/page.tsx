@@ -15,9 +15,9 @@ export default function BlogPage() {
       excerpt: 'Повний гід по системах оподаткування для фрілансерів у Польщі у 2025 році.',
       date: '2025-08-23',
       readTime: '8 хв',
-      image: '/images/webp/tax-system-guide.webp'
+      image: '/images/webp/tax-system-guide.webp',
+      isDynamic: false
     },
-    // ... інші статті
   ]
   
   // Форматуємо MDX пости для відображення
@@ -29,7 +29,7 @@ export default function BlogPage() {
     readTime: Math.ceil(post.content.split(' ').length / 200) + ' хв',
     image: post.image,
     tags: post.tags,
-    isDynamic: true // Позначка що це динамічний пост
+    isDynamic: true
   }))
   
   // Об'єднуємо всі статті
@@ -78,9 +78,7 @@ export default function BlogPage() {
                       ))}
                     </div>
                   )}
-                  <Link 
-                    href={article.isDynamic ? `/blog/posts/${article.id}` : `/blog/${article.id}`}
-                  >
+                  <Link href={`/blog/${article.id}`}>
                     <Button className="w-full sm:w-auto">
                       Читати далі →
                     </Button>
