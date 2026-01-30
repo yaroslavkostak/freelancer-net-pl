@@ -91,15 +91,6 @@
   to = "/"
   status = 301
 
-[[redirects]]
-  from = "/artykuly"
-  to = "/blog"
-  status = 301
-
-[[redirects]]
-  from = "/articles"
-  to = "/blog"
-  status = 301
 
 [[redirects]]
   from = "/kalkulator"

@@ -8,28 +8,37 @@ import { useState } from "react"
 import Link from "next/link"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { translations, type Language } from "@/lib/translations"
-import { usePathname } from "next/navigation"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, X } from "lucide-react"
+import { Menu } from "lucide-react"
 
 export default function ContactPage() {
-  const pathname = usePathname();
-  const language: Language = pathname?.startsWith('/ukr') ? 'uk' : 'pl';
+  const language: Language = 'uk';
   const t = translations[language];
   
-  const navLinks = language === 'pl' 
-    ? [
-        { href: '/#jdg', label: 'Rejestracja JDG' },
-        { href: '/#taxation-systems', label: 'Systemy opodatkowania' },
-        { href: '/#zus-insurance', label: 'Ubezpieczenia ZUS' },
-        { href: '/#how-to-start', label: 'Jak zacząć' },
-      ]
-    : [
-        { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
-        { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
-        { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
-        { href: '/ukr/#how-to-start', label: 'Як почати' },
-      ];
+  const navLinks = [
+    { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
+    { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
+    { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
+    { href: '/ukr/#how-to-start', label: 'Як почати' },
+  ];
+
+  const content = {
+    title: 'Зв\'яжіться з нами',
+    subtitle: 'Маєте питання щодо бухгалтерських послуг у Польщі? Ми готові допомогти!',
+    formTitle: 'Надішліть нам повідомлення',
+    formDescription: 'Заповніть форму нижче, і ми зв\'яжемося з вами найближчим часом',
+    nameLabel: 'Ім\'я *',
+    namePlaceholder: 'Ваше ім\'я',
+    emailLabel: 'Email *',
+    messageLabel: 'Повідомлення *',
+    messagePlaceholder: 'Опишіть ваше питання або запит...',
+    submitButton: 'Надіслати повідомлення',
+    successMessage: 'Дякуємо за повідомлення! Ми зв\'яжемося з вами найближчим часом.',
+    quickLinks: 'Швидкі посилання',
+    contact: 'Контакти',
+    copyright: 'Freelancer.org.pl. Всі права захищені.',
+  };
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -37,43 +46,8 @@ export default function ContactPage() {
   })
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const content = language === 'pl' 
-    ? {
-        title: 'Skontaktuj się z nami',
-        subtitle: 'Masz pytania dotyczące usług księgowych w Polsce? Jesteśmy gotowi pomóc!',
-        formTitle: 'Wyślij nam wiadomość',
-        formDescription: 'Wypełnij formularz poniżej, a skontaktujemy się z Tobą najszybciej jak to możliwe',
-        nameLabel: 'Imię *',
-        namePlaceholder: 'Twoje imię',
-        emailLabel: 'Email *',
-        messageLabel: 'Wiadomość *',
-        messagePlaceholder: 'Opisz swoje pytanie lub zapytanie...',
-        submitButton: 'Wyślij wiadomość',
-        successMessage: 'Dziękujemy za wiadomość! Skontaktujemy się z Tobą najszybciej jak to możliwe.',
-        quickLinks: 'Szybkie linki',
-        contact: 'Kontakt',
-        copyright: 'Freelancer.org.pl. Wszelkie prawa zastrzeżone.',
-      }
-    : {
-        title: 'Зв\'яжіться з нами',
-        subtitle: 'Маєте питання щодо бухгалтерських послуг у Польщі? Ми готові допомогти!',
-        formTitle: 'Надішліть нам повідомлення',
-        formDescription: 'Заповніть форму нижче, і ми зв\'яжемося з вами найближчим часом',
-        nameLabel: 'Ім\'я *',
-        namePlaceholder: 'Ваше ім\'я',
-        emailLabel: 'Email *',
-        messageLabel: 'Повідомлення *',
-        messagePlaceholder: 'Опишіть ваше питання або запит...',
-        submitButton: 'Надіслати повідомлення',
-        successMessage: 'Дякуємо за повідомлення! Ми зв\'яжемося з вами найближчим часом.',
-        quickLinks: 'Швидкі посилання',
-        contact: 'Контакти',
-        copyright: 'Freelancer.org.pl. Всі права захищені.',
-      };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Тут буде логіка відправки форми
     console.log('Form submitted:', formData)
     alert(content.successMessage)
   }
@@ -103,7 +77,7 @@ export default function ContactPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href={language === 'pl' ? '/' : '/ukr'}
+              href="/ukr"
               className="text-base md:text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -240,7 +214,7 @@ export default function ContactPage() {
                   <rect x="7" y="14" width="3" height="3"/>
                   <rect x="14" y="14" width="3" height="3"/>
                 </svg>
-                <a href="https://freelancer.org.pl/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</a>
+                <Link href="/ukr" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-xs md:text-sm max-w-2xl">
                 {t.footer.description}
@@ -249,9 +223,9 @@ export default function ContactPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href="/contact" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href="/privacy-policy" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Polityka prywatności' : 'Політика конфіденційності'}</Link></li>
-                <li><Link href="/terms" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Regulamin' : 'Умови використання'}</Link></li>
+                <li><Link href="/ukr/contact" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href="/ukr/privacy-policy" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">Політика конфіденційності</Link></li>
+                <li><Link href="/ukr/terms" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">Умови використання</Link></li>
               </ul>
             </div>
             <div>

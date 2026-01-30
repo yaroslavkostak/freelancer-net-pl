@@ -4,126 +4,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { translations, type Language } from "@/lib/translations"
-import { usePathname } from "next/navigation"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { useState } from "react"
 
 export default function TermsPage() {
-  const pathname = usePathname();
-  const language: Language = pathname?.startsWith('/ukr') ? 'uk' : 'pl';
+  const language: Language = 'uk';
   const t = translations[language];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  const navLinks = language === 'pl' 
-    ? [
-        { href: '/#jdg', label: 'Rejestracja JDG' },
-        { href: '/#taxation-systems', label: 'Systemy opodatkowania' },
-        { href: '/#zus-insurance', label: 'Ubezpieczenia ZUS' },
-        { href: '/#how-to-start', label: 'Jak zacząć' },
-      ]
-    : [
-        { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
-        { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
-        { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
-        { href: '/ukr/#how-to-start', label: 'Як почати' },
-      ];
+  const navLinks = [
+    { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
+    { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
+    { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
+    { href: '/ukr/#how-to-start', label: 'Як почати' },
+  ];
 
-  const content = language === 'pl' ? {
-    title: 'Regulamin',
-    lastUpdate: 'Ostatnia aktualizacja:',
-    section1: {
-      title: '1. Postanowienia ogólne',
-      p1: 'Niniejszy Regulamin reguluje korzystanie ze strony internetowej freelancer.org.pl oraz wszystkich powiązanych z nią usług.',
-      p2: 'Korzystając z naszej strony, akceptujesz te warunki. Jeśli nie zgadzasz się z którąkolwiek częścią tych warunków, prosimy nie korzystać z naszej strony.'
-    },
-    section2: {
-      title: '2. Opis usług',
-      p1: 'Nasza strona świadczy usługi informacyjne dotyczące usług księgowych w Polsce, w szczególności:',
-      items: [
-        'Informacje o rejestracji biznesu w Polsce',
-        'Konsultacje dotyczące usług księgowych',
-        'Linki do serwisów partnerskich (inFakt)',
-        'Informacje kontaktowe do uzyskania dodatkowych konsultacji'
-      ],
-      important: 'Ważne: Nie świadczymy bezpośrednich usług księgowych. Nasza strona jest zasobem informacyjnym i platformą partnerską.'
-    },
-    section3: {
-      title: '3. Linki partnerskie',
-      p: 'Nasza strona zawiera linki partnerskie do serwisu inFakt. Oznacza to, że:',
-      items: [
-        'Przy przejściu przez nasze linki i rejestracji w inFakt możemy otrzymać prowizję',
-        'Ta prowizja nie wpływa na cenę usług dla Ciebie',
-        'Wszystkie usługi inFakt są świadczone na ich własnych warunkach',
-        'Nie ponosimy odpowiedzialności za jakość usług inFakt',
-        'Aby uzyskać usługi, skontaktuj się bezpośrednio z inFakt'
-      ]
-    },
-    section4: {
-      title: '4. Strony informacyjne',
-      p1: 'freelancer.org.pl to strona informacyjna, która:',
-      items: [
-        'Dostarcza przydatne informacje o usługach księgowych w Polsce',
-        'Działa jako platformy partnerskie inFakt',
-        'Nie świadczy bezpośrednich usług',
-        'Pomaga użytkownikom dokonać świadomego wyboru'
-      ],
-      p2: 'Strona ma na celu dostarczenie wysokiej jakości informacji o usługach księgowych i pomoc przedsiębiorcom w znalezieniu odpowiednich rozwiązań.'
-    },
-    section5: {
-      title: '5. Ograniczenie odpowiedzialności',
-      p1: 'Informacje na naszej stronie są udostępniane "tak jak są" bez żadnych gwarancji. Nie gwarantujemy:',
-      items: [
-        'Dokładności lub kompletności informacji',
-        'Ciągłej dostępności strony',
-        'Brak błędów lub wirusów',
-        'Zgodność informacji z Twoimi konkretnymi potrzebami'
-      ],
-      p2: 'Nie ponosimy odpowiedzialności za jakiekolwiek szkody wynikające z korzystania z naszej strony lub informacji na niej.'
-    },
-    section6: {
-      title: '6. Własność intelektualna',
-      p1: 'Cała zawartość naszej strony, w tym tekst, obrazy, logo i projekt, jest własnością naszej strony lub jest używana za zgodą właścicieli.',
-      p2: 'Zabronione jest:',
-      items: [
-        'Kopiowanie lub rozpowszechnianie treści bez zezwolenia',
-        'Używanie naszej treści do celów komercyjnych',
-        'Modyfikowanie lub tworzenie dzieł pochodnych'
-      ]
-    },
-    section7: {
-      title: '7. Korzystanie ze strony',
-      p: 'Zobowiązujesz się nie korzystać z naszej strony do:',
-      items: [
-        'Naruszenia praw lub praw osób trzecich',
-        'Rozpowszechniania szkodliwych treści',
-        'Spamu lub niechcianych wiadomości',
-        'Prób nieautoryzowanego dostępu do systemów',
-        'Zakłócania działania strony'
-      ]
-    },
-    section8: {
-      title: '8. Zmiany warunków',
-      p1: 'Zastrzegamy sobie prawo do zmiany tych warunków w dowolnym momencie. O znaczących zmianach poinformujemy przez naszą stronę.',
-      p2: 'Kontynuacja korzystania ze strony po zmianie warunków oznacza Twoją zgodę na nowe warunki.'
-    },
-    section9: {
-      title: '9. Właściwa jurysdykcja',
-      p: 'Te warunki są regulowane prawem polskim. Wszelkie spory będą rozstrzygane w sądach polskich.'
-    },
-    section10: {
-      title: '10. Informacje kontaktowe',
-      p1: 'Jeśli masz pytania dotyczące tych warunków, skontaktuj się z nami:',
-      note: 'Uwaga: Aby uzyskać usługi księgowe, skontaktuj się bezpośrednio z oficjalną stroną'
-    },
-    footer: {
-      quickLinks: 'Szybkie linki',
-      contact: 'Kontakt',
-      privacy: 'Polityka prywatności',
-      terms: 'Regulamin',
-      copyright: 'Freelancer.org.pl. Wszelkie prawa zastrzeżone.'
-    }
-  } : {
+  const content = {
     title: 'Умови використання',
     lastUpdate: 'Останнє оновлення:',
     section1: {
@@ -237,7 +134,7 @@ export default function TermsPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href={language === 'pl' ? '/' : '/ukr'}
+              href="/ukr"
               className="text-base md:text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -288,7 +185,7 @@ export default function TermsPage() {
             <div className="text-center mb-8 md:mb-12">
               <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4 px-4">{content.title}</h1>
               <p className="text-base md:text-xl text-gray-600 px-4">
-                {content.lastUpdate} {new Date().toLocaleDateString(language === 'pl' ? 'pl-PL' : 'uk-UA')}
+                {content.lastUpdate} {new Date().toLocaleDateString('uk-UA')}
               </p>
             </div>
 
@@ -320,7 +217,7 @@ export default function TermsPage() {
                   ))}
                 </ul>
                 <p className="text-sm md:text-base">
-                  <strong>{language === 'pl' ? 'Ważne:' : 'Важливо:'}</strong> {content.section2.important}
+                  <strong>Важливо:</strong> {content.section2.important}
                 </p>
               </CardContent>
             </Card>
@@ -447,7 +344,7 @@ export default function TermsPage() {
                   <p className="text-sm md:text-base"><strong>Email:</strong> info@freelancer.org.pl</p>
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
-                  <strong>{language === 'pl' ? 'Uwaga:' : 'Примітка:'}</strong> {content.section10.note} <a href="https://www.infakt.pl/" target="_blank" rel="nofollow" className="text-blue-600 hover:text-blue-800 underline">https://www.infakt.pl/</a>
+                  <strong>Примітка:</strong> {content.section10.note} <a href="https://www.infakt.pl/" target="_blank" rel="nofollow" className="text-blue-600 hover:text-blue-800 underline">https://www.infakt.pl/</a>
                 </p>
               </CardContent>
             </Card>
@@ -467,7 +364,7 @@ export default function TermsPage() {
                   <rect x="7" y="14" width="3" height="3"/>
                   <rect x="14" y="14" width="3" height="3"/>
                 </svg>
-                <a href="https://freelancer.org.pl/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</a>
+                <Link href="/ukr" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-xs md:text-sm max-w-2xl">
                 {t.footer.description}
@@ -476,9 +373,9 @@ export default function TermsPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href={language === 'pl' ? '/contact' : '/ukr/contact'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href={language === 'pl' ? '/privacy-policy' : '/ukr/privacy-policy'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
-                <li><Link href={language === 'pl' ? '/terms' : '/ukr/terms'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
+                <li><Link href="/ukr/contact" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href="/ukr/privacy-policy" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
+                <li><Link href="/ukr/terms" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
               </ul>
             </div>
             <div>

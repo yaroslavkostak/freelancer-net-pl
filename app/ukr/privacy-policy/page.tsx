@@ -4,144 +4,23 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { translations, type Language } from "@/lib/translations"
-import { usePathname } from "next/navigation"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { useState } from "react"
 
 export default function PrivacyPolicyPage() {
-  const pathname = usePathname();
-  const language: Language = pathname?.startsWith('/ukr') ? 'uk' : 'pl';
+  const language: Language = 'uk';
   const t = translations[language];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  const navLinks = language === 'pl' 
-    ? [
-        { href: '/#jdg', label: 'Rejestracja JDG' },
-        { href: '/#taxation-systems', label: 'Systemy opodatkowania' },
-        { href: '/#zus-insurance', label: 'Ubezpieczenia ZUS' },
-        { href: '/#how-to-start', label: 'Jak zacząć' },
-      ]
-    : [
-        { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
-        { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
-        { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
-        { href: '/ukr/#how-to-start', label: 'Як почати' },
-      ];
+  const navLinks = [
+    { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
+    { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
+    { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
+    { href: '/ukr/#how-to-start', label: 'Як почати' },
+  ];
 
-  const content = language === 'pl' ? {
-    title: 'Polityka prywatności',
-    lastUpdate: 'Ostatnia aktualizacja:',
-    section1: {
-      title: '1. Informacje ogólne',
-      p1: 'Niniejsza Polityka prywatności opisuje, w jaki sposób zbieramy, wykorzystujemy i chronimy Twoje dane osobowe podczas korzystania z naszej strony internetowej freelancer.org.pl.',
-      p2: 'Zobowiązujemy się chronić Twoją prywatność i zapewniać bezpieczne korzystanie z naszej strony zgodnie z Rozporządzeniem UE 2016/679 (RODO) oraz innymi obowiązującymi przepisami dotyczącymi ochrony danych.'
-    },
-    section2: {
-      title: '2. O naszej stronie',
-      p1: 'freelancer.org.pl to strona informacyjna stworzona w celu dostarczania przydatnych informacji o usługach księgowych w Polsce. Nasza strona jest platformą partnerską serwisu inFakt.',
-      p2: 'Strona dostarcza szczegółowych informacji o usługach inFakt, w tym:',
-      items: [
-        'Szczegółowy opis usług inFakt',
-        'Instrukcje rejestracji i korzystania',
-        'Opinie użytkowników',
-        'Porównania z innymi serwisami',
-        'Przydatne artykuły i porady'
-      ],
-      p3: 'Strona działa jako zasób informacyjny i platforma partnerska inFakt, zapewniając użytkownikom wygodny dostęp do informacji o usługach księgowych w Polsce.'
-    },
-    section3: {
-      title: '3. Jakie informacje zbieramy',
-      h31: '3.1 Informacje, które nam podajesz:',
-      items1: [
-        'Imię i dane kontaktowe (e-mail, telefon)',
-        'Informacje o Twojej firmie i zapytaniach',
-        'Wiadomości wysyłane przez formularz kontaktowy'
-      ],
-      h32: '3.2 Automatycznie zbierane informacje:',
-      items2: [
-        'Adres IP i informacje techniczne o przeglądarce',
-        'Informacje o korzystaniu ze strony (strony, czas spędzony)',
-        'Pliki cookie i podobne technologie',
-        'Dane o przejściach przez linki partnerskie'
-      ]
-    },
-    section4: {
-      title: '4. Jak wykorzystujemy Twoje informacje',
-      p: 'Wykorzystujemy zebrane informacje do:',
-      items: [
-        'Odpowiedzi na Twoje zapytania i udzielania konsultacji',
-        'Ulepszania naszej strony i usług',
-        'Wysyłania informacji o naszych usługach (za Twoją zgodą)',
-        'Śledzenia skuteczności programu partnerskiego',
-        'Przestrzegania zobowiązań prawnych',
-        'Ochrony naszych praw i bezpieczeństwa'
-      ]
-    },
-    section5: {
-      title: '5. Linki partnerskie i śledzenie',
-      p1: 'Nasza strona zawiera linki partnerskie do serwisu inFakt. Przy przejściu przez te linki i rejestracji w inFakt możemy otrzymać prowizję, która nie wpływa na cenę usług dla Ciebie.',
-      p2: 'Śledzimy skuteczność programu partnerskiego w celach analitycznych i ulepszania serwisu, ale nie przekazujemy danych osobowych użytkowników osobom trzecim.'
-    },
-    section6: {
-      title: '6. Pliki cookie i technologie śledzące',
-      p1: 'Nasza strona wykorzystuje pliki cookie w celu poprawy doświadczenia użytkownika. Pliki cookie to małe pliki tekstowe przechowywane na Twoim urządzeniu.',
-      h3: 'Rodzaje plików cookie, których używamy:',
-      items: [
-        'Niezbędne pliki cookie: do podstawowego funkcjonowania strony',
-        'Analityczne pliki cookie: do analizy korzystania ze strony',
-        'Funkcjonalne pliki cookie: do zapamiętywania Twoich ustawień',
-        'Partnerskie pliki cookie: do śledzenia linków partnerskich'
-      ],
-      p2: 'Możesz zarządzać ustawieniami plików cookie w swojej przeglądarce lub odrzucić ich wykorzystanie.'
-    },
-    section7: {
-      title: '7. Udostępnianie informacji',
-      p: 'Nie sprzedajemy, nie wymieniamy ani nie przekazujemy Twoich danych osobowych osobom trzecim, z wyjątkiem przypadków:',
-      items: [
-        'Gdy jest to niezbędne do świadczenia usług (np. partnerom inFakt)',
-        'Gdy wymaga tego prawo',
-        'Za Twoją wyraźną zgodą',
-        'W celu ochrony naszych praw i bezpieczeństwa',
-        'Do śledzenia programu partnerskiego (bez przekazywania danych osobowych)'
-      ]
-    },
-    section8: {
-      title: '8. Bezpieczeństwo danych',
-      p1: 'Wdrażamy odpowiednie środki techniczne i organizacyjne w celu ochrony Twoich danych osobowych przed nieautoryzowanym dostępem, zmianą, ujawnieniem lub zniszczeniem.',
-      p2: 'Jednak żadna metoda transmisji przez Internet ani przechowywania elektronicznego nie jest w 100% bezpieczna, dlatego nie możemy zagwarantować absolutnego bezpieczeństwa.'
-    },
-    section9: {
-      title: '9. Twoje prawa',
-      p: 'Zgodnie z RODO masz prawo do:',
-      items: [
-        'Dostępu do swoich danych osobowych',
-        'Poprawiania nieprawidłowych danych',
-        'Usuwania swoich danych',
-        'Ograniczania przetwarzania danych',
-        'Przenoszenia swoich danych',
-        'Cofnięcia zgody na przetwarzanie danych',
-        'Złożenia skargi do organu nadzorczego'
-      ]
-    },
-    section10: {
-      title: '10. Zmiany w tej polityce',
-      p1: 'Możemy okresowo aktualizować niniejszą Politykę prywatności. O wszelkich znaczących zmianach poinformujemy Cię przez naszą stronę lub e-mail.',
-      p2: 'Zalecamy regularne przeglądanie tej strony w celu zapoznania się z aktualną wersją polityki.'
-    },
-    section11: {
-      title: '11. Informacje kontaktowe',
-      p1: 'Jeśli masz pytania dotyczące niniejszej Polityki prywatności lub przetwarzania Twoich danych, skontaktuj się z nami:',
-      note: 'Uwaga: Aby uzyskać usługi księgowe, skontaktuj się bezpośrednio z inFakt za pomocą kontaktów podanych na stronie "Kontakt".'
-    },
-    footer: {
-      quickLinks: 'Szybkie linki',
-      contact: 'Kontakt',
-      privacy: 'Polityka prywatności',
-      terms: 'Regulamin',
-      copyright: 'Freelancer.org.pl. Wszelkie prawa zastrzeżone.'
-    }
-  } : {
+  const content = {
     title: 'Політика конфіденційності',
     lastUpdate: 'Останнє оновлення:',
     section1: {
@@ -273,7 +152,7 @@ export default function PrivacyPolicyPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href={language === 'pl' ? '/' : '/ukr'}
+              href="/ukr"
               className="text-base md:text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -324,7 +203,7 @@ export default function PrivacyPolicyPage() {
             <div className="text-center mb-8 md:mb-12">
               <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4 px-4">{content.title}</h1>
               <p className="text-base md:text-xl text-gray-600 px-4">
-                {content.lastUpdate} {new Date().toLocaleDateString(language === 'pl' ? 'pl-PL' : 'uk-UA')}
+                {content.lastUpdate} {new Date().toLocaleDateString('uk-UA')}
               </p>
             </div>
 
@@ -504,7 +383,7 @@ export default function PrivacyPolicyPage() {
                   <p className="text-sm md:text-base"><strong>Email:</strong> info@freelancer.org.pl</p>
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
-                  <strong>{language === 'pl' ? 'Uwaga:' : 'Примітка:'}</strong> {content.section11.note}
+                  <strong>Примітка:</strong> {content.section11.note}
                 </p>
               </CardContent>
             </Card>
@@ -524,7 +403,7 @@ export default function PrivacyPolicyPage() {
                   <rect x="7" y="14" width="3" height="3"/>
                   <rect x="14" y="14" width="3" height="3"/>
                 </svg>
-                <a href="https://freelancer.org.pl/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</a>
+                <Link href="/ukr" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-xs md:text-sm max-w-2xl">
                 {t.footer.description}
@@ -533,9 +412,9 @@ export default function PrivacyPolicyPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href={language === 'pl' ? '/contact' : '/ukr/contact'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href={language === 'pl' ? '/privacy-policy' : '/ukr/privacy-policy'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
-                <li><Link href={language === 'pl' ? '/terms' : '/ukr/terms'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
+                <li><Link href="/ukr/contact" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href="/ukr/privacy-policy" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
+                <li><Link href="/ukr/terms" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
               </ul>
             </div>
             <div>

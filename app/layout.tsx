@@ -3,29 +3,28 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Analytics from "./analytics"
-import CookieConsent from "@/components/cookie-consent"
 import StructuredData from "@/components/structured-data"
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
-  title: "Бухгалтер в Польщі для українців | Варшава, Краків",
+  title: "Przewodnik po freelancingu w Polsce | Pomysły i poradniki",
   description:
-            "Професійний бухгалтер в Польщі для українців. Бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань. Бухгалтер для ФОП. Реєстрація ФОП (JDG) та ТОВ, ведення бухгалтерського обліку, податкові консультації українською мовою. Ціни від 189 zł/міс. Бугалтери платформи Infakt все зроблять, як треба!",
+            "Odkryj najlepsze pomysły na freelancing w Polsce. Przewodnik po kategoriach freelancingu, wymaganiach prawnych i rozwiązaniach księgowych. Recenzje i poradniki dla freelancerów.",
   keywords:
-        "бухгалтер в польщі, бухгалтер польща, бухгалтер варшава, бухгалтер краків, бухгалтер краков, бухгалтер вроцлав, бухгалтер познань, бухгалтер в польщі для українців, бухгалтер для фоп, бухгалтер польща українців, бухгалтерія польща, фоп польща, бухгалтер українською, infakt, ведення обліку польща, реєстрація бізнесу польща",
+        "freelancing w Polsce, pomysły na freelancing, freelancer Polska, działalność gospodarcza, JDG, księgowość dla freelancerów, infakt, jak zacząć freelancing",
       openGraph: {
-      title: "Бухгалтер в Польщі для українців | Варшава, Краків",
+      title: "Przewodnik po freelancingu w Polsce | Pomysły i poradniki",
       description:
-        "Професійний бухгалтер в Польщі для українців. Бухгалтер Варшава, бухгалтер Краків, бухгалтер Вроцлав, бухгалтер Познань. Бухгалтер для ФОП. Реєстрація ФОП (JDG) та ТОВ, ведення бухгалтерського обліку, податкові консультації українською мовою. Ціни від 189 zł/міс. Бугалтери платформи Infakt все зроблять, як треба!",
+        "Odkryj najlepsze pomysły na freelancing w Polsce. Przewodnik po kategoriach freelancingu, wymaganiach prawnych i rozwiązaniach księgowych.",
     type: "website",
-    locale: "uk_UA",
+    locale: "pl_PL",
     images: [
       {
         url: "/images/hero-accountants.png",
         width: 1200,
         height: 630,
-        alt: "Онлайн-бухгалтерія для українців у Польщі",
+        alt: "Przewodnik po freelancingu w Polsce",
       },
     ],
   },
@@ -33,8 +32,13 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  viewport: "width=device-width, initial-scale=1",
   generator: "v0.dev",
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 }
 
 export default function RootLayout({
@@ -43,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="uk">
+    <html lang="pl">
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/svg+xml" href="/favicon-if.svg" />
@@ -65,7 +69,6 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <Analytics />
-        <CookieConsent />
         <StructuredData />
       </body>
     </html>

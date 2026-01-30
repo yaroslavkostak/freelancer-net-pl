@@ -368,7 +368,6 @@ export default function TaxCalculatorPage() {
               <h3 className="text-white font-semibold mb-4">Контакти</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Email: info@freelancer.org.pl</li>
-                <li>Адреса: 31-445 Kraków, ul. płk. pil. Stefana Łaszkiewicza 2</li>
               </ul>
             </div>
           </div>

@@ -3,6 +3,10 @@ import type { NextRequest } from 'next/server'
 
 export function middleware(request: NextRequest) {
   const { pathname, host } = request.nextUrl
+  
+  // Визначення мови з URL
+  const localeMatch = pathname.match(/^\/(ukr)(\/|$)/)
+  const locale = localeMatch ? localeMatch[1] : 'pl'
 
   // Редірект з www на без www
   if (host.startsWith('www.')) {
@@ -63,12 +67,6 @@ export function middleware(request: NextRequest) {
     '/cennik.php': '/',
     '/pricing.html': '/',
     '/pricing.php': '/',
-    '/blog.html': '/blog/',
-    '/blog.php': '/blog/',
-    '/artykuly.html': '/blog/',
-    '/artykuly.php': '/blog/',
-    '/articles.html': '/blog/',
-    '/articles.php': '/blog/',
     '/kalkulator.html': '/tax-calculator/',
     '/kalkulator.php': '/tax-calculator/',
     '/calculator.html': '/tax-calculator/',
@@ -108,9 +106,6 @@ export function middleware(request: NextRequest) {
     '/services': '/',
     '/cennik': '/',
     '/pricing': '/',
-    '/blog': '/blog/',
-    '/artykuly': '/blog/',
-    '/articles': '/blog/',
     '/kalkulator': '/tax-calculator/',
     '/calculator': '/tax-calculator/',
     '/podatki': '/tax-calculator/',
