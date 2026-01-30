@@ -12,31 +12,31 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 
 export default function ContactPage() {
-  const language: Language = 'uk';
+  const language: Language = 'en';
   const t = translations[language];
-  
+
   const navLinks = [
-    { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
-    { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
-    { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
-    { href: '/ukr/#how-to-start', label: 'Як почати' },
+    { href: '/en/#jdg', label: 'Register JDG' },
+    { href: '/en/#taxation-systems', label: 'Tax systems' },
+    { href: '/en/#zus-insurance', label: 'ZUS insurance' },
+    { href: '/en/#how-to-start', label: 'How to start' },
   ];
 
   const content = {
-    title: 'Зв\'яжіться з нами',
-    subtitle: 'Маєте питання щодо бухгалтерських послуг у Польщі? Ми готові допомогти!',
-    formTitle: 'Надішліть нам повідомлення',
-    formDescription: 'Заповніть форму нижче, і ми зв\'яжемося з вами найближчим часом',
-    nameLabel: 'Ім\'я *',
-    namePlaceholder: 'Ваше ім\'я',
+    title: 'Contact us',
+    subtitle: 'Questions about accounting services in Poland? We are happy to help!',
+    formTitle: 'Send us a message',
+    formDescription: 'Fill in the form below and we will get back to you as soon as possible',
+    nameLabel: 'Name *',
+    namePlaceholder: 'Your name',
     emailLabel: 'Email *',
-    messageLabel: 'Повідомлення *',
-    messagePlaceholder: 'Опишіть ваше питання або запит...',
-    submitButton: 'Надіслати повідомлення',
-    successMessage: 'Дякуємо за повідомлення! Ми зв\'яжемося з вами найближчим часом.',
-    quickLinks: 'Швидкі посилання',
-    contact: 'Контакти',
-    copyright: 'Freelancer.org.pl. Всі права захищені.',
+    messageLabel: 'Message *',
+    messagePlaceholder: 'Describe your question or request...',
+    submitButton: 'Send message',
+    successMessage: 'Thank you for your message! We will contact you soon.',
+    quickLinks: 'Quick links',
+    contact: 'Contact',
+    copyright: 'Freelancer.org.pl. All rights reserved.',
   };
 
   const [formData, setFormData] = useState({
@@ -61,7 +61,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-100">
-      {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-3 md:px-4 py-3 md:py-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -77,7 +76,7 @@ export default function ContactPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href="/ukr/"
+              href="/en/"
               className="text-base md:text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -132,7 +131,6 @@ export default function ContactPage() {
               </p>
             </div>
 
-            {/* Контактна форма по центру */}
             <div className="max-w-2xl mx-auto">
               <Card className="bg-white shadow-lg">
                 <CardHeader className="px-4 md:px-6">
@@ -202,7 +200,6 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-white py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 mb-6 md:mb-8">
@@ -214,7 +211,7 @@ export default function ContactPage() {
                   <rect x="7" y="14" width="3" height="3"/>
                   <rect x="14" y="14" width="3" height="3"/>
                 </svg>
-                <Link href="/ukr/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
+                <Link href="/en/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-xs md:text-sm max-w-2xl">
                 {t.footer.description}
@@ -223,9 +220,9 @@ export default function ContactPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href="/ukr/contact/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href="/ukr/privacy-policy/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">Політика конфіденційності</Link></li>
-                <li><Link href="/ukr/terms/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">Умови використання</Link></li>
+                <li><Link href="/en/contact/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href="/en/privacy-policy/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">Privacy policy</Link></li>
+                <li><Link href="/en/terms/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">Terms of use</Link></li>
               </ul>
             </div>
             <div>

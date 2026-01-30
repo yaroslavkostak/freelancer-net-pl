@@ -10,15 +10,22 @@ import { usePathname } from 'next/navigation'
 
 export default function NotFound() {
   const pathname = usePathname();
-  const language: Language = pathname?.startsWith('/ukr') ? 'uk' : 'pl';
+  const language: Language = pathname?.startsWith('/en') ? 'en' : pathname?.startsWith('/ukr') ? 'uk' : 'pl';
   const t = translations[language];
-  
-  const navLinks = language === 'pl' 
+
+  const navLinks = language === 'pl'
     ? [
         { href: '/#jdg', label: 'Rejestracja JDG' },
         { href: '/#taxation-systems', label: 'Systemy opodatkowania' },
         { href: '/#zus-insurance', label: 'Ubezpieczenia ZUS' },
         { href: '/#how-to-start', label: 'Jak zacząć' },
+      ]
+    : language === 'en'
+    ? [
+        { href: '/en/#jdg', label: 'Register JDG' },
+        { href: '/en/#taxation-systems', label: 'Tax systems' },
+        { href: '/en/#zus-insurance', label: 'ZUS insurance' },
+        { href: '/en/#how-to-start', label: 'How to start' },
       ]
     : [
         { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
@@ -27,13 +34,21 @@ export default function NotFound() {
         { href: '/ukr/#how-to-start', label: 'Як почати' },
       ];
 
-  const content = language === 'pl' 
+  const content = language === 'pl'
     ? {
         title: 'Strona nie znaleziona',
         message: 'Przepraszamy, ale strona, której szukasz, nie istnieje lub została przeniesiona.',
         suggestion: 'Możesz szukać informacji o usługach księgowych w Polsce? Wróć na stronę główną, aby znaleźć potrzebne informacje.',
         backHome: 'Wróć na stronę główną',
         contact: 'Skontaktuj się z nami',
+      }
+    : language === 'en'
+    ? {
+        title: 'Page not found',
+        message: 'Sorry, the page you are looking for does not exist or has been moved.',
+        suggestion: 'Looking for information on accounting services in Poland? Go back to the home page to find what you need.',
+        backHome: 'Back to home',
+        contact: 'Contact us',
       }
     : {
         title: 'Сторінку не знайдено',
@@ -61,7 +76,7 @@ export default function NotFound() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href={language === 'pl' ? '/' : '/ukr'}
+              href={language === 'pl' ? '/' : language === 'en' ? '/en/' : '/ukr/'}
               className="text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -106,13 +121,13 @@ export default function NotFound() {
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                    <Link href={language === 'pl' ? '/' : '/ukr'}>
+                    <Link href={language === 'pl' ? '/' : language === 'en' ? '/en/' : '/ukr/'}>
                       {content.backHome}
                     </Link>
                   </Button>
                   
                   <Button asChild variant="outline" size="lg">
-                    <Link href="/contact">
+                    <Link href={language === 'pl' ? '/contact/' : language === 'en' ? '/en/contact/' : '/ukr/contact/'}>
                       {content.contact}
                     </Link>
                   </Button>
@@ -141,7 +156,7 @@ export default function NotFound() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
                 </svg>
                 <Link
-                  href={language === 'pl' ? '/' : '/ukr'}
+                  href={language === 'pl' ? '/' : language === 'en' ? '/en/' : '/ukr/'}
                   className="text-lg font-semibold hover:text-blue-400 transition-colors"
                 >
                   Freelancer.org.pl
@@ -156,7 +171,7 @@ export default function NotFound() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/contact"
+                    href={language === 'pl' ? '/contact/' : language === 'en' ? '/en/contact/' : '/ukr/contact/'}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {t.footer.contact}
@@ -164,7 +179,7 @@ export default function NotFound() {
                 </li>
                 <li>
                   <Link
-                    href="/privacy-policy"
+                    href={language === 'pl' ? '/privacy-policy/' : language === 'en' ? '/en/privacy-policy/' : '/ukr/privacy-policy/'}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {language === 'pl' ? 'Polityka prywatności' : 'Політика конфіденційності'}
@@ -172,7 +187,7 @@ export default function NotFound() {
                 </li>
                 <li>
                   <Link
-                    href="/terms"
+                    href={language === 'pl' ? '/terms/' : language === 'en' ? '/en/terms/' : '/ukr/terms/'}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {language === 'pl' ? 'Regulamin' : 'Умови використання'}

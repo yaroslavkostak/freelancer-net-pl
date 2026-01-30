@@ -5,7 +5,7 @@ export function middleware(request: NextRequest) {
   const { pathname, host } = request.nextUrl
   
   // Визначення мови з URL
-  const localeMatch = pathname.match(/^\/(ukr)(\/|$)/)
+  const localeMatch = pathname.match(/^\/(ukr|en)(\/|$)/)
   const locale = localeMatch ? localeMatch[1] : 'pl'
 
   // Редірект з www на без www

@@ -136,7 +136,7 @@ export default function TaxCalculatorPage() {
               <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12" y2="17"/></svg>
               Питання
             </Link>
-            <Link href="/tax-calculator" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
+            <Link href="/tax-calculator/" className="flex items-center gap-2 text-gray-600 hover:text-blue-600">
               {/* Noun Project icon: calculator */}
               <svg className="h-5 w-5 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="3"/><rect x="7" y="14" width="3" height="3"/><rect x="14" y="14" width="3" height="3"/></svg>
               Калькулятор
@@ -359,9 +359,9 @@ export default function TaxCalculatorPage() {
             <div>
               <h3 className="text-white font-semibold mb-4">Швидкі посилання</h3>
               <ul className="space-y-2">
-                <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Контакти</Link></li>
-                <li><Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Політика конфіденційності</Link></li>
-                <li><Link href="/terms" className="text-gray-400 hover:text-white transition-colors">Умови використання</Link></li>
+                <li><Link href="/contact/" className="text-gray-400 hover:text-white transition-colors">Контакти</Link></li>
+                <li><Link href="/privacy-policy/" className="text-gray-400 hover:text-white transition-colors">Політика конфіденційності</Link></li>
+                <li><Link href="/terms/" className="text-gray-400 hover:text-white transition-colors">Умови використання</Link></li>
               </ul>
             </div>
             <div>

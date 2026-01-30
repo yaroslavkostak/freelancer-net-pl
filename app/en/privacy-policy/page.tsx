@@ -8,111 +8,129 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import { useState } from "react"
 
-export default function TermsPage() {
-  const language: Language = 'uk';
+export default function PrivacyPolicyPage() {
+  const language: Language = 'en';
   const t = translations[language];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+
   const navLinks = [
-    { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
-    { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
-    { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
-    { href: '/ukr/#how-to-start', label: 'Як почати' },
+    { href: '/en/#jdg', label: 'Register JDG' },
+    { href: '/en/#taxation-systems', label: 'Tax systems' },
+    { href: '/en/#zus-insurance', label: 'ZUS insurance' },
+    { href: '/en/#how-to-start', label: 'How to start' },
   ];
 
   const content = {
-    title: 'Умови використання',
-    lastUpdate: 'Останнє оновлення:',
+    title: 'Privacy policy',
+    lastUpdate: 'Last updated:',
     section1: {
-      title: '1. Загальні положення',
-      p1: 'Ці Умови використання регулюють використання веб-сайту freelancer.org.pl та всіх пов\'язаних з ним послуг.',
-      p2: 'Використовуючи наш сайт, ви погоджуєтеся з цими умовами. Якщо ви не згодні з будь-якою частиною цих умов, будь ласка, не використовуйте наш сайт.'
+      title: '1. General information',
+      p1: 'This Privacy Policy describes how we collect, use and protect your personal information when you use our website freelancer.org.pl.',
+      p2: 'We are committed to protecting your privacy and ensuring secure use of our site in accordance with EU Regulation 2016/679 (GDPR) and other applicable data protection laws.'
     },
     section2: {
-      title: '2. Опис послуг',
-      p1: 'Наш сайт надає інформаційні послуги щодо бухгалтерських послуг у Польщі, зокрема:',
+      title: '2. About our site',
+      p1: 'freelancer.org.pl is an information site providing useful information about accounting services in Poland. Our site is a partner platform of the inFakt service.',
+      p2: 'The site provides detailed information about inFakt services, including:',
       items: [
-        'Інформація про реєстрацію бізнесу в Польщі',
-        'Консультації щодо бухгалтерських послуг',
-        'Посилання на партнерські сервіси (inFakt)',
-        'Контактна інформація для отримання додаткових консультацій'
+        'Description of inFakt services',
+        'Registration and usage instructions',
+        'User reviews',
+        'Comparison with other services',
+        'Useful articles and tips'
       ],
-      important: 'Важливо: Ми не надаємо безпосередні бухгалтерські послуги. Наш сайт є інформаційним ресурсом та партнерським майданчиком.'
+      p3: 'The site acts as an information resource and inFakt partner platform, giving users easy access to information about accounting services in Poland.'
     },
     section3: {
-      title: '3. Партнерські посилання',
-      p: 'Наш сайт містить партнерські посилання на сервіс inFakt. Це означає, що:',
-      items: [
-        'При переході за нашими посиланнями та реєстрації в inFakt ми можемо отримати комісію',
-        'Ця комісія не впливає на ціну послуг для вас',
-        'Всі послуги inFakt надаються на їх власних умовах',
-        'Ми не несемо відповідальності за якість послуг inFakt',
-        'Для отримання послуг звертайтеся безпосередньо до inFakt'
+      title: '3. What information we collect',
+      h31: '3.1 Information you provide:',
+      items1: [
+        'Name and contact details (email, phone)',
+        'Information about your business and enquiries',
+        'Messages you send via the contact form'
+      ],
+      h32: '3.2 Information collected automatically:',
+      items2: [
+        'IP address and browser technical information',
+        'Site usage (pages, time spent)',
+        'Cookies and similar technologies',
+        'Data on clicks via partner links'
       ]
     },
     section4: {
-      title: '4. Інформаційні сайти',
-      p1: 'freelancer.org.pl - це інформаційний сайт, який:',
+      title: '4. How we use your information',
+      p: 'We use the information collected to:',
       items: [
-        'Надають корисну інформацію про бухгалтерські послуги у Польщі',
-        'Працюють як партнерські майданчики inFakt',
-        'Не надають безпосередніх послуг',
-        'Допомагають користувачам зробити інформований вибір'
-      ],
-      p2: 'Сайт має мету надати якісну інформацію про бухгалтерські послуги та допомогти підприємцям знайти відповідні рішення.'
-    },
-    section5: {
-      title: '5. Обмеження відповідальності',
-      p1: 'Інформація на нашому сайті надається "як є" без будь-яких гарантій. Ми не гарантуємо:',
-      items: [
-        'Точність або повноту інформації',
-        'Безперервну доступність сайту',
-        'Відсутність помилок або вірусів',
-        'Відповідність інформації вашим конкретним потребам'
-      ],
-      p2: 'Ми не несемо відповідальності за будь-які збитки, що виникають внаслідок використання нашого сайту або інформації на ньому.'
-    },
-    section6: {
-      title: '6. Інтелектуальна власність',
-      p1: 'Весь контент на нашому сайті, включаючи текст, зображення, логотипи та дизайн, є власністю нашого сайту або використовується з дозволу власників.',
-      p2: 'Забороняється:',
-      items: [
-        'Копіювати або розповсюджувати контент без дозволу',
-        'Використовувати наш контент для комерційних цілей',
-        'Модифікувати або створювати похідні роботи'
+        'Respond to your enquiries and provide advice',
+        'Improve our site and services',
+        'Send information about our services (with your consent)',
+        'Track effectiveness of the partner programme',
+        'Comply with legal obligations',
+        'Protect our rights and security'
       ]
     },
-    section7: {
-      title: '7. Використання сайту',
-      p: 'Ви зобов\'язуєтеся не використовувати наш сайт для:',
+    section5: {
+      title: '5. Partner links and tracking',
+      p1: 'Our site contains partner links to the inFakt service. When you follow these links and register with inFakt we may receive a commission, which does not affect the price you pay.',
+      p2: 'We track the effectiveness of the partner programme for analytics and improvement, but we do not pass your personal data to third parties.'
+    },
+    section6: {
+      title: '6. Cookies and tracking',
+      p1: 'Our site uses cookies to improve your experience. Cookies are small text files stored on your device.',
+      h3: 'Types of cookies we use:',
       items: [
-        'Порушення законів або прав третіх осіб',
-        'Розповсюдження шкідливого контенту',
-        'Спаму або небажаних повідомлень',
-        'Спроби несанкціонованого доступу до систем',
-        'Порушення роботи сайту'
+        'Essential cookies: for basic site operation',
+        'Analytics cookies: to analyse site usage',
+        'Functional cookies: to remember your settings',
+        'Partner cookies: to track partner links'
+      ],
+      p2: 'You can manage cookie settings in your browser or decline their use.'
+    },
+    section7: {
+      title: '7. Sharing information',
+      p: 'We do not sell, exchange or transfer your personal information to third parties except:',
+      items: [
+        'When necessary to provide services (e.g. to inFakt partners)',
+        'When required by law',
+        'With your explicit consent',
+        'To protect our rights and security',
+        'For partner programme tracking (without passing personal data)'
       ]
     },
     section8: {
-      title: '8. Зміни умов',
-      p1: 'Ми залишаємо за собою право змінювати ці умови в будь-який час. Про значні зміни ми повідомимо через наш сайт.',
-      p2: 'Продовження використання сайту після зміни умов означає вашу згоду з новими умовами.'
+      title: '8. Data security',
+      p1: 'We implement appropriate technical and organisational measures to protect your personal information from unauthorised access, alteration, disclosure or destruction.',
+      p2: 'No method of transmission over the internet or electronic storage is 100% secure, so we cannot guarantee absolute security.'
     },
     section9: {
-      title: '9. Примірна юрисдикція',
-      p: 'Ці умови регулюються законодавством Польщі. Будь-які спори будуть вирішуватися в судах Польщі.'
+      title: '9. Your rights',
+      p: 'Under GDPR you have the right to:',
+      items: [
+        'Access your personal data',
+        'Correct inaccurate data',
+        'Delete your data',
+        'Restrict processing',
+        'Data portability',
+        'Withdraw consent',
+        'Complain to a supervisory authority'
+      ]
     },
     section10: {
-      title: '10. Контактна інформація',
-      p1: 'Якщо у вас є питання щодо цих умов, зв\'яжіться з нами:',
-      note: 'Примітка: Для отримання бухгалтерських послуг звертайтеся безпосередньо на офіційний сайт'
+      title: '10. Changes to this policy',
+      p1: 'We may update this Privacy Policy from time to time. We will notify you of significant changes via our site or email.',
+      p2: 'We recommend checking this page regularly for the current version.'
+    },
+    section11: {
+      title: '11. Contact',
+      p1: 'If you have questions about this Privacy Policy or the processing of your data, contact us:',
+      note: 'Note: For accounting services please contact inFakt directly via the details on the Contact page.'
     },
     footer: {
-      quickLinks: 'Швидкі посилання',
-      contact: 'Контакти',
-      privacy: 'Політика конфіденційності',
-      terms: 'Умови використання',
-      copyright: 'Freelancer.org.pl. Всі права захищені.'
+      quickLinks: 'Quick links',
+      contact: 'Contact',
+      privacy: 'Privacy policy',
+      terms: 'Terms of use',
+      copyright: 'Freelancer.org.pl. All rights reserved.'
     }
   };
 
@@ -134,7 +152,7 @@ export default function TermsPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href="/ukr/"
+              href="/en/"
               className="text-base md:text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -209,7 +227,10 @@ export default function TermsPage() {
               </CardHeader>
               <CardContent className="space-y-4 px-4 md:px-6">
                 <p className="text-sm md:text-base">
-                  {content.section2.p1}
+                  <strong>freelancer.org.pl</strong> - {content.section2.p1}
+                </p>
+                <p className="text-sm md:text-base">
+                  {content.section2.p2}
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
                   {content.section2.items.map((item, idx) => (
@@ -217,7 +238,7 @@ export default function TermsPage() {
                   ))}
                 </ul>
                 <p className="text-sm md:text-base">
-                  <strong>Важливо:</strong> {content.section2.important}
+                  {content.section2.p3}
                 </p>
               </CardContent>
             </Card>
@@ -227,14 +248,22 @@ export default function TermsPage() {
                 <CardTitle className="text-lg md:text-xl">{content.section3.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 px-4 md:px-6">
-                <p className="text-sm md:text-base">
-                  {content.section3.p}
-                </p>
-                <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
-                  {content.section3.items.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
+                <div>
+                  <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">{content.section3.h31}</h3>
+                  <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
+                    {content.section3.items1.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">{content.section3.h32}</h3>
+                  <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
+                    {content.section3.items2.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </CardContent>
             </Card>
 
@@ -243,17 +272,12 @@ export default function TermsPage() {
                 <CardTitle className="text-lg md:text-xl">{content.section4.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 px-4 md:px-6">
-                <p className="text-sm md:text-base">
-                  <strong>freelancer.org.pl</strong> - {content.section4.p1}
-                </p>
+                <p className="text-sm md:text-base">{content.section4.p}</p>
                 <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
                   {content.section4.items.map((item, idx) => (
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
-                <p className="text-sm md:text-base">
-                  {content.section4.p2}
-                </p>
               </CardContent>
             </Card>
 
@@ -265,11 +289,6 @@ export default function TermsPage() {
                 <p className="text-sm md:text-base">
                   {content.section5.p1}
                 </p>
-                <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
-                  {content.section5.items.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
                 <p className="text-sm md:text-base">
                   {content.section5.p2}
                 </p>
@@ -284,14 +303,17 @@ export default function TermsPage() {
                 <p className="text-sm md:text-base">
                   {content.section6.p1}
                 </p>
+                <div>
+                  <h3 className="text-sm md:text-base font-semibold text-gray-900 mb-2">{content.section6.h3}</h3>
+                  <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
+                    {content.section6.items.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
                 <p className="text-sm md:text-base">
                   {content.section6.p2}
                 </p>
-                <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
-                  {content.section6.items.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
               </CardContent>
             </Card>
 
@@ -328,9 +350,12 @@ export default function TermsPage() {
                 <CardTitle className="text-lg md:text-xl">{content.section9.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 px-4 md:px-6">
-                <p className="text-sm md:text-base">
-                  {content.section9.p}
-                </p>
+                <p className="text-sm md:text-base">{content.section9.p}</p>
+                <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-gray-700 ml-2 md:ml-4">
+                  {content.section9.items.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
               </CardContent>
             </Card>
 
@@ -339,12 +364,26 @@ export default function TermsPage() {
                 <CardTitle className="text-lg md:text-xl">{content.section10.title}</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4 px-4 md:px-6">
-                <p className="text-sm md:text-base">{content.section10.p1}</p>
+                <p className="text-sm md:text-base">
+                  {content.section10.p1}
+                </p>
+                <p className="text-sm md:text-base">
+                  {content.section10.p2}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white shadow-lg mt-4 md:mt-6">
+              <CardHeader className="px-4 md:px-6">
+                <CardTitle className="text-lg md:text-xl">{content.section11.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4 px-4 md:px-6">
+                <p className="text-sm md:text-base">{content.section11.p1}</p>
                 <div className="space-y-2">
                   <p className="text-sm md:text-base"><strong>Email:</strong> info@freelancer.org.pl</p>
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
-                  <strong>Примітка:</strong> {content.section10.note} <a href="https://www.infakt.pl/" target="_blank" rel="nofollow" className="text-blue-600 hover:text-blue-800 underline">https://www.infakt.pl/</a>
+                  <strong>Примітка:</strong> {content.section11.note}
                 </p>
               </CardContent>
             </Card>
@@ -364,7 +403,7 @@ export default function TermsPage() {
                   <rect x="7" y="14" width="3" height="3"/>
                   <rect x="14" y="14" width="3" height="3"/>
                 </svg>
-                <Link href="/ukr/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
+                <Link href="/en/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-xs md:text-sm max-w-2xl">
                 {t.footer.description}
@@ -373,9 +412,9 @@ export default function TermsPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href="/ukr/contact/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href="/ukr/privacy-policy/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
-                <li><Link href="/ukr/terms/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
+                <li><Link href="/en/contact/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href="/en/privacy-policy/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
+                <li><Link href="/en/terms/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
               </ul>
             </div>
             <div>

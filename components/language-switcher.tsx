@@ -22,6 +22,7 @@ export function LanguageSwitcher({ currentLanguage }: LanguageSwitcherProps) {
   const languages: { code: Language; label: string; path: string }[] = [
     { code: 'pl', label: 'PL', path: '/' },
     { code: 'uk', label: 'UKR', path: '/ukr/' },
+    { code: 'en', label: 'EN', path: '/en/' },
   ];
 
   const currentLabel = languages.find(l => l.code === currentLanguage)?.label || 'PL';
@@ -29,12 +30,15 @@ export function LanguageSwitcher({ currentLanguage }: LanguageSwitcherProps) {
   const handleLanguageChange = (lang: Language) => {
     const targetLang = languages.find(l => l.code === lang);
     if (targetLang) {
-      // Видаляємо /ukr/ з поточного pathname якщо він є
-      let cleanPath = pathname.replace(/^\/ukr\/?/, '/');
-      
-      // Додаємо новий префікс мови
+      // Remove language prefix from current pathname; ensure trailing slash
+      let cleanPath = pathname.replace(/^\/(ukr|en)\/?/, '/');
+      if (cleanPath === '') cleanPath = '/';
+      if (cleanPath !== '/' && !cleanPath.endsWith('/')) cleanPath += '/';
+
       if (lang === 'uk') {
-        router.push(`/ukr${cleanPath === '/' ? '/' : cleanPath}`);
+        router.push(cleanPath === '/' ? '/ukr/' : `/ukr${cleanPath}`);
+      } else if (lang === 'en') {
+        router.push(cleanPath === '/' ? '/en/' : `/en${cleanPath}`);
       } else {
         router.push(cleanPath);
       }

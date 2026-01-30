@@ -458,7 +458,7 @@ export default function HomePage() {
                 To idealny wariant, aby przetestować swoją niszę bez ryzyka i papierkowej roboty.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="unregistered-activity-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Czym jest działalność nierejestrowana?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -485,7 +485,7 @@ export default function HomePage() {
                 koniecznie musisz zarejestrować JDG.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="unregistered-activity-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Limit finansowy dochodu w 2026 roku
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -493,13 +493,13 @@ export default function HomePage() {
                 Ta kwota wynosi <strong>75% od minimalnego wynagrodzenia brutto w Polsce</strong>.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Od 1 stycznia 2026 roku minimalna pensja wzrosła, więc Twój limit wynosi teraz około <strong>3500–3600 złotych miesięcznie</strong> 
+                Od 1 stycznia 2026 roku minimalna pensja wzrosła, więc Twój limit wynosi teraz około <strong>3500-3600 złotych miesięcznie</strong> 
                 (dokładną cyfrę należy sprawdzić w momencie wypłaty). 
                 <em>Jeśli przekroczyłeś ten limit choćby o 1 złoty, jesteś zobowiązany zarejestrować JDG w ciągu 7 dni</em>.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Kto ma prawo do tej formy
+              <h3 id="unregistered-activity-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+                Kto ma prawo do tej formy?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Ten model jest dostępny dla obywateli Polski, którzy legalnie przebywają w kraju. 
@@ -511,7 +511,7 @@ export default function HomePage() {
                 menedżerów treści i innych specjalistów</em> na starcie. Po prostu zaczynasz pracować bez żadnych wizyt w urzędach.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="unregistered-activity-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Lista obowiązków - uproszczony rejestr
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -523,12 +523,12 @@ export default function HomePage() {
                 czy nie przekroczyłeś miesięcznego limitu dochodu.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="unregistered-activity-5" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Kwestia ubezpieczenia (ZUS)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 To największa zaleta działalności nierejestrowanej. <strong>Nie płacisz obowiązkowych składek społecznych (ZUS)</strong> jako przedsiębiorca. 
-                Oszczędzasz około <strong>1600–2000 złotych miesięcznie</strong>, które płacą przedsiębiorcy na JDG.
+                Oszczędzasz około <strong>1600-2000 złotych miesięcznie</strong>, które płacą przedsiębiorcy na JDG.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Pamiętaj jednak: jeśli świadczysz usługi na podstawie umowy <strong>Umowa zlecenie</strong>, 
@@ -539,7 +539,7 @@ export default function HomePage() {
                 (oprócz przypadków nagłych) i nie gromadzisz emerytury.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="unregistered-activity-6" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Sprawozdawczość podatkowa (PIT-36)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -573,7 +573,7 @@ export default function HomePage() {
                 stajesz się pełnoprawnym kontrahentem i możesz pracować z dowolnymi firmami na świecie.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="jdg-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Krok po kroku: algorytm rejestracji przez CEIDG
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -594,7 +594,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm"><a href="https://aplikacja.ceidg.gov.pl/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">CEIDG (Aplikacja.ceidg.gov.pl)</a> - Jedyny państwowy rejestr do rejestracji, wprowadzania zmian lub zamknięcia biznesu.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="jdg-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Wybór kodów działalności (PKD)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -624,7 +624,7 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="jdg-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Wybór daty rozpoczęcia i miejsce rejestracji
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -634,10 +634,10 @@ export default function HomePage() {
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Jako adres możesz wskazać własne mieszkanie (jeśli właściciel nie ma nic przeciwko) lub skorzystać z 
                 <strong> Wirtualne biuro</strong>. Wirtualne biuro w Krakowie czy Warszawie to legalny sposób na posiadanie prestiżowego adresu biznesowego za 
-                <strong> 60–100 złotych miesięcznie</strong>.
+                <strong> 60-100 złotych miesięcznie</strong>.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="jdg-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Rejestracja w ZUS - formularze ZZA i ZUA
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -650,8 +650,8 @@ export default function HomePage() {
                 <strong>ZUA</strong> - jeśli rejestrujesz się na pełne ubezpieczenie społeczne (emerytalne, rentowe itp.).
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Konto bankowe - prywatne czy firmowe
+              <h3 id="jdg-5" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+                Konto bankowe - prywatne czy firmowe?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Zgodnie z prawem, dla JDG nie zawsze jest obowiązkowe posiadanie osobnego konta biznesowego (jeśli nie jesteś płatnikiem VAT). 
@@ -670,7 +670,7 @@ export default function HomePage() {
                 Warto sprawdzić aktualne warunki i wymagania każdego banku, ponieważ mogą się zmieniać.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="jdg-6" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Odpowiedzialność finansowa i majątkowa
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -724,7 +724,7 @@ export default function HomePage() {
                 To klasyka dla freelancerów, którzy pracują z polskimi firmami bezpośrednio.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="civil-contracts-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Umowa o dzieło: Specyfika dla zawodów kreatywnych
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -739,12 +739,12 @@ export default function HomePage() {
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
                 <p className="text-gray-700 font-semibold mb-2">Oficjalne źródła</p>
                 <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Kodeks Cywilny (KC)</a> - Kodeks cywilny, artykuły 627–646 regulują Umowa o dzieło.</li>
+                  <li>• <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Kodeks Cywilny (KC)</a> - Kodeks cywilny, artykuły 627-646 regulują Umowa o dzieło.</li>
                   <li>• <a href="https://www.podatki.gov.pl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Podatki.gov.pl</a> - Oficjalne wyjaśnienie dotyczące legalnego zmniejszenia podatku przy pracy z prawami autorskimi.</li>
                 </ul>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="civil-contracts-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Umowa zlecenie: Płatność za proces
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -758,12 +758,12 @@ export default function HomePage() {
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
                 <p className="text-gray-700 font-semibold mb-2">Oficjalne źródła</p>
                 <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Kodeks Cywilny (KC)</a> - Kodeks cywilny, artykuły 734–751 regulują Umowa zlecenie.</li>
+                  <li>• <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Kodeks Cywilny (KC)</a> - Kodeks cywilny, artykuły 734-751 regulują Umowa zlecenie.</li>
                   <li>• <a href="https://www.zus.pl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ZUS.pl</a> - Zasady ubezpieczenia społecznego i które umowy wymagają opłacania składek.</li>
                 </ul>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="civil-contracts-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Porównanie "brutto" i "netto" dla freelancera
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -772,7 +772,7 @@ export default function HomePage() {
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Na przykład, przy Umowa o dzieło otrzymasz na rękę około 88% kwoty. 
-                Przy Umowa zlecenie (jeśli nie jesteś studentem) to około 70–75%. 
+                Przy Umowa zlecenie (jeśli nie jesteś studentem) to około 70-75%. 
                 Zawsze upewnij się, czy cena obejmuje koszt odliczeń podatkowych.
               </p>
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
@@ -782,7 +782,7 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="civil-contracts-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Opodatkowanie dochodów z zagranicy
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -801,7 +801,7 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="civil-contracts-5" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Umowa zlecenie: zasady opodatkowania i składki społeczne
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -823,7 +823,7 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="civil-contracts-6" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Porównanie "brutto" i "netto" dla freelancera
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -842,7 +842,7 @@ export default function HomePage() {
                 aby uniknąć nieporozumień.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="civil-contracts-7" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Opodatkowanie dochodów z zagranicy przez te umowy
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -921,7 +921,7 @@ export default function HomePage() {
                 to inwestycja w Twoją przyszłość i legalność Twojej działalności.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="business-incubators-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Zasada działania modelu "Freelance as a Service"
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -932,7 +932,7 @@ export default function HomePage() {
                 Pieniądze trafiają na konto inkubatora, oni potrącają podatki i swoją prowizję, 
                 a resztę wypłacają Tobie jako wynagrodzenie. Otrzymujesz "czyste" pieniądze bez konieczności rejestracji JDG w CEIDG.
               </p>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="business-incubators-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Zalety (z ostrożnością)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -945,7 +945,7 @@ export default function HomePage() {
                 <strong> odpowiedzialność może spaść na Ciebie</strong>. 
                 Nie masz również bezpośredniego dostępu do swoich finansów - wszystko przechodzi przez inkubatora.
               </p>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="business-incubators-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Analiza kosztów - abonament przeciwko podatkom
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -961,7 +961,7 @@ export default function HomePage() {
                 Jesteś również zależny od stabilności inkubatora i jego stanu finansowego. 
                 Jeśli inkubator ma problemy, może to wpłynąć na Twoje dochody i dostęp do środków.
               </p>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="business-incubators-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Odpowiedzialność w inkubatorach biznesowych
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -987,7 +987,7 @@ export default function HomePage() {
                 To tworzy dodatkowe ryzyka, które ważne jest uwzględnić przy wyborze modelu pracy.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="business-incubators-6" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ograniczenia modelu
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -999,7 +999,7 @@ export default function HomePage() {
                 Na przykład, odpisać wydatki na paliwo lub wynajem biura przez inkubator jest trudniejsze niż we własnym <strong>JDG</strong>.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="business-incubators-7" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Zalety dla osób bez znajomości języka i księgowości
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1015,7 +1015,7 @@ export default function HomePage() {
                 To znacznie ułatwia rozpoczęcie pracy w Polsce.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="business-incubators-8" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Analiza kosztów - miesięczna abonament przeciwko podatkom JDG
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1031,7 +1031,7 @@ export default function HomePage() {
                 ponieważ pozwala skupić się na pracy, a nie na formalnościach.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="business-incubators-10" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ograniczenia w rodzajach działalności w ramach inkubatora
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1056,7 +1056,7 @@ export default function HomePage() {
                 Polskie prawodawstwo wyraźnie rozróżnia, gdzie kończy się prywatna pomoc, a zaczyna biznes.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="laws-regulations-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ustawa o przedsiębiorcach
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1072,7 +1072,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm"><a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180000646" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ustawa - Prawo przedsiębiorców</a> - Podstawowa ustawa o przedsiębiorcach.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="laws-regulations-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ordynacja podatkowa (Kodeks podatkowy)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1090,7 +1090,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm"><a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19971370926" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Ordynacja podatkowa</a> - Kodeks podatkowy z zasadami relacji między Tobą a urzędem skarbowym, oficjalny tekst i aktualizacje w systemie ISAP.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="laws-regulations-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Prawa freelancera podczas kontroli (KAS)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1107,7 +1107,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm"><a href="https://www.podatki.gov.pl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Podatki.gov.pl</a> - Informacje o prawach podczas kontroli KAS i terminach przechowywania dokumentów.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="laws-regulations-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ochrona danych osobowych (RODO)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1124,11 +1124,11 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm">UODO (Urząd Ochrony Danych Osobowych) - Oficjalna strona dotycząca RODO i porad dotyczących ochrony danych klientów.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="laws-regulations-5" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Oficjalne wyjaśnienia dotyczące pracy zdalnej
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                W latach 2023–2026 polski rząd znacznie zaktualizował Kodeks pracy i normy dotyczące pracy zdalnej. 
+                W latach 2023-2026 polski rząd znacznie zaktualizował Kodeks pracy i normy dotyczące pracy zdalnej. 
                 Chociaż freelancerzy nie są pracownikami najemnymi, te normy wpływają na to, 
                 jak formalizujesz umowy z dużymi polskimi firmami.
               </p>
@@ -1154,7 +1154,7 @@ export default function HomePage() {
                 W 2026 roku w Polsce istnieją trzy główne opcje dla JDG.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="taxation-systems-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Skala podatkowa (Ogólny system 12% / 32%)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1171,7 +1171,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm">Podatki.gov.pl: Wybór formy opodatkowania - Przewodnik od ministerstwa z porównaniem Ryczałt, Skala i Liniowy.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="taxation-systems-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Podatek liniowy (Podatek liniowy 19%)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1179,7 +1179,7 @@ export default function HomePage() {
                 czy zarobiłeś 50 tysięcy czy 500 tysięcy złotych. Możesz również odliczać wydatki.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Ten system jest opłacalny tylko wtedy, gdy Twoje dochody stale przekraczają <strong>120–150 tysięcy złotych rocznie</strong>. 
+                Ten system jest opłacalny tylko wtedy, gdy Twoje dochody stale przekraczają <strong>120-150 tysięcy złotych rocznie</strong>. 
                 Nie ma tutaj "kwoty wolnej od podatku", więc dla małych dochodów jest niekorzystny.
               </p>
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
@@ -1187,7 +1187,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm"><a href="https://www.podatki.gov.pl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Podatki.gov.pl</a> - Informacje o podatku liniowym 19%.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="taxation-systems-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ryczałt (Podatek od obrotu)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1209,7 +1209,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm">Kalkulator B2B 2026 - Kalkulator dochodu do porównania różnych systemów podatkowych.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="taxation-systems-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ryczałt: szczegółowa analiza stawek
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1226,7 +1226,7 @@ export default function HomePage() {
                 <strong>Ważne jest prawidłowe wybranie kodu, aby uzyskać najniższą stawkę</strong>.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="taxation-systems-5" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Kryteria wyboru najbardziej opłacalnego systemu w 2026 roku
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1279,7 +1279,7 @@ export default function HomePage() {
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Jako przedsiębiorca na JDG płacisz składki co miesiąc, nawet jeśli nic nie zarobiłeś. 
-                W 2026 roku pełny <strong>ZUS</strong> wynosi około <strong>1600–2000 złotych miesięcznie</strong>. 
+                W 2026 roku pełny <strong>ZUS</strong> wynosi około <strong>1600-2000 złotych miesięcznie</strong>. 
                 Ta kwota składa się z kilku części: ubezpieczenie emerytalne (około 19% od podstawy), 
                 ubezpieczenie zdrowotne (9% od podstawy), ubezpieczenie na wypadek niezdolności do pracy i wypadku (około 1,5%).
               </p>
@@ -1289,7 +1289,7 @@ export default function HomePage() {
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Suma składek <strong>ZUS</strong> zależy od minimalnej pensji w Polsce. 
-                Co roku rząd podnosi minimalną pensję (w 2026 roku to około 4300–4500 złotych brutto), 
+                Co roku rząd podnosi minimalną pensję (w 2026 roku to około 4300-4500 złotych brutto), 
                 i od tej kwoty obliczane są składki. Im wyższa minimalna pensja, tym więcej płacisz. 
                 Ale to również oznacza, że Twoja przyszła emerytura będzie wyższa, a opieka medyczna lepsza.
               </p>
@@ -1322,7 +1322,7 @@ export default function HomePage() {
                 analizy i badania na skierowanie, hospitalizacja, operacje, leki dla dzieci do 18 roku życia, 
                 nagła pomoc medyczna. <strong>Płatnie:</strong> konsultacje specjalistów bez skierowania (prywatne kliniki), 
                 niektóre procedury kosmetyczne, stomatologia (częściowo, podstawowe usługi mogą być bezpłatne), 
-                leki dla dorosłych (zniżka 30–50%), szybkie badania diagnostyczne bez kolejki.
+                leki dla dorosłych (zniżka 30-50%), szybkie badania diagnostyczne bez kolejki.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1330,12 +1330,12 @@ export default function HomePage() {
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Rozmiar emerytury zależy od tego, ile lat płaciłeś składki i jaki był Twój dochód. 
-                Minimalna emerytura w Polsce w 2026 roku wynosi około <strong>1200–1400 złotych</strong>. 
-                Średnia emerytura około <strong>2500–3000 złotych</strong>. 
-                Maksymalna emerytura może osiągnąć <strong>5000–6000 złotych</strong> lub więcej, 
+                Minimalna emerytura w Polsce w 2026 roku wynosi około <strong>1200-1400 złotych</strong>. 
+                Średnia emerytura około <strong>2500-3000 złotych</strong>. 
+                Maksymalna emerytura może osiągnąć <strong>5000-6000 złotych</strong> lub więcej, 
                 jeśli płaciłeś wysokie składki przez wiele lat. 
-                Aby otrzymać pełną emeryturę, trzeba płacić składki <strong>nie mniej niż 20–25 lat</strong> (dla kobiet) 
-                lub <strong>25–30 lat</strong> (dla mężczyzn).
+                Aby otrzymać pełną emeryturę, trzeba płacić składki <strong>nie mniej niż 20-25 lat</strong> (dla kobiet) 
+                lub <strong>25-30 lat</strong> (dla mężczyzn).
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1344,7 +1344,7 @@ export default function HomePage() {
                 Ale dla początkujących są ulgi.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="zus-insurance-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ulga "Ulga na start"
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1357,7 +1357,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm">ZUS: Ulga na start - Oficjalne zasady ulg dla pierwszych 6 miesięcy biznesu.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="zus-insurance-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Mały ZUS Plus
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1370,11 +1370,11 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm"><a href="https://www.zus.pl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ZUS.pl</a> - Informacje o Mały ZUS Plus i okresach preferencyjnych.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="zus-insurance-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Standardowe składki i "Chorobowe"
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Pełny <strong>ZUS</strong> w 2026 roku to poważna suma (około <strong>1600–2000 złotych</strong> w zależności od obliczeń). 
+                Pełny <strong>ZUS</strong> w 2026 roku to poważna suma (około <strong>1600-2000 złotych</strong> w zależności od obliczeń). 
                 Możesz również dobrowolnie płacić składkę na wypadek choroby (<strong>Chorobowe</strong>). 
                 To daje prawo do płatnego zwolnienia lekarskiego, co jest ważne dla freelancera, który pracuje na własny rachunek.
               </p>
@@ -1396,7 +1396,7 @@ export default function HomePage() {
                 ale czasami staje się obowiązkowy.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="vat-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Limit 200 000 złotych
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1408,7 +1408,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm"><a href="https://www.podatki.gov.pl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Podatki.gov.pl</a> - Informacje o limicie 200 000 złotych i rejestracji VAT-R.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="vat-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Rejestracja VAT-UE
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1438,7 +1438,7 @@ export default function HomePage() {
                 Każdy wydatek musi być potwierdzony fakturą, a każdy dochód musi być zarejestrowany w odpowiednich rejestrach.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="accounting-finance-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Prowadzenie KPiR (Księga przychodów i rozchodów)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1451,7 +1451,7 @@ export default function HomePage() {
                 Wydatki Cię nie interesują, ponieważ nie wpływają na rozmiar podatku.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="accounting-finance-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 System KSeF w 2026 roku
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1468,7 +1468,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm">KSeF: Oficjalne informacje - Wszystko o obowiązkowych fakturach elektronicznych.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="accounting-finance-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Wydatki, które zmniejszają podatek
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1477,19 +1477,19 @@ export default function HomePage() {
                 (jeśli tam jest zarejestrowana firma), szkolenia zawodowe i kursy, telefon i internet.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Profesjonalna pomoc - gdzie szukać księgowego
+              <h3 id="accounting-finance-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+                Gdzie szukać księgowego?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Freelancerowi w Polsce nie jest koniecznie potrzebny księgowy w zespole. 
-                Większość wybiera <strong>Biuro rachunkowe</strong>. Koszt usług dla JDG wynosi <strong>200–450 złotych miesięcznie</strong>.
+                Większość wybiera <strong>Biuro rachunkowe</strong>. Koszt usług dla JDG wynosi <strong>200-450 złotych miesięcznie</strong>.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Alternatywą jest księgowość online (na przykład iFirma lub wFirma). 
                 To tańsze, a Ty sam wprowadzasz dane, a system generuje deklaracje.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="accounting-finance-5" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Fakturowanie elektroniczne i system KSeF w 2026 roku
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1509,7 +1509,7 @@ export default function HomePage() {
                 Księgowy może pomóc w konfiguracji.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="accounting-finance-6" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Wydatki, które zmniejszają podatek - wynajem, sprzęt, szkolenia, auto
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1529,7 +1529,7 @@ export default function HomePage() {
                 ile jest używane do biznesu, a ile - do potrzeb osobistych.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="accounting-finance-7" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Profesjonalna pomoc - Biuro rachunkowe przeciwko usługom online
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1561,7 +1561,7 @@ export default function HomePage() {
                 Nowoczesny freelancing to narzędzia cyfrowe. Bez nich interakcja z polskim państwem będzie powolna i skomplikowana.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="technical-legal-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Profil Zaufany i mObywatel
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1578,7 +1578,7 @@ export default function HomePage() {
                 <p className="text-gray-700 text-sm">mObywatel.gov.pl - Jak działa główna aplikacja cyfrowa Polski.</p>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="technical-legal-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Podpis elektroniczny (Podpis kwalifikowany)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1587,7 +1587,7 @@ export default function HomePage() {
                 ale jest niezastąpiona dla freelancerów, którzy pracują z dużymi korporacjami.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="technical-legal-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Praca z zagranicznymi platformami (Upwork, Fiverr)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1613,7 +1613,7 @@ export default function HomePage() {
                 Najważniejsze to nie bać się legalizacji i wybrać właściwą formę opodatkowania.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="conclusions-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Twój checklist na start
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1653,7 +1653,7 @@ export default function HomePage() {
                 Nie zapomnij zarejestrować się w ZUS w ciągu 7 dni po otrzymaniu NIP.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="conclusions-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Strategia udanego freelancingu
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1697,7 +1697,7 @@ export default function HomePage() {
           {/* Employment vs Self-Employed Section */}
           <section id="employment-vs-selfemployed" className="mb-16 scroll-mt-20">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Samozatrudnienie vs Umowa o pracę - co jest bardziej opłacalne?
+              Samozatrudnienie vs Umowa o pracę - co jest korzystniejsze?
             </h2>
             <div className="prose prose-lg max-w-none">
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1705,7 +1705,7 @@ export default function HomePage() {
                 Ważne jest zrozumienie wszystkich zalet i wad obu opcji.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="employment-vs-selfemployed-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Urlopy i zwolnienia lekarskie
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1729,7 +1729,7 @@ export default function HomePage() {
                 Oznacza to, że nawet gdy nie pracujesz z powodu choroby lub urlopu, nadal otrzymujesz pensję.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="employment-vs-selfemployed-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Stabilność
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1753,7 +1753,7 @@ export default function HomePage() {
                 Oznacza to, że klient może zakończyć współpracę bez dodatkowych kosztów, jeśli jest to przewidziane w umowie.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="employment-vs-selfemployed-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Pieniądze na rękę
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1797,7 +1797,7 @@ export default function HomePage() {
                 Zrozumienie odpowiedzialności pomoże Ci chronić swój majątek i uniknąć poważnych problemów.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="legal-liability-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Odpowiedzialność całym majątkiem
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1819,7 +1819,7 @@ export default function HomePage() {
                 Rozdzielenie majątku z małżonkiem (intercyza) również pomaga.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="legal-liability-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Ubezpieczenie odpowiedzialności zawodowej (OC)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1857,7 +1857,7 @@ export default function HomePage() {
                 Ważne jest zrozumienie różnicy, aby uniknąć problemów z urzędem skarbowym i prawidłowo sformalizować relacje z klientem.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="b2b-contracts-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Oznaki stosunku pracy
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1883,7 +1883,7 @@ export default function HomePage() {
                 utratą prawa do ulg ZUS, problemami z urzędem skarbowym oraz utratą prawa do Ryczałt (dla określonych kategorii).
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="b2b-contracts-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Praca dla byłego pracodawcy
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1914,7 +1914,7 @@ export default function HomePage() {
                 Szczegółowe informacje o tym, co dokładnie sprawdza urząd, pomoże Ci przygotować się do kontroli i uniknąć problemów.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="reporting-requirements-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Rejestracja w statystyce (REGON)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1934,7 +1934,7 @@ export default function HomePage() {
                 REGON jest przypisywany automatycznie podczas rejestracji w CEIDG. Nie musisz robić nic dodatkowego.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="reporting-requirements-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Kontrole ZUS
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1952,7 +1952,7 @@ export default function HomePage() {
                 oraz stracić prawo do Ryczałt (dla określonych kategorii).
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="reporting-requirements-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Kontrole urzędu skarbowego
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1983,8 +1983,8 @@ export default function HomePage() {
                 szybko staniesz się udanym niezależnym profesjonalistą.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Jak określić swój zawód i kierunek
+              <h3 id="how-to-start-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+                Jak określić swój zawód i kierunek?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Pierwszy krok do udanego freelancingu to <strong>uczciwa ocena swoich umiejętności i zainteresowań</strong>. Zadaj sobie pytania:
@@ -2000,8 +2000,8 @@ export default function HomePage() {
                 obróbka obrazów. To pozwoli Ci zdobyć doświadczenie i zrozumieć, co Ci pasuje.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Od czego zacząć - zawody dla początkujących
+              <h3 id="how-to-start-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+                Dla kogo warto zaczynać? Zawody dla początkujących
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Oto zawody, które pasują dla początkujących w freelancingu:
@@ -2016,7 +2016,7 @@ export default function HomePage() {
                 <li><strong>Menedżer SMM</strong> - zarządzanie mediami społecznościowymi dla biznesu</li>
               </ul>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="how-to-start-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Gdzie szukać - platformy i sposoby znajdowania klientów
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -2030,7 +2030,7 @@ export default function HomePage() {
                 <li><strong>Własna strona lub portfolio</strong> - utwórz profil na Behance, Dribbble lub własną stronę</li>
               </ul>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="how-to-start-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Nauka - kursy i zasoby
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -2071,7 +2071,7 @@ export default function HomePage() {
                 <li><strong>Mentoring indywidualny</strong> - od <strong>200 do 500 złotych/godz</strong></li>
               </ul>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="how-to-start-6" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Praktyczne porady na start
               </h3>
               <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4 text-lg">
@@ -2101,7 +2101,7 @@ export default function HomePage() {
                 Wszystkie odpowiedzi są napisane prostym językiem i oparte na aktualnym prawodawstwie z 2026 roku.
               </p>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="faq-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Podstawowe pytania o rejestrację
               </h3>
               <div className="space-y-6">
@@ -2146,7 +2146,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="faq-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Pytania o opodatkowanie
               </h3>
               <div className="space-y-6">
@@ -2200,7 +2200,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="faq-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Pytania o ZUS
               </h3>
               <div className="space-y-6">
@@ -2245,7 +2245,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="faq-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Pytania o VAT
               </h3>
               <div className="space-y-6">
@@ -2278,7 +2278,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="faq-5" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Pytania o księgowość
               </h3>
               <div className="space-y-6">
@@ -2322,7 +2322,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="faq-6" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Pytania o dochody międzynarodowe
               </h3>
               <div className="space-y-6">
@@ -2356,7 +2356,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="faq-8" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Pytania o umowy B2B i stosunki pracy
               </h3>
               <div className="space-y-6">
@@ -2392,7 +2392,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
+              <h3 id="faq-9" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
                 Pytania o odpowiedzialność
               </h3>
               <div className="space-y-6">
@@ -2539,7 +2539,7 @@ export default function HomePage() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/contact"
+                    href="/contact/"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {t.footer.contact}
@@ -2547,7 +2547,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link
-                    href="/privacy-policy"
+                    href="/privacy-policy/"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Polityka prywatności
@@ -2555,7 +2555,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link
-                    href="/terms"
+                    href="/terms/"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Regulamin

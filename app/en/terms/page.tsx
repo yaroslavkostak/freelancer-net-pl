@@ -9,110 +9,110 @@ import { Menu } from "lucide-react"
 import { useState } from "react"
 
 export default function TermsPage() {
-  const language: Language = 'uk';
+  const language: Language = 'en';
   const t = translations[language];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
+
   const navLinks = [
-    { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
-    { href: '/ukr/#taxation-systems', label: 'Системи оподаткування' },
-    { href: '/ukr/#zus-insurance', label: 'Страхування ZUS' },
-    { href: '/ukr/#how-to-start', label: 'Як почати' },
+    { href: '/en/#jdg', label: 'Register JDG' },
+    { href: '/en/#taxation-systems', label: 'Tax systems' },
+    { href: '/en/#zus-insurance', label: 'ZUS insurance' },
+    { href: '/en/#how-to-start', label: 'How to start' },
   ];
 
   const content = {
-    title: 'Умови використання',
-    lastUpdate: 'Останнє оновлення:',
+    title: 'Terms of use',
+    lastUpdate: 'Last updated:',
     section1: {
-      title: '1. Загальні положення',
-      p1: 'Ці Умови використання регулюють використання веб-сайту freelancer.org.pl та всіх пов\'язаних з ним послуг.',
-      p2: 'Використовуючи наш сайт, ви погоджуєтеся з цими умовами. Якщо ви не згодні з будь-якою частиною цих умов, будь ласка, не використовуйте наш сайт.'
+      title: '1. General provisions',
+      p1: 'These Terms of Use govern your use of the website freelancer.org.pl and all related services.',
+      p2: 'By using our site you agree to these terms. If you do not agree with any part of these terms, please do not use our site.'
     },
     section2: {
-      title: '2. Опис послуг',
-      p1: 'Наш сайт надає інформаційні послуги щодо бухгалтерських послуг у Польщі, зокрема:',
+      title: '2. Description of services',
+      p1: 'Our site provides information about accounting services in Poland, in particular:',
       items: [
-        'Інформація про реєстрацію бізнесу в Польщі',
-        'Консультації щодо бухгалтерських послуг',
-        'Посилання на партнерські сервіси (inFakt)',
-        'Контактна інформація для отримання додаткових консультацій'
+        'Information on business registration in Poland',
+        'Advice on accounting services',
+        'Links to partner services (inFakt)',
+        'Contact details for further advice'
       ],
-      important: 'Важливо: Ми не надаємо безпосередні бухгалтерські послуги. Наш сайт є інформаційним ресурсом та партнерським майданчиком.'
+      important: 'Important: We do not provide accounting services directly. Our site is an information resource and partner platform.'
     },
     section3: {
-      title: '3. Партнерські посилання',
-      p: 'Наш сайт містить партнерські посилання на сервіс inFakt. Це означає, що:',
+      title: '3. Partner links',
+      p: 'Our site contains partner links to the inFakt service. This means that:',
       items: [
-        'При переході за нашими посиланнями та реєстрації в inFakt ми можемо отримати комісію',
-        'Ця комісія не впливає на ціну послуг для вас',
-        'Всі послуги inFakt надаються на їх власних умовах',
-        'Ми не несемо відповідальності за якість послуг inFakt',
-        'Для отримання послуг звертайтеся безпосередньо до inFakt'
+        'When you follow our links and register with inFakt we may receive a commission',
+        'This commission does not affect the price you pay',
+        'All inFakt services are provided on their own terms',
+        'We are not responsible for the quality of inFakt services',
+        'For accounting services please contact inFakt directly'
       ]
     },
     section4: {
-      title: '4. Інформаційні сайти',
-      p1: 'freelancer.org.pl - це інформаційний сайт, який:',
+      title: '4. Information site',
+      p1: 'freelancer.org.pl is an information site that:',
       items: [
-        'Надають корисну інформацію про бухгалтерські послуги у Польщі',
-        'Працюють як партнерські майданчики inFakt',
-        'Не надають безпосередніх послуг',
-        'Допомагають користувачам зробити інформований вибір'
+        'Provides useful information about accounting services in Poland',
+        'Operates as an inFakt partner platform',
+        'Does not provide services directly',
+        'Helps users make informed choices'
       ],
-      p2: 'Сайт має мету надати якісну інформацію про бухгалтерські послуги та допомогти підприємцям знайти відповідні рішення.'
+      p2: 'The site aims to provide quality information about accounting services and help entrepreneurs find suitable solutions.'
     },
     section5: {
-      title: '5. Обмеження відповідальності',
-      p1: 'Інформація на нашому сайті надається "як є" без будь-яких гарантій. Ми не гарантуємо:',
+      title: '5. Limitation of liability',
+      p1: 'Information on our site is provided "as is" without any warranties. We do not guarantee:',
       items: [
-        'Точність або повноту інформації',
-        'Безперервну доступність сайту',
-        'Відсутність помилок або вірусів',
-        'Відповідність інформації вашим конкретним потребам'
+        'Accuracy or completeness of the information',
+        'Uninterrupted availability of the site',
+        'Absence of errors or viruses',
+        'Fitness of the information for your particular needs'
       ],
-      p2: 'Ми не несемо відповідальності за будь-які збитки, що виникають внаслідок використання нашого сайту або інформації на ньому.'
+      p2: 'We are not liable for any loss arising from use of our site or the information on it.'
     },
     section6: {
-      title: '6. Інтелектуальна власність',
-      p1: 'Весь контент на нашому сайті, включаючи текст, зображення, логотипи та дизайн, є власністю нашого сайту або використовується з дозволу власників.',
-      p2: 'Забороняється:',
+      title: '6. Intellectual property',
+      p1: 'All content on our site, including text, images, logos and design, is owned by our site or used with permission.',
+      p2: 'You may not:',
       items: [
-        'Копіювати або розповсюджувати контент без дозволу',
-        'Використовувати наш контент для комерційних цілей',
-        'Модифікувати або створювати похідні роботи'
+        'Copy or distribute content without permission',
+        'Use our content for commercial purposes',
+        'Modify or create derivative works'
       ]
     },
     section7: {
-      title: '7. Використання сайту',
-      p: 'Ви зобов\'язуєтеся не використовувати наш сайт для:',
+      title: '7. Use of the site',
+      p: 'You agree not to use our site for:',
       items: [
-        'Порушення законів або прав третіх осіб',
-        'Розповсюдження шкідливого контенту',
-        'Спаму або небажаних повідомлень',
-        'Спроби несанкціонованого доступу до систем',
-        'Порушення роботи сайту'
+        'Breaking laws or third-party rights',
+        'Distributing harmful content',
+        'Spam or unsolicited messages',
+        'Attempting unauthorised access to systems',
+        'Disrupting the site'
       ]
     },
     section8: {
-      title: '8. Зміни умов',
-      p1: 'Ми залишаємо за собою право змінювати ці умови в будь-який час. Про значні зміни ми повідомимо через наш сайт.',
-      p2: 'Продовження використання сайту після зміни умов означає вашу згоду з новими умовами.'
+      title: '8. Changes to terms',
+      p1: 'We reserve the right to change these terms at any time. We will notify you of significant changes via our site.',
+      p2: 'Continued use of the site after changes means you accept the new terms.'
     },
     section9: {
-      title: '9. Примірна юрисдикція',
-      p: 'Ці умови регулюються законодавством Польщі. Будь-які спори будуть вирішуватися в судах Польщі.'
+      title: '9. Governing law',
+      p: 'These terms are governed by Polish law. Any disputes will be resolved in the courts of Poland.'
     },
     section10: {
-      title: '10. Контактна інформація',
-      p1: 'Якщо у вас є питання щодо цих умов, зв\'яжіться з нами:',
-      note: 'Примітка: Для отримання бухгалтерських послуг звертайтеся безпосередньо на офіційний сайт'
+      title: '10. Contact',
+      p1: 'If you have questions about these terms, contact us:',
+      note: 'Note: For accounting services please contact the official inFakt website directly.'
     },
     footer: {
-      quickLinks: 'Швидкі посилання',
-      contact: 'Контакти',
-      privacy: 'Політика конфіденційності',
-      terms: 'Умови використання',
-      copyright: 'Freelancer.org.pl. Всі права захищені.'
+      quickLinks: 'Quick links',
+      contact: 'Contact',
+      privacy: 'Privacy policy',
+      terms: 'Terms of use',
+      copyright: 'Freelancer.org.pl. All rights reserved.'
     }
   };
 
@@ -134,7 +134,7 @@ export default function TermsPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href="/ukr/"
+              href="/en/"
               className="text-base md:text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -364,7 +364,7 @@ export default function TermsPage() {
                   <rect x="7" y="14" width="3" height="3"/>
                   <rect x="14" y="14" width="3" height="3"/>
                 </svg>
-                <Link href="/ukr/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
+                <Link href="/en/" className="text-lg font-semibold hover:text-blue-400 transition-colors">Freelancer.org.pl</Link>
               </div>
               <p className="text-gray-400 text-xs md:text-sm max-w-2xl">
                 {t.footer.description}
@@ -373,9 +373,9 @@ export default function TermsPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href="/ukr/contact/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href="/ukr/privacy-policy/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
-                <li><Link href="/ukr/terms/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
+                <li><Link href="/en/contact/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href="/en/privacy-policy/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
+                <li><Link href="/en/terms/" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
               </ul>
             </div>
             <div>

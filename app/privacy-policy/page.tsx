@@ -273,7 +273,7 @@ export default function PrivacyPolicyPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href={language === 'pl' ? '/' : '/ukr'}
+              href={language === 'pl' ? '/' : '/ukr/'}
               className="text-base md:text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -533,9 +533,9 @@ export default function PrivacyPolicyPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href={language === 'pl' ? '/contact' : '/ukr/contact'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href={language === 'pl' ? '/privacy-policy' : '/ukr/privacy-policy'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
-                <li><Link href={language === 'pl' ? '/terms' : '/ukr/terms'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
+                <li><Link href={language === 'pl' ? '/contact/' : '/ukr/contact/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href={language === 'pl' ? '/privacy-policy/' : '/ukr/privacy-policy/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
+                <li><Link href={language === 'pl' ? '/terms/' : '/ukr/terms/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
               </ul>
             </div>
             <div>

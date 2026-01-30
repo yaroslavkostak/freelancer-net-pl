@@ -14,7 +14,7 @@ import { Menu, X } from "lucide-react"
 
 export default function ContactPage() {
   const pathname = usePathname();
-  const language: Language = pathname?.startsWith('/ukr') ? 'uk' : 'pl';
+  const language: Language = pathname?.startsWith('/ukr') ? 'uk' : pathname?.startsWith('/en') ? 'en' : 'pl';
   const t = translations[language];
   
   const navLinks = language === 'pl' 
@@ -23,6 +23,13 @@ export default function ContactPage() {
         { href: '/#taxation-systems', label: 'Systemy opodatkowania' },
         { href: '/#zus-insurance', label: 'Ubezpieczenia ZUS' },
         { href: '/#how-to-start', label: 'Jak zacząć' },
+      ]
+    : pathname?.startsWith('/en')
+    ? [
+        { href: '/en/#jdg', label: 'Register JDG' },
+        { href: '/en/#taxation-systems', label: 'Tax systems' },
+        { href: '/en/#zus-insurance', label: 'ZUS insurance' },
+        { href: '/en/#how-to-start', label: 'How to start' },
       ]
     : [
         { href: '/ukr/#jdg', label: 'Реєстрація JDG' },
@@ -37,7 +44,7 @@ export default function ContactPage() {
   })
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const content = language === 'pl' 
+  const content = language === 'pl'
     ? {
         title: 'Skontaktuj się z nami',
         subtitle: 'Masz pytania dotyczące usług księgowych w Polsce? Jesteśmy gotowi pomóc!',
@@ -53,6 +60,23 @@ export default function ContactPage() {
         quickLinks: 'Szybkie linki',
         contact: 'Kontakt',
         copyright: 'Freelancer.org.pl. Wszelkie prawa zastrzeżone.',
+      }
+    : language === 'en'
+    ? {
+        title: 'Contact us',
+        subtitle: 'Questions about accounting services in Poland? We are happy to help!',
+        formTitle: 'Send us a message',
+        formDescription: 'Fill in the form below and we will get back to you as soon as possible',
+        nameLabel: 'Name *',
+        namePlaceholder: 'Your name',
+        emailLabel: 'Email *',
+        messageLabel: 'Message *',
+        messagePlaceholder: 'Describe your question or request...',
+        submitButton: 'Send message',
+        successMessage: 'Thank you for your message! We will contact you soon.',
+        quickLinks: 'Quick links',
+        contact: 'Contact',
+        copyright: 'Freelancer.org.pl. All rights reserved.',
       }
     : {
         title: 'Зв\'яжіться з нами',
@@ -103,7 +127,7 @@ export default function ContactPage() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href={language === 'pl' ? '/' : '/ukr'}
+              href={language === 'pl' ? '/' : language === 'en' ? '/en/' : '/ukr/'}
               className="text-base md:text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -249,9 +273,9 @@ export default function ContactPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href="/contact" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href="/privacy-policy" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Polityka prywatności' : 'Політика конфіденційності'}</Link></li>
-                <li><Link href="/terms" className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Regulamin' : 'Умови використання'}</Link></li>
+                <li><Link href={language === 'pl' ? '/contact/' : language === 'en' ? '/en/contact/' : '/ukr/contact/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href={language === 'pl' ? '/privacy-policy/' : language === 'en' ? '/en/privacy-policy/' : '/ukr/privacy-policy/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Polityka prywatności' : language === 'en' ? 'Privacy policy' : 'Політика конфіденційності'}</Link></li>
+                <li><Link href={language === 'pl' ? '/terms/' : language === 'en' ? '/en/terms/' : '/ukr/terms/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Regulamin' : language === 'en' ? 'Terms of use' : 'Умови використання'}</Link></li>
               </ul>
             </div>
             <div>

@@ -8,6 +8,7 @@ import StructuredData from "@/components/structured-data"
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://freelancer.org.pl"),
   title: "Przewodnik po freelancingu w Polsce | Pomysły i poradniki",
   description:
             "Odkryj najlepsze pomysły na freelancing w Polsce. Przewodnik po kategoriach freelancingu, wymaganiach prawnych i rozwiązaniach księgowych. Recenzje i poradniki dla freelancerów.",

@@ -599,11 +599,11 @@ export default function HomePage() {
                 Головна умова полягає в тому, що ваш щомісячний дохід не повинен перевищувати певну суму. Ця сума становить <strong>75% від мінімальної заробітної плати брутто в Польщі</strong>.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                З 1 січня 2026 року мінімальна зарплата зросла, тому ваш ліміт тепер складає близько <strong>3500–3600 злотих на місяць</strong> (точну цифру слід перевіряти на момент виплати). <em>Якщо ви перевищили цей ліміт хоча б на 1 злотий, ви зобов'язані зареєструвати JDG протягом 7 днів</em>.
+                З 1 січня 2026 року мінімальна зарплата зросла, тому ваш ліміт тепер складає близько <strong>3500-3600 злотих на місяць</strong> (точну цифру слід перевіряти на момент виплати). <em>Якщо ви перевищили цей ліміт хоча б на 1 злотий, ви зобов'язані зареєструвати JDG протягом 7 днів</em>.
               </p>
 
               <h3 id="unregistered-activity-3" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Хто має право на цю форму
+                Хто має право на цю форму?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Ця модель доступна для громадян України, які легально перебувають у Польщі. <strong>Головна вимога</strong> полягає в тому, що ви не повинні були вести власну фірму (<strong>JDG</strong>) у Польщі протягом <strong>останніх 60 місяців</strong>.
@@ -626,7 +626,7 @@ export default function HomePage() {
                 Питання страхування (ZUS)
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Це найбільша перевага незареєстрованої діяльності. Ви <strong>не платите обов'язкові соціальні внески (ZUS)</strong> як підприємець. Ви економите близько <strong>1600–2000 злотих на місяць</strong>, які платять підприємці на JDG.
+                Це найбільша перевага незареєстрованої діяльності. Ви <strong>не платите обов'язкові соціальні внески (ZUS)</strong> як підприємець. Ви економите близько <strong>1600-2000 злотих на місяць</strong>, які платять підприємці на JDG.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Проте пам'ятайте: якщо ви надаєте послуги за договором <strong>Umowa zlecenie</strong>, замовник може бути зобов'язаний заплатити внески за вас. Це варто обговорити з клієнтом заздалегідь.
@@ -715,7 +715,7 @@ export default function HomePage() {
                 Ви можете вказати дату реєстрації "сьогодні" або майбутню дату. <strong>Важливо: не можна вказувати дату заднім числом</strong>, якщо ви не займалися незареєстрованою діяльністю раніше.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Як адресу ви можете вказати власне житло (якщо орендодавець не проти) або скористатися <strong>Wirtualne biuro</strong>. Віртуальний офіс у Кракові чи Варшаві це законний спосіб мати престижну бізнес-адресу за <strong>60–100 злотих на місяць</strong>.
+                Як адресу ви можете вказати власне житло (якщо орендодавець не проти) або скористатися <strong>Wirtualne biuro</strong>. Віртуальний офіс у Кракові чи Варшаві це законний спосіб мати престижну бізнес-адресу за <strong>60-100 злотих на місяць</strong>.
               </p>
 
               <h3 id="jdg-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
@@ -732,7 +732,7 @@ export default function HomePage() {
               </p>
 
               <h3 id="jdg-5" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Банківський рахунок - приватний чи фірмовий
+                Банківський рахунок - приватний чи фірмовий?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 За законом, для JDG не завжди обов'язково мати окремий бізнес-рахунок (якщо ви не платник VAT). Проте на практиці більшість банків вимагають розділяти особисті та ділові кошти.
@@ -976,7 +976,7 @@ export default function HomePage() {
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
                 <p className="text-gray-700 font-semibold mb-2">Офіційні джерела</p>
                 <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Kodeks Cywilny (KC)</a> - Цивільний кодекс, статті 627–646 регулюють Umowa o dzieło.</li>
+                  <li>• <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Kodeks Cywilny (KC)</a> - Цивільний кодекс, статті 627-646 регулюють Umowa o dzieło.</li>
                   <li>• <a href="https://www.podatki.gov.pl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Podatki.gov.pl</a> - Офіційне роз'яснення про законне зменшення податку при роботі з авторським правом.</li>
                 </ul>
               </div>
@@ -993,7 +993,7 @@ export default function HomePage() {
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
                 <p className="text-gray-700 font-semibold mb-2">Офіційні джерела</p>
                 <ul className="text-gray-700 space-y-1 text-sm">
-                  <li>• <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Kodeks Cywilny (KC)</a> - Цивільний кодекс, статті 734–751 регулюють Umowa zlecenie.</li>
+                  <li>• <a href="https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19640160093" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Kodeks Cywilny (KC)</a> - Цивільний кодекс, статті 734-751 регулюють Umowa zlecenie.</li>
                   <li>• <a href="https://www.zus.pl" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">ZUS.pl</a> - Правила соцстрахування та які договори вимагають оплати внесків.</li>
                 </ul>
               </div>
@@ -1005,7 +1005,7 @@ export default function HomePage() {
                 Важливо розуміти різницю при обговоренні ціни з клієнтом. Компанія завжди називає суму "брутто" (до податків).
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Наприклад, при Umowa o dzieło ви отримаєте на руки близько 88% від суми. При Umowa zlecenie (якщо ви не студент) це близько 70–75%. Завжди уточнюйте, чи включає ціна вартість податкових відрахувань.
+                Наприклад, при Umowa o dzieło ви отримаєте на руки близько 88% від суми. При Umowa zlecenie (якщо ви не студент) це близько 70-75%. Завжди уточнюйте, чи включає ціна вартість податкових відрахувань.
               </p>
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
                 <p className="text-gray-700 font-semibold mb-2">Офіційні джерела</p>
@@ -1160,7 +1160,7 @@ export default function HomePage() {
                 Офіційні роз'яснення щодо віддаленої роботи
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                У 2023–2026 роках польський уряд значно оновив Кодекс праці та норми щодо дистанційної роботи. Хоча фрілансери це не наймані працівники, ці норми впливають на те, як ви оформлюєте договори з великими польськими фірмами.
+                У 2023-2026 роках польський уряд значно оновив Кодекс праці та норми щодо дистанційної роботи. Хоча фрілансери це не наймані працівники, ці норми впливають на те, як ви оформлюєте договори з великими польськими фірмами.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Роботодавці тепер мають чіткі інструкції, як легально оплачувати послуги дистанційних виконавців, які працюють з дому або коворкінгів.
@@ -1203,7 +1203,7 @@ export default function HomePage() {
                 Тут ставка завжди фіксована на рівні <strong>19%</strong>, незалежно від того, заробили ви 50 тисяч чи 500 тисяч злотих. Ви також можете віднімати витрати.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Ця система вигідна лише тоді, коли ваші доходи стабільно перевищують <strong>120–150 тисяч злотих на рік</strong>. Тут немає «вільної від податку суми», тому для малих доходів вона збиткова.
+                Ця система вигідна лише тоді, коли ваші доходи стабільно перевищують <strong>120-150 тисяч злотих на рік</strong>. Тут немає «вільної від податку суми», тому для малих доходів вона збиткова.
               </p>
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
                 <p className="text-gray-700 font-semibold mb-2">Офіційні джерела</p>
@@ -1354,14 +1354,14 @@ export default function HomePage() {
                 <strong>Скільки платити і за що</strong>
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Як підприємець на JDG ви платите внески щомісяця, навіть якщо не заробили нічого. У 2026 році повний <strong>ZUS</strong> становить близько <strong>1600–2000 злотих на місяць</strong>. Ця сума складається з кількох частин: пенсійне страхування (близько 19% від бази), медичне страхування (9% від бази), страхування на випадок інвалідності та нещасного випадку (близько 1,5%).
+                Як підприємець на JDG ви платите внески щомісяця, навіть якщо не заробили нічого. У 2026 році повний <strong>ZUS</strong> становить близько <strong>1600-2000 злотих на місяць</strong>. Ця сума складається з кількох частин: пенсійне страхування (близько 19% від бази), медичне страхування (9% від бази), страхування на випадок інвалідності та нещасного випадку (близько 1,5%).
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 <strong>Як росте сума внесків і чому</strong>
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Сума внесків <strong>ZUS</strong> залежить від мінімальної зарплати в Польщі. Кожного року уряд підвищує мінімальну зарплату (у 2026 році це близько 4300–4500 злотих брутто), і від цієї суми розраховуються внески. Чим вища мінімальна зарплата, тим більше ви платите. Але це також означає, що ваша майбутня пенсія буде вищою, а медичне обслуговування кращим.
+                Сума внесків <strong>ZUS</strong> залежить від мінімальної зарплати в Польщі. Кожного року уряд підвищує мінімальну зарплату (у 2026 році це близько 4300-4500 злотих брутто), і від цієї суми розраховуються внески. Чим вища мінімальна зарплата, тим більше ви платите. Але це також означає, що ваша майбутня пенсія буде вищою, а медичне обслуговування кращим.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1382,14 +1382,14 @@ export default function HomePage() {
                 <strong>Що безкоштовно, а що платно</strong>
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                <strong>Безкоштовно:</strong> візити до лікаря загальної практики, консультації спеціалістів за направленням, аналізи та обстеження за направленням, госпіталізація, операції, ліки для дітей до 18 років, екстрена медична допомога. <strong>Платно:</strong> консультації спеціалістів без направлення (приватні клініки), деякі косметичні процедури, стоматологія (частково, базові послуги можуть бути безкоштовними), ліки для дорослих (знижка 30–50%), швидкі діагностичні обстеження без черги.
+                <strong>Безкоштовно:</strong> візити до лікаря загальної практики, консультації спеціалістів за направленням, аналізи та обстеження за направленням, госпіталізація, операції, ліки для дітей до 18 років, екстрена медична допомога. <strong>Платно:</strong> консультації спеціалістів без направлення (приватні клініки), деякі косметичні процедури, стоматологія (частково, базові послуги можуть бути безкоштовними), ліки для дорослих (знижка 30-50%), швидкі діагностичні обстеження без черги.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 <strong>Пенсії - від і до</strong>
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Розмір пенсії залежить від того, скільки років ви платили внески та який був ваш дохід. Мінімальна пенсія в Польщі у 2026 році становить близько <strong>1200–1400 злотих</strong>. Середня пенсія близько <strong>2500–3000 злотих</strong>. Максимальна пенсія може досягати <strong>5000–6000 злотих</strong> або більше, якщо ви платили високі внески багато років. Щоб отримати повну пенсію, потрібно платити внески <strong>не менше 20–25 років</strong> (для жінок) або <strong>25–30 років</strong> (для чоловіків).
+                Розмір пенсії залежить від того, скільки років ви платили внески та який був ваш дохід. Мінімальна пенсія в Польщі у 2026 році становить близько <strong>1200-1400 злотих</strong>. Середня пенсія близько <strong>2500-3000 злотих</strong>. Максимальна пенсія може досягати <strong>5000-6000 злотих</strong> або більше, якщо ви платили високі внески багато років. Щоб отримати повну пенсію, потрібно платити внески <strong>не менше 20-25 років</strong> (для жінок) або <strong>25-30 років</strong> (для чоловіків).
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
@@ -1422,7 +1422,7 @@ export default function HomePage() {
                 Стандартні внески та "Chorobowe"
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Повний <strong>ZUS</strong> у 2026 році це серйозна сума (близько <strong>1600–2000 злотих</strong> залежно від розрахунків). Ви також можете добровільно платити внесок на випадок хвороби (<strong>Chorobowe</strong>). Це дає право на оплачуваний лікарняний, що важливо для фрілансера, який працює сам на себе.
+                Повний <strong>ZUS</strong> у 2026 році це серйозна сума (близько <strong>1600-2000 злотих</strong> залежно від розрахунків). Ви також можете добровільно платити внесок на випадок хвороби (<strong>Chorobowe</strong>). Це дає право на оплачуваний лікарняний, що важливо для фрілансера, який працює сам на себе.
               </p>
               <div className="bg-blue-50 rounded-lg p-4 mt-4">
                 <p className="text-gray-700 font-semibold mb-2">Офіційні джерела</p>
@@ -1510,10 +1510,10 @@ export default function HomePage() {
               </p>
 
               <h3 id="accounting-finance-4" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Професійна допомога - де шукати бухгалтера
+                Де шукати бухгалтера?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
-                Фрілансеру в Польщі не обов'язково мати бухгалтера в штаті. Більшість обирають <strong>Biuro rachunkowe</strong>. Вартість послуг для JDG становить <strong>200–450 злотих на місяць</strong>.
+                Фрілансеру в Польщі не обов'язково мати бухгалтера в штаті. Більшість обирають <strong>Biuro rachunkowe</strong>. Вартість послуг для JDG становить <strong>200-450 злотих на місяць</strong>.
               </p>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Альтернатива це онлайн-бухгалтерія (наприклад, iFirma або wFirma). Це дешевше, і ви самі вносите дані, а система генерує декларації.
@@ -1973,7 +1973,7 @@ export default function HomePage() {
               </p>
 
               <h3 id="how-to-start-1" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                Як визначити свою професію та напрямок
+                Як визначити свою професію та напрямок?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Перший крок до успішного фрілансу це <strong>чесна оцінка своїх навичок та інтересів</strong>. Задайте собі питання:
@@ -1989,7 +1989,7 @@ export default function HomePage() {
               </p>
 
               <h3 id="how-to-start-2" className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
-                На кого варто починати - професії для новачків
+                На кого варто починати? Професії для новачків
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 Ось професії, які підходять для початківців у фрілансі:
@@ -2666,7 +2666,7 @@ export default function HomePage() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href="/ukr/contact"
+                    href="/ukr/contact/"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {t.footer.contact}
@@ -2674,7 +2674,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link
-                    href="/ukr/privacy-policy"
+                    href="/ukr/privacy-policy/"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Політика конфіденційності
@@ -2682,7 +2682,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <Link
-                    href="/ukr/terms"
+                    href="/ukr/terms/"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     Умови використання
