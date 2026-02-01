@@ -1,13 +1,13 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Як легально працювати фрілансером у Польщі 2026? | Гід",
+  title: "Як легально працювати фрілансером у Польщі 2026?",
   description:
     "Як легально працювати фрілансером у Польщі в 2026? JDG, нереєстрована діяльність, ZUS, податки, договори B2B. Практичний гід крок за кроком.",
   keywords:
     "фріланс Польща 2026, як легально працювати фрілансером, реєстрація JDG, нереєстрована діяльність, ZUS фрілансер, податки фріланс Польща, договір B2B, легальна робота Польща",
   openGraph: {
-    title: "Як легально працювати фрілансером у Польщі 2026? | Гід",
+    title: "Як легально працювати фрілансером у Польщі 2026?",
     description:
       "Як легально працювати фрілансером у Польщі в 2026? JDG, ZUS, податки, договори B2B. Практичний гід крок за кроком.",
     type: "website",
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://freelancer.org.pl/ukr/",
+    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/" },
   },
 }
 

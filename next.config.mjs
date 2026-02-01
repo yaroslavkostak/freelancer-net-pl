@@ -10,8 +10,11 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
-    domains: ['freelancer.org.pl'],
+    unoptimized: false,
+    remotePatterns: [
+      { protocol: 'https', hostname: 'images.pexels.com', pathname: '/**' },
+      { protocol: 'https', hostname: 'freelancer.org.pl', pathname: '/**' },
+    ],
   },
   // Налаштування для статичного експорту (GitHub Pages)
   // Розкоментуйте наступні рядки для GitHub Pages:

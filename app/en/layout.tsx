@@ -1,13 +1,13 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "How to Work Legally as a Freelancer in Poland 2026? | Guide",
+  title: "How to Work Legally as a Freelancer in Poland 2026?",
   description:
     "How to work legally as a freelancer in Poland in 2026? JDG, unregistered activity, ZUS, taxes, B2B contracts. Step-by-step practical guide.",
   keywords:
     "freelancer Poland 2026, how to work legally as freelancer, JDG registration, unregistered activity Poland, ZUS freelancer, freelance taxes Poland, B2B contract, legal work Poland",
   openGraph: {
-    title: "How to Work Legally as a Freelancer in Poland 2026? | Guide",
+    title: "How to Work Legally as a Freelancer in Poland 2026?",
     description:
       "How to work legally as a freelancer in Poland in 2026? JDG, ZUS, taxes, B2B contracts. Step-by-step practical guide.",
     type: "website",
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://freelancer.org.pl/en/",
+    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/" },
   },
 }
 

@@ -18,13 +18,13 @@ function LayoutFallback() {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://freelancer.org.pl"),
-  title: "Jak legalnie pracować jako freelancer w Polsce 2026? | Przewodnik",
+  title: "Jak legalnie pracować jako freelancer w Polsce 2026?",
   description:
     "Jak legalnie pracować jako freelancer w Polsce w 2026? JDG, działalność nierejestrowana, ZUS, podatki, umowy B2B. Praktyczny przewodnik krok po kroku.",
   keywords:
     "freelancer Polska 2026, jak legalnie pracować freelancer, JDG rejestracja, działalność nierejestrowana, ZUS freelancer, podatki freelancing Polska, umowa B2B, legalna praca Polska",
   openGraph: {
-    title: "Jak legalnie pracować jako freelancer w Polsce 2026? | Przewodnik",
+    title: "Jak legalnie pracować jako freelancer w Polsce 2026?",
     description:
       "Jak legalnie pracować jako freelancer w Polsce w 2026? JDG, ZUS, podatki, umowy B2B. Praktyczny przewodnik krok po kroku.",
     type: "website",
@@ -44,6 +44,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://freelancer.org.pl/",
+    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/" },
   },
   generator: "v0.dev",
 }
@@ -69,8 +70,11 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="canonical" href="https://freelancer.org.pl/" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.pexels.com" crossOrigin="anonymous" />
+        <link rel="author" href="https://www.linkedin.com/in/yaroslav-kostak/" />
         <meta name="theme-color" content="#1e40af" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />

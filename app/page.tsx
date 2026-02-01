@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { DynamicYear } from "@/components/dynamic-year";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { translations, type Language } from "@/lib/translations";
@@ -59,7 +60,7 @@ export default function HomePage() {
   return (
     <div className="mobile-shell min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50 -mx-[max(1rem,env(safe-area-inset-left))] md:mx-0 px-4 py-3 md:py-4">
+      <header className="bg-white shadow-sm sticky top-0 z-50 mobile-shell-edge md:mx-0 px-4 py-3 md:py-4">
         <div className="container mx-auto px-0 md:px-4 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <svg
@@ -76,6 +77,7 @@ export default function HomePage() {
             <Link
               href="/"
               className="text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+              aria-label="Freelancer.org.pl - strona główna"
             >
               Freelancer.org.pl
             </Link>
@@ -169,11 +171,14 @@ export default function HomePage() {
 
             <div className="relative flex">
               <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden shadow-lg">
-                <img
+                <Image
                   src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop"
                   alt="Freelancer w Polsce"
+                  width={800}
+                  height={1000}
+                  sizes="(max-width: 768px) 100vw, min(696px, 50vw)"
                   className="w-full h-full object-cover"
-                  loading="eager"
+                  priority
                 />
               </div>
             </div>
@@ -2507,7 +2512,7 @@ export default function HomePage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-10 md:py-12 -mx-[max(1rem,env(safe-area-inset-left))] md:mx-0 px-4 md:px-0">
+      <footer className="bg-gray-900 text-white py-10 md:py-12 mobile-shell-edge md:mx-0 px-4 md:px-0">
         <div className="container mx-auto px-0 md:px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="col-span-2">
@@ -2526,6 +2531,7 @@ export default function HomePage() {
                 <Link
                   href="/"
                   className="text-lg font-semibold hover:text-blue-400 transition-colors"
+                  aria-label="Freelancer.org.pl - strona główna"
                 >
                   Freelancer.org.pl
                 </Link>

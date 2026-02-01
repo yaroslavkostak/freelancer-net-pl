@@ -81,8 +81,15 @@
   }
   @media (max-width: 767px) {
     .mobile-shell {
-      padding-left: max(1rem, env(safe-area-inset-left));
-      padding-right: max(1rem, env(safe-area-inset-right));
+      padding-left: env(safe-area-inset-left, 1rem);
+      padding-right: env(safe-area-inset-right, 1rem);
+    }
+  }
+  /* Negative margin for full-bleed header/footer on mobile (W3C-friendly, no max() parse issues) */
+  @media (max-width: 767px) {
+    .mobile-shell-edge {
+      margin-left: calc(-1 * env(safe-area-inset-left, 1rem));
+      margin-right: calc(-1 * env(safe-area-inset-right, 1rem));
     }
   }
 }
