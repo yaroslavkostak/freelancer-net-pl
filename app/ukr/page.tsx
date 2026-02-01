@@ -116,7 +116,7 @@ export default function HomePage() {
 
       {/* Hero Section - зберігаємо як є */}
       <section className="bg-gradient-to-b from-blue-50 to-white py-10 md:py-24">
-        <div className="w-full max-w-6xl mx-auto px-0 md:px-4">
+        <div className="w-full max-w-6xl mx-auto px-4 md:px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               {t.hero.title}
@@ -206,10 +206,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Main Content with Sidebar Navigation - сайдбар починається біля заголовка статті */}
-      <div className="flex w-full max-w-[100vw]">
+      {/* Main Content with Sidebar Navigation - сайдбар разом зі статтею, від заголовка */}
+      <div className="flex w-full max-w-[100vw] overflow-x-hidden">
         {/* Main Content Area */}
-        <main className="flex-1 w-full min-w-0 max-w-3xl mx-auto px-0 md:px-2 py-8 md:py-12">
+        <main className="flex-1 w-full min-w-0 max-w-3xl mx-auto px-4 sm:px-6 md:px-8 py-8 md:py-12">
           {/* Introduction Section */}
           <section id="introduction" className="mb-16 scroll-mt-20">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
@@ -2567,7 +2567,7 @@ export default function HomePage() {
           </section>
         </main>
 
-        {/* Right Sidebar Navigation - заголовки + підзаголовки акордеоном */}
+        {/* Right Sidebar Navigation - в один ряд зі статтею, sticky при скролі */}
         <aside className="hidden lg:block w-[min(359px,28rem)] flex-shrink-0 self-start sticky top-16 h-[calc(100vh-4rem)] overflow-y-auto overflow-x-hidden border-l border-gray-200 bg-gray-50">
           <nav className="p-3">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">

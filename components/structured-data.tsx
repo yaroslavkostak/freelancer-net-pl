@@ -1,7 +1,3 @@
-"use client"
-
-import { useEffect } from "react"
-
 export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",

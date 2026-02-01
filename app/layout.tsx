@@ -1,23 +1,32 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Suspense } from "react"
 import "./globals.css"
 import Analytics from "./analytics"
 import StructuredData from "@/components/structured-data"
 
 const inter = Inter({ subsets: ["latin", "cyrillic"] })
 
+function LayoutFallback() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 text-gray-600" style={{ padding: "2rem" }}>
+      <p>Ładowanie…</p>
+    </div>
+  )
+}
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://freelancer.org.pl"),
-  title: "Przewodnik po freelancingu w Polsce | Pomysły i poradniki",
+  title: "Jak legalnie pracować jako freelancer w Polsce 2026? | Przewodnik",
   description:
-            "Odkryj najlepsze pomysły na freelancing w Polsce. Przewodnik po kategoriach freelancingu, wymaganiach prawnych i rozwiązaniach księgowych. Recenzje i poradniki dla freelancerów.",
+    "Jak legalnie pracować jako freelancer w Polsce w 2026? JDG, działalność nierejestrowana, ZUS, podatki, umowy B2B. Praktyczny przewodnik krok po kroku.",
   keywords:
-        "freelancing w Polsce, pomysły na freelancing, freelancer Polska, działalność gospodarcza, JDG, księgowość dla freelancerów, infakt, jak zacząć freelancing",
-      openGraph: {
-      title: "Przewodnik po freelancingu w Polsce | Pomysły i poradniki",
-      description:
-        "Odkryj najlepsze pomysły na freelancing w Polsce. Przewodnik po kategoriach freelancingu, wymaganiach prawnych i rozwiązaniach księgowych.",
+    "freelancer Polska 2026, jak legalnie pracować freelancer, JDG rejestracja, działalność nierejestrowana, ZUS freelancer, podatki freelancing Polska, umowa B2B, legalna praca Polska",
+  openGraph: {
+    title: "Jak legalnie pracować jako freelancer w Polsce 2026? | Przewodnik",
+    description:
+      "Jak legalnie pracować jako freelancer w Polsce w 2026? JDG, ZUS, podatki, umowy B2B. Praktyczny przewodnik krok po kroku.",
     type: "website",
     locale: "pl_PL",
     images: [
@@ -25,13 +34,16 @@ export const metadata: Metadata = {
         url: "/images/hero-accountants.png",
         width: 1200,
         height: 630,
-        alt: "Przewodnik po freelancingu w Polsce",
+        alt: "Freelancer w Polsce 2026 - przewodnik",
       },
     ],
   },
   robots: {
     index: true,
     follow: true,
+  },
+  alternates: {
+    canonical: "https://freelancer.org.pl/",
   },
   generator: "v0.dev",
 }
@@ -48,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pl">
+    <html lang="pl" suppressHydrationWarning>
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/svg+xml" href="/favicon-if.svg" />
@@ -67,8 +79,15 @@ export default function RootLayout({
         <meta name="geo.placename" content="Poland" />
         <meta name="google-site-verification" content="QWKDWq93I0NI6T_OE8oyuLlFz7kMAQIatHxti9IfXX4" />
       </head>
-      <body className={inter.className}>
-        {children}
+      <body className={`${inter.className} bg-white antialiased`} suppressHydrationWarning>
+        <noscript>
+          <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4 text-gray-700 text-center">
+            <p>Włącz JavaScript, aby zobaczyć stronę. Freelancer.org.pl — przewodnik po freelancingu w Polsce.</p>
+          </div>
+        </noscript>
+        <Suspense fallback={<LayoutFallback />}>
+          {children}
+        </Suspense>
         <Analytics />
         <StructuredData />
       </body>
