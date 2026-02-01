@@ -5,7 +5,7 @@ export function middleware(request: NextRequest) {
   const { pathname, host } = request.nextUrl
   
   // Визначення мови з URL
-  const localeMatch = pathname.match(/^\/(ukr|en)(\/|$)/)
+  const localeMatch = pathname.match(/^\/(ukr|en|de)(\/|$)/)
   const locale = localeMatch ? localeMatch[1] : 'pl'
 
   // Редірект з www на без www
@@ -67,14 +67,14 @@ export function middleware(request: NextRequest) {
     '/cennik.php': '/',
     '/pricing.html': '/',
     '/pricing.php': '/',
-    '/kalkulator.html': '/tax-calculator/',
-    '/kalkulator.php': '/tax-calculator/',
-    '/calculator.html': '/tax-calculator/',
-    '/calculator.php': '/tax-calculator/',
-    '/podatki.html': '/tax-calculator/',
-    '/podatki.php': '/tax-calculator/',
-    '/taxes.html': '/tax-calculator/',
-    '/taxes.php': '/tax-calculator/',
+    '/kalkulator.html': '/',
+    '/kalkulator.php': '/',
+    '/calculator.html': '/',
+    '/calculator.php': '/',
+    '/podatki.html': '/',
+    '/podatki.php': '/',
+    '/taxes.html': '/',
+    '/taxes.php': '/',
   }
 
   if (oldToNewPaths[pathname]) {
@@ -106,10 +106,12 @@ export function middleware(request: NextRequest) {
     '/services': '/',
     '/cennik': '/',
     '/pricing': '/',
-    '/kalkulator': '/tax-calculator/',
-    '/calculator': '/tax-calculator/',
-    '/podatki': '/tax-calculator/',
-    '/taxes': '/tax-calculator/',
+    '/kalkulator': '/',
+    '/calculator': '/',
+    '/podatki': '/',
+    '/taxes': '/',
+    '/tax-calculator': '/',
+    '/tax-calculator/': '/',
   }
 
   if (slugRedirects[pathname]) {

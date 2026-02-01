@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pl_PL",
     url: "https://freelancer.org.pl/privacy-policy/",
+    images: [
+      { url: "/images/dashboard-screenshot.jpg", width: 1200, height: 630, alt: "Freelancer.org.pl" },
+    ],
   },
   alternates: {
     canonical: "https://freelancer.org.pl/privacy-policy/",

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import Script from "next/script";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -2433,6 +2434,60 @@ export default function HomePage() {
                 </div>
               </div>
 
+              <Script
+                id="faq-structured-data-pl"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                      {
+                        "@type": "Question",
+                        "name": "Czy muszę rejestrować JDG, jeśli pracuję tylko z zagranicznymi klientami?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Tak, jeśli przekraczasz limit działalności nierejestrowanej (3500-3600 zł miesięcznie). Nawet jeśli klienci są zagraniczni, nadal jesteś zobowiązany deklarować dochody w Polsce, jeśli jesteś rezydentem podatkowym." }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Jaki system opodatkowania jest najbardziej opłacalny dla freelancera?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "To zależy od Twojego dochodu i wydatków. Dla większości freelancerów z małymi wydatkami najbardziej opłacalny jest Ryczałt 12% lub 8,5%. Dla tych z znaczniejszymi wydatkami bardziej opłacalna jest Skala podatkowa." }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Ile będę płacić ZUS na starcie?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Przez pierwsze 6 miesięcy jesteś zwolniony ze składek społecznych dzięki uldze \"Ulga na start\". Płacisz tylko ubezpieczenie zdrowotne (około 400-500 zł miesięcznie)." }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Kiedy jestem zobowiązany zarejestrować się jako płatnik VAT?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Jesteś zobowiązany zarejestrować się, gdy Twój roczny obrót przekracza 200 000 zł." }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Czy potrzebna jest KPiR dla Ryczałt?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Nie, dla Ryczałt KPiR nie jest potrzebna. Jest potrzebna tylko dla Skala podatkowa i Podatek liniowy." }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Czy muszę deklarować dochody z Upwork/Fiverr?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Tak, wszystkie dochody z międzynarodowych platform muszą być deklarowane w rocznej deklaracji PIT-36." }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Czy mogę uzyskać zezwolenie na pobyt na podstawie JDG?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Tak, możesz ubiegać się o zezwolenie na pobyt czasowy na podstawie prowadzenia działalności. Potrzebny jest stabilny dochód i korzyść dla polskiej gospodarki." }
+                      },
+                      {
+                        "@type": "Question",
+                        "name": "Czy odpowiadam za długi biznesu swoim majątkiem osobistym?",
+                        "acceptedAnswer": { "@type": "Answer", "text": "Tak, na JDG odpowiadasz za długi biznesu całym swoim majątkiem osobistym: samochodem, mieszkaniem, środkami na kontach prywatnych. W przeciwieństwie do Sp. z o.o., gdzie odpowiedzialność jest ograniczona kapitałem zakładowym." }
+                      }
+                    ]
+                  })
+                }}
+              />
+
               <div className="mt-8 pt-6 border-t border-gray-200">
                 <p className="text-gray-700 leading-relaxed mb-4 text-base">
                   Ten FAQ obejmuje najczęściej zadawane pytania freelancerów dotyczące pracy w Polsce. Jeśli masz dodatkowe pytania, zalecam skontaktowanie się z księgowym lub uzyskanie oficjalnego wyjaśnienia od urzędu skarbowego.
@@ -2573,6 +2628,7 @@ export default function HomePage() {
               <h3 className="text-white font-semibold mb-4">{t.footer.contact}</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Email: info@freelancer.org.pl</li>
+                <li>{t.footer.addressLabel}: {t.footer.address}</li>
               </ul>
             </div>
           </div>

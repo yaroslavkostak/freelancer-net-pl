@@ -180,6 +180,11 @@ export default function ContactPage() {
               <p className="text-base md:text-xl text-gray-600 px-4">
                 {content.subtitle}
               </p>
+              <div className="mt-6 px-4 text-left inline-block text-gray-700 bg-white/80 rounded-lg py-4 shadow-sm">
+                <h2 className="text-lg font-semibold text-gray-900 mb-2">{content.contact}</h2>
+                <p className="text-sm md:text-base">Email: info@freelancer.org.pl</p>
+                <p className="text-sm md:text-base mt-1">{t.footer.address}</p>
+              </div>
             </div>
 
             {/* Контактна форма по центру */}
@@ -273,15 +278,16 @@ export default function ContactPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href={language === 'pl' ? '/contact/' : language === 'en' ? '/en/contact/' : '/ukr/contact/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href={language === 'pl' ? '/privacy-policy/' : language === 'en' ? '/en/privacy-policy/' : '/ukr/privacy-policy/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Polityka prywatności' : language === 'en' ? 'Privacy policy' : 'Політика конфіденційності'}</Link></li>
-                <li><Link href={language === 'pl' ? '/terms/' : language === 'en' ? '/en/terms/' : '/ukr/terms/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Regulamin' : language === 'en' ? 'Terms of use' : 'Умови використання'}</Link></li>
+                <li><Link href={language === 'pl' ? '/contact/' : '/en/contact/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href={language === 'pl' ? '/privacy-policy/' : '/en/privacy-policy/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Polityka prywatności' : 'Privacy policy'}</Link></li>
+                <li><Link href={language === 'pl' ? '/terms/' : '/en/terms/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{language === 'pl' ? 'Regulamin' : 'Terms of use'}</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.contact}</h3>
               <ul className="space-y-2 text-gray-400">
                 <li className="text-sm md:text-base">Email: info@freelancer.org.pl</li>
+                <li className="text-sm md:text-base">{t.footer.addressLabel}: {t.footer.address}</li>
               </ul>
             </div>
           </div>

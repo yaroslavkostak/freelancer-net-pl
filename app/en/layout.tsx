@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/images/hero-accountants.png",
+        url: "/images/dashboard-screenshot.jpg",
         width: 1200,
         height: 630,
         alt: "Freelancer in Poland 2026 - guide",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://freelancer.org.pl/en/",
-    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/" },
+    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/", "de": "https://freelancer.org.pl/de/" },
   },
 }
 

@@ -22,10 +22,49 @@ const nextConfig = {
   // trailingSlash: true,
   // distDir: 'out',
 
-  // Налаштування редіректів
+  // Налаштування редіректів (працюють у dev і на будь-якому хостингу: Vercel, Netlify, next start)
   async redirects() {
     return [
-      // Редірект зі старих URL на нові
+      // --- Субдомени → мовні версії (uk./ua. → українська, en. → англійська) ---
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'uk.freelancer.org.pl' }],
+        destination: 'https://freelancer.org.pl/ukr/',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'ua.freelancer.org.pl' }],
+        destination: 'https://freelancer.org.pl/ukr/',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'en.freelancer.org.pl' }],
+        destination: 'https://freelancer.org.pl/en/',
+        permanent: true,
+      },
+      // --- Шляхи «мовна версія» → /ukr/, /en/, /de/ ---
+      { source: '/ua', destination: '/ukr/', permanent: true },
+      { source: '/ua/', destination: '/ukr/', permanent: true },
+      { source: '/ukraine', destination: '/ukr/', permanent: true },
+      { source: '/ukraine/', destination: '/ukr/', permanent: true },
+      { source: '/ukrainian', destination: '/ukr/', permanent: true },
+      { source: '/ukrainian/', destination: '/ukr/', permanent: true },
+      { source: '/english', destination: '/en/', permanent: true },
+      { source: '/english/', destination: '/en/', permanent: true },
+      { source: '/german', destination: '/de/', permanent: true },
+      { source: '/german/', destination: '/de/', permanent: true },
+      { source: '/deutsch', destination: '/de/', permanent: true },
+      { source: '/deutsch/', destination: '/de/', permanent: true },
+      // --- Старий PHP/форум (беклінки) → головна ---
+      { source: '/profile.php', destination: '/', permanent: true },
+      { source: '/topic.php', destination: '/', permanent: true },
+      { source: '/index.php/feed', destination: '/', permanent: true },
+      { source: '/index.php/feed/', destination: '/', permanent: true },
+      { source: '/blog', destination: '/', permanent: true },
+      { source: '/blog/', destination: '/', permanent: true },
+      // --- Редірект зі старих URL на нові ---
       {
         source: '/contact.tsx',
         destination: '/contact/',
@@ -93,6 +132,113 @@ const nextConfig = {
         destination: '/contact/',
         permanent: true,
       },
+      {
+        source: '/kontakt',
+        destination: '/contact/',
+        permanent: true,
+      },
+      {
+        source: '/polityka',
+        destination: '/privacy-policy/',
+        permanent: true,
+      },
+      {
+        source: '/regulamin',
+        destination: '/terms/',
+        permanent: true,
+      },
+      {
+        source: '/o-nas',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/about',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/uslugi',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/services',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/cennik',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/pricing',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/kalkulator',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/kalkulator/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/calculator',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/calculator/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/podatki',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/podatki/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/taxes',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/taxes/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/tax-calculator',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/tax-calculator/',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index.php',
+        destination: '/',
+        permanent: true,
+      },
+      // UKR/DE технічні сторінки → англійські (Kontakt, Privacy, Terms тільки PL + EN)
+      { source: '/ukr/contact/', destination: '/en/contact/', permanent: true },
+      { source: '/ukr/privacy-policy/', destination: '/en/privacy-policy/', permanent: true },
+      { source: '/ukr/terms/', destination: '/en/terms/', permanent: true },
+      { source: '/de/contact/', destination: '/en/contact/', permanent: true },
+      { source: '/de/privacy-policy/', destination: '/en/privacy-policy/', permanent: true },
+      { source: '/de/terms/', destination: '/en/terms/', permanent: true },
       // Редірект зі старих доменів на freelancer.org.pl
       {
         source: '/:path*',

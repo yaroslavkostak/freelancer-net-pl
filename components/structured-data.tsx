@@ -4,8 +4,8 @@ export default function StructuredData() {
     "@type": "Organization",
     "name": "Freelancer.org.pl",
     "url": "https://freelancer.org.pl",
-    "logo": "https://freelancer.org.pl/images/logo.png",
-    "description": "Онлайн-бухгалтерія для українців у Польщі: реєстрація ФОП, ведення обліку, звіти та підтримка українською.",
+    "logo": "https://freelancer.org.pl/placeholder-logo.svg",
+    "description": "Przewodnik po legalnej pracy jako freelancer w Polsce: JDG, działalność nierejestrowana, ZUS, podatki, umowy B2B. Praktyczny przewodnik krok po kroku.",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "PL",
@@ -13,9 +13,9 @@ export default function StructuredData() {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+48-XXX-XXX-XXX",
       "contactType": "customer service",
-      "email": "info@buh-online.pl"
+      "email": "info@freelancer.org.pl",
+      "url": "https://freelancer.org.pl/contact/"
     },
     "sameAs": [
       "https://freelancer.net.pl"
@@ -26,22 +26,14 @@ export default function StructuredData() {
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Бухгалтерські послуги",
+      "name": "Przewodnik freelancera w Polsce",
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Реєстрація ФОП у Польщі",
-            "description": "Допомога з реєстрацією індивідуальної підприємницької діяльності"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Ведення бухгалтерського обліку",
-            "description": "Професійне ведення обліку для підприємців"
+            "name": "Rejestracja JDG w Polsce",
+            "description": "Informacje i przewodnik po rejestracji jednoosobowej działalności gospodarczej"
           }
         }
       ]

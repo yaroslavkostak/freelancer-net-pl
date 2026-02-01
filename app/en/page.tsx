@@ -2656,6 +2656,7 @@ export default function HomePage() {
               <h3 className="text-white font-semibold mb-4">{t.footer.contact}</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Email: info@freelancer.org.pl</li>
+                <li>{t.footer.addressLabel}: {t.footer.address}</li>
               </ul>
             </div>
           </div>

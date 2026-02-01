@@ -20,10 +20,12 @@
 /blog /blog 301
 /artykuly /blog 301
 /articles /blog 301
-/kalkulator /tax-calculator 301
-/calculator /tax-calculator 301
-/podatki /tax-calculator 301
-/taxes /tax-calculator 301
+/kalkulator / 301
+/calculator / 301
+/podatki / 301
+/taxes / 301
+/tax-calculator / 301
+/tax-calculator/ / 301
 
 # Редіректи для старих файлів
 /contact.tsx /contact 301
@@ -60,14 +62,14 @@
 /artykuly.php /blog 301
 /articles.html /blog 301
 /articles.php /blog 301
-/kalkulator.html /tax-calculator 301
-/kalkulator.php /tax-calculator 301
-/calculator.html /tax-calculator 301
-/calculator.php /tax-calculator 301
-/podatki.html /tax-calculator 301
-/podatki.php /tax-calculator 301
-/taxes.html /tax-calculator 301
-/taxes.php /tax-calculator 301
+/kalkulator.html / 301
+/kalkulator.php / 301
+/calculator.html / 301
+/calculator.php / 301
+/podatki.html / 301
+/podatki.php / 301
+/taxes.html / 301
+/taxes.php / 301
 
 # Редіректи для старих доменів
 # Ці редіректи потрібно налаштувати на рівні DNS або сервера

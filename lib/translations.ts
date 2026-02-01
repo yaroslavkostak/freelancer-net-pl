@@ -1,4 +1,4 @@
-export type Language = 'pl' | 'uk' | 'en';
+export type Language = 'pl' | 'uk' | 'en' | 'de';
 
 export interface Translations {
   // Header
@@ -290,6 +290,8 @@ export interface Translations {
     description: string;
     quickLinks: string;
     contact: string;
+    address: string;
+    addressLabel: string;
     copyright: string;
   };
 }
@@ -617,6 +619,8 @@ export const translations: Record<Language, Translations> = {
       description: 'Freelancer.org.pl is an information portal and blog about freelancing in Poland. It includes reviews, guides and comparisons of solutions for freelancers, including those from India, Ukraine and other countries.',
       quickLinks: 'Quick links',
       contact: 'Contact',
+      address: 'Poland, Kraków',
+      addressLabel: 'Address',
       copyright: 'Freelancer.org.pl. All rights reserved.',
     },
   },
@@ -1220,6 +1224,8 @@ export const translations: Record<Language, Translations> = {
       description: 'Freelancer.net.pl to portal informacyjny i blog o freelancingu w Polsce. Zawiera recenzje, poradniki i przeglądy różnych rozwiązań dla freelancerów.',
       quickLinks: 'Szybkie linki',
       contact: 'Kontakt',
+      address: 'Polska, Kraków',
+      addressLabel: 'Adres',
       copyright: 'Freelancer.net.pl. Wszelkie prawa zastrzeżone.',
     },
   },
@@ -1254,7 +1260,7 @@ export const translations: Record<Language, Translations> = {
         },
         {
           rate: '17%',
-          description: 'Якщо ваш річний прибуток перевищує 200 000 zł.',
+          description: 'Якщо твій річний прибуток перевищує 200 000 zł.',
         },
       ],
       cta: 'Зареєструватися та переглянути свого бухгалтера',
@@ -1262,7 +1268,7 @@ export const translations: Record<Language, Translations> = {
     },
     requirements: {
       title: 'Що потрібно для початку фрілансу в Польщі?',
-      subtitle: 'Щоб легально вести фрілансерську діяльність у Польщі, ви повинні виконати кілька основних вимог. Ось повний путівник по формальностях.',
+      subtitle: 'Щоб легально вести фрілансерську діяльність у Польщі, ти повинен виконати кілька основних вимог. Ось повний путівник по формальностях.',
       tipTitle: 'Порада',
       tipText: 'Процес реєстрації діяльності можна провести онлайн через CEIDG. Більшість формальностей можна зробити дистанційно, що особливо зручно для фрілансерів, які працюють з різних локацій.',
       items: [
@@ -1330,8 +1336,8 @@ export const translations: Record<Language, Translations> = {
       cardTitle: 'Професійна онлайн-бухгалтерія',
       cardSubtitle: 'inFakt - одна з найпопулярніших бухгалтерських платформ у Польщі',
       selectionTitle: 'Бухгалтери inFakt за рекомендацією. Як замовити бухгалтерські послуги в inFakt?',
-      selectionSubtitle: 'Вкажіть, що вам потрібно, і оберіть найкращого бухгалтера inFakt за рекомендацією',
-      selectionDescription: 'Надайте свої дані, і ми зв\'яжемося з вами протягом 24 годин',
+      selectionSubtitle: 'Вкажи, що тобі потрібно, і обери найкращого бухгалтера inFakt за рекомендацією',
+      selectionDescription: 'Надай свої дані, і ми зв\'яжемося з тобою протягом 24 годин',
       qualityInfo: 'Оцінюйте бухгалтера та рекомендуйте іншим! Якість послуг дуже важлива для нас',
       languagesInfo: '445 бухгалтерів зі знанням англійської, української та багатьох інших мов',
       features: [
@@ -1360,14 +1366,14 @@ export const translations: Record<Language, Translations> = {
         jdg: 'від 189 zł на місяць',
         spzoo: 'від 619 zł на місяць',
       },
-      ksef: 'KSeF (Krajowy System e-Faktur) - це національна система електронних рахунків-фактур у Польщі. З inFakt ви можете виставляти та отримувати e-фактури безкоштовно та без обмежень. Система автоматично надсилає та отримує рахунки-фактури через KSeF.',
+      ksef: 'KSeF (Krajowy System e-Faktur) - це національна система електронних рахунків-фактур у Польщі. З inFakt ти можеш виставляти та отримувати e-фактури безкоштовно та без обмежень. Система автоматично надсилає та отримує рахунки-фактури через KSeF.',
       whyTitle: 'Чому варто обрати inFakt?',
       whyItems: [
         '9,7 з 10 клієнтів рекомендують свого бухгалтера',
         '98% клієнтів залишають позитивні відгуки',
         'Високі рейтинги: Google (4,9), Facebook (94%), AppStore (4,8)',
         'Підтримка KSeF - безкоштовне виставлення та отримання e-фактур',
-        'Понад 100 консультантів KSeF готові відповісти на ваші питання',
+        'Понад 100 консультантів KSeF готові відповісти на твої питання',
       ],
       button1: 'Зареєструватися та переглянути свого бухгалтера',
       button2: 'Дізнатися більше',
@@ -1376,7 +1382,7 @@ export const translations: Record<Language, Translations> = {
         subtitle: 'Відкрийте свою діяльність онлайн без стресу, з повною підтримкою персонального бухгалтера',
         description: 'Оберіть форму діяльності та відкрийте бізнес на роки. Все можна зробити, не виходячи з дому.',
         benefits: [
-          'Підтримка експерта - відповімо на всі ваші питання',
+          'Підтримка експерта - відповімо на всі твої питання',
           'Без візиту до уряду - всі формальності оформимо онлайн',
           'Гарантія задоволення - 97% фірм, які ми відкрили, далі користуються бухгалтерією в inFakt',
           'Зручно і швидко - за допомогою зручної програми свою фірму відкриєте навіть за 15 хвилин',
@@ -1392,27 +1398,27 @@ export const translations: Record<Language, Translations> = {
             {
               number: '2',
               title: 'Відкриваєте фірму з бухгалтером',
-              description: 'Бухгалтер допомагає відкрити вашу фірму. Ви стаєте підприємцем! Послуга повністю безкоштовна',
+              description: 'Бухгалтер допомагає відкрити твою фірму. Ти стаєш підприємцем! Послуга повністю безкоштовна',
             },
             {
               number: '3',
               title: 'Готово!',
-              description: 'Ваша фірма зареєстрована! Ви отримуєте номер NIP і можете виставити перший рахунок-фактуру',
+              description: 'Твоя фірма зареєстрована! Ти отримуєш номер NIP і можеш виставити перший рахунок-фактуру',
             },
           ],
         },
         comparison: {
           title: 'Заснування з підтримкою або самостійно?',
           withAccountant: [
-            'Реєстрація вашої фірми в CEIDG',
+            'Реєстрація твоєї фірми в CEIDG',
             'Процес заснування фірми повністю в inFakt',
             'Консультація телефоном зі спеціалістом',
             'Після заснування немає зобов\'язання до бухгалтерії',
             'Професійна підтримка та турбота на кожному етапі',
             'Відразу стаєте клієнтом inFakt',
             'Реєстрація до ПДВ та ZUS',
-            'Вашу фірму заснуємо за 15 хвилин',
-            'Ваш персональний бухгалтер',
+            'Твою фірму заснуємо за 15 хвилин',
+            'Твій персональний бухгалтер',
             'Відразу узгоджуємо умови співпраці',
             'Можливість придбати послугу бухгалтерії',
           ],
@@ -1431,9 +1437,9 @@ export const translations: Record<Language, Translations> = {
     },
     accountants: {
       title: 'Бухгалтери inFakt за рекомендацією. Як замовити бухгалтерські послуги в inFakt?',
-      subtitle: 'Вкажіть, що вам потрібно, і оберіть найкращого бухгалтера inFakt за рекомендацією',
-      description: 'Надайте свої дані, і ми зв\'яжемося з вами протягом 24 годин',
-      contactInfo: 'Надайте свої дані, і ми зв\'яжемося з вами протягом 24 годин',
+      subtitle: 'Вкажи, що тобі потрібно, і обери найкращого бухгалтера inFakt за рекомендацією',
+      description: 'Надай свої дані, і ми зв\'яжемося з тобою протягом 24 годин',
+      contactInfo: 'Надай свої дані, і ми зв\'яжемося з тобою протягом 24 годин',
       qualityInfo: 'Оцінюйте бухгалтера та рекомендуйте іншим! Якість послуг дуже важлива для нас',
       languagesInfo: '445 бухгалтерів зі знанням англійської, української та багатьох інших мов',
       filters: {
@@ -1547,7 +1553,7 @@ export const translations: Record<Language, Translations> = {
       helpText: 'Ми допоможемо на всіх етапах - підберемо вид діяльності, зберемо документи, відкриємо рахунок. Повний супровід з гарантією.',
     },
     afterRegistration: {
-      title: 'Що ви отримаєте після реєстрації',
+      title: 'Що ти отримаєш після реєстрації',
       items: [
         {
           number: '1',
@@ -1832,7 +1838,7 @@ export const translations: Record<Language, Translations> = {
       subtitle: 'Відкрийте товариство онлайн без стресу',
       description: 'inFakt допомагає заснувати багатоосібні товариства. Ми проведемо вас через весь процес крок за кроком.',
       benefits: [
-        'Підтримка експерта - відповімо на ваші запитання',
+        'Підтримка експерта - відповімо на твої запитання',
         'Без візиту до офісу - всі формальності онлайн',
         'Засну йте товариство з бухгалтером або самостійно',
         'Отримаєте особистого бухгалтера для ведення справ',
@@ -1845,7 +1851,7 @@ export const translations: Record<Language, Translations> = {
             description: 'Спеціаліст inFakt допоможе обрати відповідну форму товариства та проведе через всі формальності.',
           },
           {
-            title: 'Заснуємо ваше товариство онлайн - без виходу з дому та зустрічей з нотаріусом',
+            title: 'Заснуємо твоє товариство онлайн - без виходу з дому та зустрічей з нотаріусом',
             description: 'Всі документи можна підписати електронно. Не потрібно нікуди їхати.',
           },
         ],
@@ -1885,7 +1891,336 @@ export const translations: Record<Language, Translations> = {
       description: 'Freelancer.net.pl - це інформаційний портал та блог про фріланс у Польщі. Містить рецензії, посібники та огляди різних рішень для фрілансерів.',
       quickLinks: 'Швидкі посилання',
       contact: 'Контакти',
+      address: 'Польща, Краків',
+      addressLabel: 'Адреса',
       copyright: 'Freelancer.net.pl. Всі права захищені.',
+    },
+  },
+  de: {
+    header: {
+      blog: 'Blog',
+      freelanceIdeas: 'Freelancing in Polen',
+      accounting: 'Buchhaltung',
+      businessSetup: 'Unternehmensgründung',
+      temporaryResidence: 'Aufenthaltserlaubnis',
+      permanentResidence: 'Daueraufenthalt',
+    },
+    hero: {
+      title: 'Freelancing in Polen für Selbstständige',
+      subtitle: 'Wie du legal als Freelancer in Polen arbeitest – Leitfaden für Deutsche, Österreicher und andere',
+      bullets: [
+        '✓ JDG anmelden (Einzelunternehmen)',
+        '✓ Günstigste Steuerform wählen',
+        '✓ Buchhaltung und Berichte über inFakt',
+      ],
+      description: 'Um als Freelancer in Polen zu arbeiten, musst du ein JDG (jednoosobowa działalność gospodarcza – Einzelunternehmen) anmelden. Es ist einfach und schnell. Die wichtigste Entscheidung ist deine Steuerform. Dieser Leitfaden richtet sich an Freelancer aus Deutschland, Österreich, der Schweiz und anderen Ländern.',
+      ryczaltTitle: 'Pauschalsteuer (ryczałt) – die beliebteste Wahl für Freelancer',
+      ryczaltDescription: 'Ryczałt ist ein fester Steuersatz auf den Umsatz. Du musst keine detaillierten Kostennachweise führen.',
+      ryczaltRates: [
+        { rate: '12%', description: 'Für die meisten Dienstleistungen (IT, Design, Beratung, Marketing). Umsatz bis 200.000 PLN/Jahr.' },
+        { rate: '8,5%', description: 'Für freie Berufe (Ärzte, Anwälte, Architekten, Ingenieure). Umsatz bis 200.000 PLN/Jahr.' },
+        { rate: '17%', description: 'Wenn dein Jahresumsatz 200.000 PLN übersteigt.' },
+      ],
+      cta: 'Anmelden und deinen Buchhalter sehen',
+      infaktLink: 'Wir empfehlen inFakt für die Buchhaltung',
+    },
+    requirements: {
+      title: 'Was brauchst du, um in Polen freiberuflich zu starten?',
+      subtitle: 'Für eine legale Freelancer-Tätigkeit in Polen musst du einige Grundvoraussetzungen erfüllen. Hier ist der komplette Leitfaden zu den Formalitäten.',
+      tipTitle: 'Tipp',
+      tipText: 'Die Gewerbeanmeldung kann online über CEIDG erfolgen. Die meisten Formalitäten können remote erledigt werden – besonders praktisch für Freelancer aus Deutschland, Österreich und anderen Ländern.',
+      items: [
+        { title: 'Gewerbeanmeldung', description: 'Gründung eines JDG (Einzelunternehmen) oder einer GmbH (Sp. z o.o.).' },
+        { title: 'NIP-Nummer', description: 'Erhalt einer Steuer-Identifikationsnummer' },
+        { title: 'Bankkonto', description: 'Eröffnung eines Geschäfts- oder Privatkontos' },
+        { title: 'ZUS-Versicherung', description: 'Anmeldung bei der Sozialversicherung' },
+        { title: 'Einnahmen-/Ausgabenbuch', description: 'Führen von Finanzunterlagen' },
+        { title: 'Steuerform', description: 'Wahl: Pauschalsteuer (ryczałt), Steuerskala oder Linearsteuer' },
+      ],
+    },
+    categories: {
+      title: 'Beliebte Freelancing-Kategorien in Polen',
+      subtitle: 'Einkommensmöglichkeiten für Freelancer. Jede Kategorie bietet eigene Wachstums- und Einkommensoptionen.',
+      cta: 'Mehr zu einer Kategorie erfahren?',
+      ctaButton: 'Artikel im Blog lesen',
+      items: [
+        { title: 'Technologie', description: 'Entwickler, IT-Spezialisten' },
+        { title: 'Marketing & Werbung', description: 'Marketing, SEO, Werbung' },
+        { title: 'Kreativ & Medien', description: 'Fotografen, Videografen, Content-Ersteller' },
+        { title: 'Schreiben & Verlag', description: 'Autoren, Copywriter, Redakteure' },
+        { title: 'Video & Fotografie', description: 'Videoschnitt, Werbespots, kommerzielle Fotografie' },
+        { title: 'Kunst & Design', description: 'Grafiker, Illustratoren, Designer' },
+      ],
+    },
+    accounting: {
+      title: 'Buchhaltungsdienstleistungen in Polen von inFakt',
+      subtitle: 'Volles Leistungsspektrum für Einzelunternehmer (JDG) und Gesellschaften (Sp. z o.o.) in ganz Polen.',
+      cardTitle: 'Professionelle Online-Buchhaltung',
+      cardSubtitle: 'inFakt ist eine der beliebtesten Buchhaltungsplattformen in Polen',
+      features: [
+        { title: 'Gewerbeanmeldung', description: 'Hilfe bei JDG oder Sp. z o.o.' },
+        { title: 'Buchhaltung', description: 'Vollständige Buchhaltung und Steuerunterstützung, Erstellung von Erklärungen' },
+        { title: 'KSeF – E-Rechnung', description: 'E-Rechnungen über KSeF kostenlos und unbegrenzt ausstellen und empfangen' },
+        { title: 'App', description: 'Finanzen und Rechnungen von überall verwalten' },
+        { title: 'Zugang zum Buchhalter', description: 'Ein persönlicher, von inFakt geprüfter Buchhalter' },
+      ],
+      pricing: { jdg: 'ab 189 PLN/Monat', spzoo: 'ab 619 PLN/Monat' },
+      ksef: 'KSeF (Nationales E-Rechnungs-System) ist das polnische E-Rechnungs-System. Mit inFakt kannst du E-Rechnungen kostenlos und unbegrenzt ausstellen und empfangen.',
+      whyTitle: 'Warum inFakt wählen?',
+      whyItems: [
+        '9,7 von 10 Kunden empfehlen ihren Buchhalter',
+        '98 % der Kunden bewerten positiv',
+        'Hohe Bewertungen: Google (4,9), Facebook (94 %), AppStore (4,8)',
+        'KSeF-Support – kostenlose E-Rechnung',
+        'Über 100 KSeF-Berater bereit zu helfen',
+      ],
+      button1: 'Anmelden und Buchhalter sehen',
+      button2: 'Mehr erfahren',
+    },
+    accountants: {
+      title: 'inFakt-Buchhalter per Empfehlung. Wie bestellt man Buchhaltung bei inFakt?',
+      subtitle: 'Gib deine Anforderungen an und wähle den passenden inFakt-Buchhalter',
+      description: 'Hinterlass deine Daten – wir melden uns innerhalb von 24 Stunden',
+      contactInfo: 'Hinterlass deine Daten – wir melden uns innerhalb von 24 Stunden',
+      qualityInfo: 'Bewerte deinen Buchhalter und empfiehl weiter! Servicequalität ist uns wichtig',
+      languagesInfo: '445 Buchhalter mit Englisch, Ukrainisch und vielen weiteren Sprachen – auch für Freelancer aus Deutschland und Österreich',
+      filters: {
+        name: 'Name des Buchhalters',
+        activityType: 'Tätigkeitsart',
+        jdg: 'Einzelunternehmen',
+        spzoo: 'Gesellschaft',
+        settlementMethod: 'Versteuerungsart',
+        kpir: 'Einnahmen-/Ausgabenbuch',
+        ryczalt: 'Pauschalsteuer',
+        vatActive: 'Umsatzsteuerpflichtig',
+        yes: 'Ja',
+        no: 'Nein',
+        industry: 'Branche',
+        employees: 'Mitarbeiter',
+        employeesInfo: 'Service inkl. Steuer, Beiträge, Personalunterlagen, US- und ZUS-Erklärungen',
+        showBusy: 'Ausgelastete Buchhalter anzeigen',
+      },
+      button: 'Buchhalter finden',
+    },
+    whyOpenCompany: {
+      title: 'Warum ein Unternehmen in Polen gründen',
+      items: [
+        { title: 'Polens Wirtschaft wächst', description: 'In der EU liegt Polen beim BIP auf Platz 6. Die Arbeitslosigkeit sinkt.' },
+        { title: 'Geringes Startkapital', description: '1.200 EUR oder 5.000 PLN. Muss nicht auf dem Konto sein.' },
+        { title: 'Voller Sozialschutz', description: 'Kostenlose Gesundheitsversorgung und Bildung für Unternehmer.' },
+        { title: 'Zugang zum EU-Markt', description: 'Arbeit mit allen EU-Ländern möglich.' },
+        { title: 'Wachstumschancen', description: 'Kredite zu günstigen Konditionen.' },
+        { title: 'Keine Gehaltskosten', description: 'Inhaber müssen sich kein Gehalt zahlen.' },
+        { title: 'Immobilienzugang', description: 'Unkompliziertes Verfahren für gewerbliche und private Immobilien.' },
+        { title: 'Aufenthaltsoptionen', description: 'Nach 6 Monaten Tätigkeit Aufenthaltserlaubnis beantragbar; nach 5 Jahren – Daueraufenthalt.' },
+      ],
+    },
+    businessIdeas: {
+      title: 'Welches Geschäft in Polen starten',
+      description: 'Beliebte Bereiche: Reinigung, Personal, Transport, Bau. Polen hat eine gute Lage für Logistik. Gut entwickelt: Landwirtschaft, Textil- und Chemieindustrie, Metallurgie, Tourismus, Maschinenbau.',
+    },
+    companyTypes: {
+      title: 'Welche Gesellschaftsformen kann man anmelden',
+      types: [
+        { number: '1', title: 'Sp. z o.o. (ähnlich GmbH)', description: '80 % der neuen Unternehmen wählen diese Form. Passt zu jedem Geschäft, einfach anzumelden.' },
+        { number: '2', title: 'JDG (Einzelunternehmen)', description: 'Geringe Anmeldekosten, 18 % Steuer. Einfache Buchhaltung. Erste 2 Jahre – ZUS-Erleichterung. Tätigkeit bis 2 Jahre unterbrechbar.' },
+        { number: '3', title: 'Aktiengesellschaft (SA)', description: 'Für große Unternehmen. Mindestkapital 25.000 EUR. 19 % Steuer.' },
+        { number: '4', title: 'Kommanditgesellschaft auf Aktien', description: 'Name muss Nachname des Inhabers enthalten. Kapital 12.500 EUR.' },
+        { number: '5', title: 'Kommanditgesellschaft', description: 'Mindestens 2 Gründer. Kein Stammkapital erforderlich.' },
+        { number: '6', title: 'Zweigniederlassung ausländischer Gesellschaft', description: 'Zweig oder Repräsentanz einer ausländischen Gesellschaft. Getrennte Buchhaltung.' },
+      ],
+    },
+    registrationSteps: {
+      title: 'Schritte zur Unternehmensanmeldung in Polen',
+      steps: [
+        'Gesellschaftsform wählen (JDG oder Sp. z o.o.)',
+        'Tätigungscode (PKD) wählen',
+        'Gründerdaten angeben',
+        'Adresse wählen (physisch oder virtuell)',
+        'Dokumente beim Notar mit Übersetzer beglaubigen',
+        'PESEL-Nummer erhalten',
+        'E-Signatur oder EPUAP-Profil erhalten',
+        'Über S24-System anmelden',
+        'Bankkonto eröffnen',
+        'Buchhaltungsdienst bestellen',
+      ],
+      helpText: 'Wir helfen bei jedem Schritt – Tätigkeit wählen, Dokumente sammeln, Konto eröffnen. Vollständige Unterstützung mit Garantie.',
+    },
+    afterRegistration: {
+      title: 'Was du nach der Anmeldung erhältst',
+      items: [
+        { number: '1', title: 'REGON-Nummer' },
+        { number: '2', title: 'KRS-Nummer (alle Firmeninfos)' },
+        { number: '3', title: 'Gesellschaftsvertrag' },
+        { number: '4', title: 'NIP (Steuer-ID)' },
+        { number: '5', title: 'Firmenstempel (optional)' },
+        { number: '6', title: 'VAT-Registrierung bei Bedarf' },
+      ],
+      nextStepsTitle: 'Was nach der Anmeldung?',
+      nextStepsText: 'Formular NIP-8 mit Buchhalter- und Bankdaten an das Finanzamt senden. Wichtig innerhalb von 21 Tagen.',
+    },
+    taxation: {
+      title: 'Besteuerung in Polen',
+      paragraphs: [
+        'Körperschaftsteuer – 19 %. Zum Vergleich: Deutschland 30 %, Estland 21 %.',
+        'Seit 2019 ermäßigter Satz 9 % bei Umsatz bis 1,2 Mio. EUR/Jahr.',
+        'Ermäßigte Sätze für bestimmte Waren: Arzneimittel, Baumaterialien.',
+        'Sp. z o.o. mit mehr als 2 Gründern – Befreiung von Pflicht-ZUS-Beiträgen.',
+      ],
+    },
+    faq: {
+      title: 'Häufig gestellte Fragen',
+      questions: [
+        { question: 'Welche Dokumente werden benötigt?', answer: 'Nur Reisepass. Den Rest übernehmen unsere Spezialisten.' },
+        { question: 'Wer kann ein Unternehmen gründen?', answer: 'Jede Person über 18, mit oder ohne Wohnsitz in Polen.' },
+        { question: 'Kann ich remote gründen?', answer: 'Ja. Notarielle Vollmacht und E-Signatur nötig – beides können wir remote einrichten.' },
+        { question: 'Wie lange dauert die Anmeldung?', answer: 'Etwa 10 Tage.' },
+        { question: 'Muss der Geschäftsführer angestellt sein?', answer: 'Nein, das ist nicht verpflichtend.' },
+        { question: 'Wie wählt man den Firmennamen?', answer: 'Der Name muss einzigartig sein. Prüfung auf der polnischen KRS-Website möglich.' },
+      ],
+    },
+    temporaryResidence: {
+      title: 'Aufenthaltserlaubnis in Polen',
+      subtitle: 'Aufenthaltserlaubnis beantragen',
+      description: 'Eine Aufenthaltserlaubnis ermöglicht legales Wohnen und Arbeiten in Polen. Sie ist der erste Schritt zum Daueraufenthalt.',
+      benefits: {
+        title: 'Vorteile der Aufenthaltserlaubnis',
+        items: [
+          { title: 'Legal aufhalten', description: 'Du kannst 6 Monate bis 3 Jahre in Polen leben.' },
+          { title: 'Arbeitserlaubnis', description: 'Arbeit ohne zusätzliche Genehmigungen.' },
+          { title: 'Schengen-Reisen', description: 'Bis zu 90 Tage in der EU reisen.' },
+          { title: 'Gesundheitsversorgung', description: 'Kostenlose Versorgung bei ZUS-Zahlung.' },
+          { title: 'Schulbildung für Kinder', description: 'Kinder können polnische Schulen besuchen.' },
+          { title: 'Banking', description: 'Konten eröffnen und Kredite aufnehmen.' },
+        ],
+      },
+      requirements: {
+        title: 'Was du brauchst',
+        items: [
+          'Gültiger Reisepass',
+          'Aufenthaltsgrund (Arbeit, Studium, Geschäft)',
+          'Krankenversicherung oder ZUS',
+          'Nachweis der Adresse in Polen',
+          'Finanzielle Mittel (Bankkonto)',
+          'Unbescholtenheit',
+          '4 Fotos',
+          'Ausgefüllter Antrag',
+        ],
+      },
+      process: {
+        title: 'So erhältst du die Karte',
+        steps: [
+          { number: '1', title: 'Dokumente sammeln', description: 'Alle erforderlichen Dokumente und Übersetzungen vorbereiten.' },
+          { number: '2', title: 'Antrag einreichen', description: 'Beim Woiwodschaftsamt einreichen.' },
+          { number: '3', title: 'Gebühr zahlen', description: 'Staatliche Gebühr (ca. 340 PLN).' },
+          { number: '4', title: 'Auf Entscheidung warten', description: 'Bearbeitung 1–3 Monate.' },
+          { number: '5', title: 'Karte abholen', description: 'Karte beim Amt abholen.' },
+        ],
+      },
+      duration: { title: 'Gültigkeit', text: 'Die Karte wird je nach Grund für 6 Monate bis 3 Jahre ausgestellt. Sie kann mehrfach verlängert werden.' },
+      faq: {
+        title: 'FAQ',
+        questions: [
+          { question: 'Was kostet die Beantragung?', answer: 'Staatliche Gebühr ca. 340 PLN. Zusätzlich ggf. Übersetzung und Versicherung.' },
+          { question: 'Wie lange Wartezeit?', answer: 'In der Regel 1–3 Monate. Manchmal bis 6 Monate.' },
+          { question: 'Darf ich während der Bearbeitung arbeiten?', answer: 'Ja, mit Stempel zur Antragsstellung.' },
+          { question: 'Darf ich Polen verlassen?', answer: 'Ja, besser mit Stempel im Reisepass.' },
+          { question: 'Was bei Ablehnung?', answer: 'Innerhalb 14 Tage Widerspruch einlegen oder neuen Antrag stellen.' },
+        ],
+      },
+    },
+    permanentResidence: {
+      title: 'Daueraufenthaltserlaubnis in Polen',
+      subtitle: 'Daueraufenthalt in der EU',
+      description: 'Die Daueraufenthaltserlaubnis verleiht nahezu dieselben Rechte wie polnischen Staatsbürgern. Unbefristete Aufenthaltserlaubnis.',
+      benefits: {
+        title: 'Vorteile des Daueraufenthalts',
+        items: [
+          { title: 'Unbefristeter Aufenthalt', description: 'Karte 10 Jahre gültig, dann Verlängerung.' },
+          { title: 'Volles Arbeitsrecht', description: 'Unbeschränkt in Polen arbeiten.' },
+          { title: 'Freizügigkeit in der EU', description: 'In anderen EU-Ländern leben und arbeiten.' },
+          { title: 'Sozialleistungen', description: 'Zugang zu allen Sozialprogrammen.' },
+          { title: 'Bildung', description: 'Kostenlose Bildung für dich und Kinder.' },
+          { title: 'Weg zur Staatsbürgerschaft', description: 'Nach 3 Jahren Pass beantragbar.' },
+        ],
+      },
+      requirements: {
+        title: 'Voraussetzungen',
+        items: [
+          '5 Jahre ununterbrochen mit Aufenthaltserlaubnis in Polen leben',
+          'Stabiles Einkommen',
+          'Adresse in Polen',
+          'Krankenversicherung',
+          'Grundkenntnisse Polnisch (falls erforderlich)',
+          'Unbescholtenheit',
+          'Integration in die polnische Gesellschaft',
+        ],
+      },
+      process: {
+        title: 'So erhältst du die Karte',
+        steps: [
+          { number: '1', title: 'Bedingungen prüfen', description: 'Sicherstellen, dass du 5 Jahre gelebt hast.' },
+          { number: '2', title: 'Dokumente sammeln', description: 'Alle Dokumente und Bescheinigungen vorbereiten.' },
+          { number: '3', title: 'Sprachprüfung', description: 'Polnisch-Test ablegen, falls erforderlich.' },
+          { number: '4', title: 'Antrag einreichen', description: 'Beim Woiwodschaftsamt einreichen.' },
+          { number: '5', title: 'Warten', description: 'Bearbeitung 2–6 Monate.' },
+          { number: '6', title: 'Karte abholen', description: 'Daueraufenthaltskarte abholen.' },
+        ],
+      },
+      faq: {
+        title: 'FAQ',
+        questions: [
+          { question: 'Ist die Sprachprüfung Pflicht?', answer: 'Ja, Grundkenntnisse Polnisch erforderlich. Ausnahmen: Kinder, Rentner, Absolventen polnischer Schulen.' },
+          { question: 'Kann ich die Karte verlieren?', answer: 'Ja, bei Abwesenheit aus der EU über 6 Jahre oder Einreiseverbot.' },
+          { question: 'Was kostet die Beantragung?', answer: 'Staatliche Gebühr ca. 640 PLN zzgl. Dokumentenkosten.' },
+          { question: 'Muss verlängert werden?', answer: 'Karte 10 Jahre gültig, danach neue Karte.' },
+          { question: 'Darf ich in anderen EU-Ländern arbeiten?', answer: 'Ja, die Karte erlaubt Leben und Arbeit in den meisten EU-Ländern.' },
+        ],
+      },
+    },
+    spolkaSetup: {
+      title: 'GmbH-Gründung mit inFakt',
+      subtitle: 'Unternehmen online stressfrei gründen',
+      description: 'inFakt unterstützt bei der Gründung von Personengesellschaften. Wir begleiten dich Schritt für Schritt.',
+      benefits: [
+        'Fachberatung – wir beantworten deine Fragen',
+        'Kein Amtsbesuch – alle Formalitäten online',
+        'Mit Buchhalter oder selbst gründen',
+        'Du erhältst einen persönlichen Buchhalter für die Gesellschaft',
+      ],
+      process: {
+        title: 'So funktioniert es',
+        steps: [
+          { title: 'Wir begleiten dich Schritt für Schritt durch die Gründung', description: 'inFakt-Spezialisten helfen bei der Formwahl und Formalitäten.' },
+          { title: 'Wir gründen deine Gesellschaft online – kein Notartermin nötig', description: 'Alle Dokumente können elektronisch unterzeichnet werden.' },
+        ],
+      },
+      features: [
+        'Vollständige Buchhaltung für Sp. z o.o.',
+        'Persönlicher Buchhalter pro Gesellschaft',
+        'inFakt-App mit Zugang für Partner',
+        'Hilfe bei der Wahl der Steuerform',
+      ],
+      cta: 'Ich möchte eine Gesellschaft gründen',
+    },
+    blog: {
+      title: 'Aktuelle Freelancing-Artikel',
+      subtitle: 'Rezensionen, Leitfäden und Analysen zum Freelancing in Polen',
+      readMore: 'Weiterlesen',
+      seeAll: 'Alle Artikel',
+      posts: [
+        { badge: 'Leitfaden', title: 'Freelancing in Polen starten', description: 'Kompletter Leitfaden für neue Freelancer' },
+        { badge: 'Analyse', title: 'Bestbezahlte Freelancing-Branchen', description: 'Welche Kategorien am besten zahlen' },
+        { badge: 'Überblick', title: 'Buchhaltungsplattformen im Überblick', description: 'Vergleich der besten Lösungen für Freelancer' },
+      ],
+    },
+    footer: {
+      description: 'Freelancer.org.pl ist ein Informationsportal und Blog zum Freelancing in Polen. Mit Rezensionen, Leitfäden und Vergleichen für Freelancer aus Deutschland, Österreich, der Schweiz und anderen Ländern.',
+      quickLinks: 'Schnelllinks',
+      contact: 'Kontakt',
+      address: 'Polen, Krakau',
+      addressLabel: 'Adresse',
+      copyright: 'Freelancer.org.pl. Alle Rechte vorbehalten.',
     },
   },
 };

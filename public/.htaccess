@@ -1,4 +1,30 @@
 RewriteEngine On
+RewriteBase /
+
+# --- Беклінки та мовні версії ---
+# УВАГА: Редірект за текстом анкора (anchor) неможливий — сервер отримує лише URL, не текст посилання.
+# Налаштовано редіректи за шляхом URL та субдоменом. Якщо беклінки ведуть на різні шляхи (наприклад /ua, /en),
+# вони перенаправляються на /ukr/ та /en/. Посилання на голений домен (/) залишаються на польській головній.
+
+# Субдомени → мовні версії (uk., ua. → українська; en. → англійська)
+RewriteCond %{HTTP_HOST} ^(uk|ua)\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://freelancer.org.pl/ukr/ [R=301,L]
+RewriteCond %{HTTP_HOST} ^en\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://freelancer.org.pl/en/ [R=301,L]
+
+# Шляхи "українська версія" → /ukr/
+Redirect 301 /ua https://freelancer.org.pl/ukr/
+Redirect 301 /ukraine https://freelancer.org.pl/ukr/
+Redirect 301 /ukrainian https://freelancer.org.pl/ukr/
+
+# Шляхи "англійська версія" → /en/
+Redirect 301 /english https://freelancer.org.pl/en/
+
+# Шляхи "німецька версія" → /de/
+Redirect 301 /german https://freelancer.org.pl/de/
+Redirect 301 /deutsch https://freelancer.org.pl/de/
+
+# Голений домен (/) — без змін, залишається польська головна https://freelancer.org.pl/
 
 # Загальне правило: додавання закритого слеша до всіх URL (крім файлів та кореневого)
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -27,10 +53,12 @@ Redirect 301 /pricing https://freelancer.org.pl/
 # Redirect 301 /blog https://freelancer.org.pl/blog/
 # Redirect 301 /artykuly https://freelancer.org.pl/blog/
 # Redirect 301 /articles https://freelancer.org.pl/blog/
-Redirect 301 /kalkulator https://freelancer.org.pl/tax-calculator/
-Redirect 301 /calculator https://freelancer.org.pl/tax-calculator/
-Redirect 301 /podatki https://freelancer.org.pl/tax-calculator/
-Redirect 301 /taxes https://freelancer.org.pl/tax-calculator/
+Redirect 301 /kalkulator https://freelancer.org.pl/
+Redirect 301 /calculator https://freelancer.org.pl/
+Redirect 301 /podatki https://freelancer.org.pl/
+Redirect 301 /taxes https://freelancer.org.pl/
+Redirect 301 /tax-calculator https://freelancer.org.pl/
+Redirect 301 /tax-calculator/ https://freelancer.org.pl/
 
 # Редіректи для старих файлів
 Redirect 301 /contact.tsx https://freelancer.org.pl/contact/
@@ -41,6 +69,11 @@ Redirect 301 /privacy-policy.html https://freelancer.org.pl/privacy-policy/
 Redirect 301 /terms.html https://freelancer.org.pl/terms/
 Redirect 301 /index.html https://freelancer.org.pl/
 Redirect 301 /index.php https://freelancer.org.pl/
+Redirect 301 /profile.php https://freelancer.org.pl/
+Redirect 301 /topic.php https://freelancer.org.pl/
+Redirect 301 /index.php/feed https://freelancer.org.pl/
+Redirect 301 /blog https://freelancer.org.pl/
+Redirect 301 /blog/ https://freelancer.org.pl/
 Redirect 301 /kontakt.html https://freelancer.org.pl/contact/
 Redirect 301 /kontakt.php https://freelancer.org.pl/contact/
 Redirect 301 /polityka.html https://freelancer.org.pl/privacy-policy/
@@ -67,14 +100,14 @@ Redirect 301 /pricing.php https://freelancer.org.pl/
 # Redirect 301 /artykuly.php https://freelancer.org.pl/blog/
 # Redirect 301 /articles.html https://freelancer.org.pl/blog/
 # Redirect 301 /articles.php https://freelancer.org.pl/blog/
-Redirect 301 /kalkulator.html https://freelancer.org.pl/tax-calculator/
-Redirect 301 /kalkulator.php https://freelancer.org.pl/tax-calculator/
-Redirect 301 /calculator.html https://freelancer.org.pl/tax-calculator/
-Redirect 301 /calculator.php https://freelancer.org.pl/tax-calculator/
-Redirect 301 /podatki.html https://freelancer.org.pl/tax-calculator/
-Redirect 301 /podatki.php https://freelancer.org.pl/tax-calculator/
-Redirect 301 /taxes.html https://freelancer.org.pl/tax-calculator/
-Redirect 301 /taxes.php https://freelancer.org.pl/tax-calculator/
+Redirect 301 /kalkulator.html https://freelancer.org.pl/
+Redirect 301 /kalkulator.php https://freelancer.org.pl/
+Redirect 301 /calculator.html https://freelancer.org.pl/
+Redirect 301 /calculator.php https://freelancer.org.pl/
+Redirect 301 /podatki.html https://freelancer.org.pl/
+Redirect 301 /podatki.php https://freelancer.org.pl/
+Redirect 301 /taxes.html https://freelancer.org.pl/
+Redirect 301 /taxes.php https://freelancer.org.pl/
 
 
 

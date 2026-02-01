@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     locale: "uk_UA",
     images: [
       {
-        url: "/images/hero-accountants.png",
+        url: "/images/dashboard-screenshot.jpg",
         width: 1200,
         height: 630,
         alt: "Фрілансер у Польщі 2026 - гід",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://freelancer.org.pl/ukr/",
-    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/" },
+    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/", "de": "https://freelancer.org.pl/de/" },
   },
 }
 

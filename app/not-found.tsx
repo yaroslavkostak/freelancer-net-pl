@@ -76,7 +76,7 @@ export default function NotFound() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
             </svg>
             <Link
-              href={language === 'pl' ? '/' : language === 'en' ? '/en/' : '/ukr/'}
+              href={language === 'pl' ? '/' : language === 'en' ? '/en/' : language === 'de' ? '/de/' : '/ukr/'}
               className="text-xl font-semibold text-gray-900 hover:text-blue-600 transition-colors"
             >
               Freelancer.org.pl
@@ -121,13 +121,13 @@ export default function NotFound() {
                 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                    <Link href={language === 'pl' ? '/' : language === 'en' ? '/en/' : '/ukr/'}>
+                    <Link href={language === 'pl' ? '/' : language === 'en' ? '/en/' : language === 'de' ? '/de/' : '/ukr/'}>
                       {content.backHome}
                     </Link>
                   </Button>
                   
                   <Button asChild variant="outline" size="lg">
-                    <Link href={language === 'pl' ? '/contact/' : language === 'en' ? '/en/contact/' : '/ukr/contact/'}>
+                    <Link href={language === 'pl' ? '/contact/' : '/en/contact/'}>
                       {content.contact}
                     </Link>
                   </Button>
@@ -156,7 +156,7 @@ export default function NotFound() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h12v12H6V6Z" />
                 </svg>
                 <Link
-                  href={language === 'pl' ? '/' : language === 'en' ? '/en/' : '/ukr/'}
+                  href={language === 'pl' ? '/' : language === 'en' ? '/en/' : language === 'de' ? '/de/' : '/ukr/'}
                   className="text-lg font-semibold hover:text-blue-400 transition-colors"
                 >
                   Freelancer.org.pl
@@ -171,7 +171,7 @@ export default function NotFound() {
               <ul className="space-y-2">
                 <li>
                   <Link
-                    href={language === 'pl' ? '/contact/' : language === 'en' ? '/en/contact/' : '/ukr/contact/'}
+                    href={language === 'pl' ? '/contact/' : '/en/contact/'}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     {t.footer.contact}
@@ -179,18 +179,18 @@ export default function NotFound() {
                 </li>
                 <li>
                   <Link
-                    href={language === 'pl' ? '/privacy-policy/' : language === 'en' ? '/en/privacy-policy/' : '/ukr/privacy-policy/'}
+                    href={language === 'pl' ? '/privacy-policy/' : '/en/privacy-policy/'}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    {language === 'pl' ? 'Polityka prywatności' : 'Політика конфіденційності'}
+                    {language === 'pl' ? 'Polityka prywatności' : 'Privacy policy'}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href={language === 'pl' ? '/terms/' : language === 'en' ? '/en/terms/' : '/ukr/terms/'}
+                    href={language === 'pl' ? '/terms/' : '/en/terms/'}
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    {language === 'pl' ? 'Regulamin' : 'Умови використання'}
+                    {language === 'pl' ? 'Regulamin' : 'Terms of use'}
                   </Link>
                 </li>
               </ul>
@@ -199,6 +199,7 @@ export default function NotFound() {
               <h3 className="text-white font-semibold mb-4">{t.footer.contact}</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>Email: info@freelancer.org.pl</li>
+                <li>{t.footer.addressLabel}: {t.footer.address}</li>
               </ul>
             </div>
           </div>

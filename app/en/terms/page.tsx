@@ -382,6 +382,7 @@ export default function TermsPage() {
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.contact}</h3>
               <ul className="space-y-2 text-gray-400">
                 <li className="text-sm md:text-base">Email: info@freelancer.org.pl</li>
+                <li className="text-sm md:text-base">{t.footer.addressLabel}: {t.footer.address}</li>
               </ul>
             </div>
           </div>

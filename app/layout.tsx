@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     images: [
       {
-        url: "/images/hero-accountants.png",
+        url: "/images/dashboard-screenshot.jpg",
         width: 1200,
         height: 630,
         alt: "Freelancer w Polsce 2026 - przewodnik",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://freelancer.org.pl/",
-    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/" },
+    languages: { "pl": "https://freelancer.org.pl/", "uk": "https://freelancer.org.pl/ukr/", "en": "https://freelancer.org.pl/en/", "de": "https://freelancer.org.pl/de/" },
   },
   generator: "v0.dev",
 }
@@ -77,6 +77,7 @@ export default function RootLayout({
         <link rel="author" href="https://www.linkedin.com/in/yaroslav-kostak/" />
         <meta name="theme-color" content="#1e40af" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Freelancer.org.pl" />
         <meta name="geo.region" content="PL" />

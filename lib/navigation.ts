@@ -397,6 +397,138 @@ export const navigationSectionsEn: NavSection[] = [
   ]},
 ];
 
+export const navigationSectionsDe: NavSection[] = [
+  { id: 'introduction', title: 'Alles über Freelancing in Polen 2026', children: [
+    { id: 'introduction-1', title: 'Warum Polen zum Hub für Freelancer wurde' },
+    { id: 'introduction-2', title: 'Freelancing-Statistik in Polen' },
+    { id: 'introduction-3', title: 'Gefragte Berufe und Durchschnittsgehälter' },
+    { id: 'introduction-4', title: 'Plattformen für Freelancer' },
+    { id: 'introduction-5', title: 'Durchschnittliche Stundensätze' },
+  ]},
+  { id: 'legal-status', title: 'Legal aufhalten und Freelancing in Polen', children: [
+    { id: 'legal-status-1', title: 'PESEL und Aufenthaltsstatus 2026' },
+    { id: 'legal-status-2', title: 'Recht auf Geschäftstätigkeit für Nicht-EU-Bürger' },
+    { id: 'legal-status-3', title: 'Aufenthaltserlaubnis aus geschäftlichem Grund' },
+    { id: 'legal-status-4', title: 'Blaue Karte EU für IT-Freelancer' },
+    { id: 'legal-status-5', title: 'Arbeit mit Visum oder visumfrei' },
+  ]},
+  { id: 'unregistered-activity', title: 'Nicht angemeldete Tätigkeit', children: [
+    { id: 'unregistered-activity-1', title: 'Was ist nicht angemeldete Tätigkeit?' },
+    { id: 'unregistered-activity-2', title: 'Einkommensgrenze 2026' },
+    { id: 'unregistered-activity-3', title: 'Wer hat Anspruch?' },
+    { id: 'unregistered-activity-4', title: 'Pflichten – vereinfachtes Register' },
+    { id: 'unregistered-activity-5', title: 'Versicherung (ZUS)' },
+    { id: 'unregistered-activity-6', title: 'Steuererklärung (PIT-36)' },
+  ]},
+  { id: 'jdg', title: 'Jednoosobowa Działalność Gospodarcza (JDG)', children: [
+    { id: 'jdg-1', title: 'Schritt-für-Schritt-Anmeldung über CEIDG' },
+    { id: 'jdg-2', title: 'Tätigkeitscodes (PKD) wählen' },
+    { id: 'jdg-3', title: 'Startdatum und Anmeldestelle' },
+    { id: 'jdg-4', title: 'ZUS-Anmeldung – ZZA und ZUA' },
+    { id: 'jdg-5', title: 'Bankkonto – privat oder geschäftlich?' },
+    { id: 'jdg-6', title: 'Finanz- und Vermögenshaftung' },
+  ]},
+  { id: 'business-incubators', title: 'Freelancing über Business-Inkubatoren', children: [
+    { id: 'business-incubators-1', title: 'Modell "Freelance as a Service"' },
+    { id: 'business-incubators-2', title: 'Vorteile für Ausländer (mit Vorsicht)' },
+    { id: 'business-incubators-3', title: 'Kosten – Abo vs. Steuer' },
+    { id: 'business-incubators-4', title: 'Haftung in Inkubatoren' },
+    { id: 'business-incubators-5', title: 'Aufenthaltserlaubnis und Legalisation' },
+    { id: 'business-incubators-6', title: 'Grenzen des Modells' },
+    { id: 'business-incubators-7', title: 'Vorteile ohne Sprach-/Buchhaltungskenntnisse' },
+    { id: 'business-incubators-8', title: 'Kosten – Monatsabo vs. JDG-Steuer' },
+    { id: 'business-incubators-9', title: 'Legalisation (Aufenthalt) über Inkubator' },
+    { id: 'business-incubators-10', title: 'Tätigkeitsgrenzen in Inkubatoren' },
+  ]},
+  { id: 'civil-contracts', title: 'Zivilrechtliche Verträge (B2C)', children: [
+    { id: 'civil-contracts-1', title: 'Umowa o dzieło: Für kreative Berufe' },
+    { id: 'civil-contracts-2', title: 'Umowa zlecenie: Vergütung für Ablauf' },
+    { id: 'civil-contracts-3', title: 'Brutto vs. Netto für Freelancer' },
+    { id: 'civil-contracts-4', title: 'Besteuerung ausländischer Einkünfte' },
+    { id: 'civil-contracts-5', title: 'Umowa zlecenie: Steuer und Sozialabgaben' },
+    { id: 'civil-contracts-6', title: 'Brutto vs. Netto (Verträge)' },
+    { id: 'civil-contracts-7', title: 'Besteuerung ausländischer Einkünfte (diese Verträge)' },
+  ]},
+  { id: 'laws-regulations', title: 'Recht und staatliche Regelung', children: [
+    { id: 'laws-regulations-1', title: 'Unternehmergesetz (Ustawa o przedsiębiorcach)' },
+    { id: 'laws-regulations-2', title: 'Abgabenordnung (Ordynacja podatkowa)' },
+    { id: 'laws-regulations-3', title: 'Rechte bei Prüfungen (KAS)' },
+    { id: 'laws-regulations-4', title: 'Datenschutz (DSGVO)' },
+    { id: 'laws-regulations-5', title: 'Offizielle Hinweise zu Remote-Arbeit' },
+  ]},
+  { id: 'taxation-systems', title: 'Steuersysteme im Überblick', children: [
+    { id: 'taxation-systems-1', title: 'Steuerskala (12% / 32%)' },
+    { id: 'taxation-systems-2', title: 'Lineare Steuer (19%)' },
+    { id: 'taxation-systems-3', title: 'Pauschalsteuer (ryczałt)' },
+    { id: 'taxation-systems-4', title: 'Ryczałt: Stufen im Detail' },
+    { id: 'taxation-systems-5', title: 'Beste Wahl 2026' },
+  ]},
+  { id: 'zus-insurance', title: 'Sozialversicherung und ZUS', children: [
+    { id: 'zus-insurance-1', title: '"Ulga na start"-Erleichterung' },
+    { id: 'zus-insurance-2', title: 'Mały ZUS Plus' },
+    { id: 'zus-insurance-3', title: 'Regelbeiträge und "Chorobowe"' },
+  ]},
+  { id: 'vat', title: 'Umsatzsteuer (VAT) für Freelancer', children: [
+    { id: 'vat-1', title: 'Grenze 200.000 PLN' },
+    { id: 'vat-2', title: 'VAT-EU-Registrierung' },
+  ]},
+  { id: 'accounting-finance', title: 'Buchhaltung und Finanzen', children: [
+    { id: 'accounting-finance-1', title: 'KPiR (Einnahmen-/Ausgabenbuch) führen' },
+    { id: 'accounting-finance-2', title: 'KSeF-System 2026' },
+    { id: 'accounting-finance-3', title: 'Steuerlich absetzbare Kosten' },
+    { id: 'accounting-finance-4', title: 'Wo einen Buchhalter finden?' },
+    { id: 'accounting-finance-5', title: 'E-Rechnung und KSeF 2026' },
+    { id: 'accounting-finance-6', title: 'Absetzbare Kosten – Miete, Ausstattung, Fortbildung, Auto' },
+    { id: 'accounting-finance-7', title: 'Professionelle Hilfe – Büro vs. Online' },
+  ]},
+  { id: 'technical-legal', title: 'Technische und rechtliche Aspekte', children: [
+    { id: 'technical-legal-1', title: 'Profil Zaufany und mObywatel' },
+    { id: 'technical-legal-2', title: 'Qualifizierte E-Signatur' },
+    { id: 'technical-legal-3', title: 'Arbeit mit ausländischen Plattformen (Upwork, Fiverr)' },
+  ]},
+  { id: 'conclusions', title: 'Fazit – Strategie für erfolgreiches Freelancing', children: [
+    { id: 'conclusions-1', title: 'Ihr Start-Checkliste' },
+    { id: 'conclusions-2', title: 'Strategie für erfolgreiches Freelancing' },
+  ]},
+  { id: 'employment-vs-selfemployed', title: 'Selbstständig vs. Angestellt – was lohnt sich?', children: [
+    { id: 'employment-vs-selfemployed-1', title: 'Urlaub und Krankheit' },
+    { id: 'employment-vs-selfemployed-2', title: 'Stabilität' },
+    { id: 'employment-vs-selfemployed-3', title: 'Nettoeinkommen' },
+  ]},
+  { id: 'legal-liability', title: 'Rechtliche Haftung des Freelancers', children: [
+    { id: 'legal-liability-1', title: 'Haftung mit dem gesamten Vermögen' },
+    { id: 'legal-liability-2', title: 'Berufshaftpflicht (OC)' },
+  ]},
+  { id: 'b2b-contracts', title: 'Besonderheiten B2B-Vertrag', children: [
+    { id: 'b2b-contracts-1', title: 'Anzeichen Arbeitsverhältnis' },
+    { id: 'b2b-contracts-2', title: 'Arbeit für früheren Arbeitgeber' },
+  ]},
+  { id: 'reporting-requirements', title: 'Meldepflichten und Prüfungen', children: [
+    { id: 'reporting-requirements-1', title: 'REGON (Statistik)-Anmeldung' },
+    { id: 'reporting-requirements-2', title: 'ZUS-Prüfungen' },
+    { id: 'reporting-requirements-3', title: 'Steuerprüfungen' },
+  ]},
+  { id: 'how-to-start', title: 'Freelancer werden – Tipps für Einsteiger', children: [
+    { id: 'how-to-start-1', title: 'Beruf und Richtung festlegen' },
+    { id: 'how-to-start-2', title: 'Für wen lohnt sich der Einstieg?' },
+    { id: 'how-to-start-3', title: 'Wo suchen – Plattformen und Kundenakquise' },
+    { id: 'how-to-start-4', title: 'Weiterbildung – Kurse und Ressourcen' },
+    { id: 'how-to-start-5', title: 'Sprachen der Kurse – Verfügbarkeit' },
+    { id: 'how-to-start-6', title: 'Praktische Tipps für den Start' },
+  ]},
+  { id: 'faq', title: 'FAQ – Fragen und Antworten', children: [
+    { id: 'faq-1', title: 'Grundfragen zur Anmeldung' },
+    { id: 'faq-2', title: 'Steuerfragen' },
+    { id: 'faq-3', title: 'ZUS-Fragen' },
+    { id: 'faq-4', title: 'VAT-Fragen' },
+    { id: 'faq-5', title: 'Buchhaltungsfragen' },
+    { id: 'faq-6', title: 'Internationale Einkünfte' },
+    { id: 'faq-7', title: 'Legalisation' },
+    { id: 'faq-8', title: 'B2B und Arbeitsverhältnis' },
+    { id: 'faq-9', title: 'Haftung' },
+  ]},
+];
+
 /** Усі id (секції + підзаголовки) у порядку для визначення activeSection при скролі */
 export function getAllNavIds(sections: NavSection[]): string[] {
   return sections.flatMap(s => [s.id, ...(s.children?.map(c => c.id) ?? [])]);

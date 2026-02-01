@@ -94,22 +94,32 @@
 
 [[redirects]]
   from = "/kalkulator"
-  to = "/tax-calculator"
+  to = "/"
   status = 301
 
 [[redirects]]
   from = "/calculator"
-  to = "/tax-calculator"
+  to = "/"
   status = 301
 
 [[redirects]]
   from = "/podatki"
-  to = "/tax-calculator"
+  to = "/"
   status = 301
 
 [[redirects]]
   from = "/taxes"
-  to = "/tax-calculator"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tax-calculator"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tax-calculator/*"
+  to = "/"
   status = 301
 
 [[headers]]

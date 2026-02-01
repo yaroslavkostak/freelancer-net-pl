@@ -23,6 +23,7 @@ export function LanguageSwitcher({ currentLanguage }: LanguageSwitcherProps) {
     { code: 'pl', label: 'PL', path: '/' },
     { code: 'uk', label: 'UKR', path: '/ukr/' },
     { code: 'en', label: 'EN', path: '/en/' },
+    { code: 'de', label: 'DE', path: '/de/' },
   ];
 
   const currentLabel = languages.find(l => l.code === currentLanguage)?.label || 'PL';
@@ -31,7 +32,7 @@ export function LanguageSwitcher({ currentLanguage }: LanguageSwitcherProps) {
     const targetLang = languages.find(l => l.code === lang);
     if (targetLang) {
       // Remove language prefix from current pathname; ensure trailing slash
-      let cleanPath = pathname.replace(/^\/(ukr|en)\/?/, '/');
+      let cleanPath = pathname.replace(/^\/(ukr|en|de)\/?/, '/');
       if (cleanPath === '') cleanPath = '/';
       if (cleanPath !== '/' && !cleanPath.endsWith('/')) cleanPath += '/';
 
@@ -39,6 +40,8 @@ export function LanguageSwitcher({ currentLanguage }: LanguageSwitcherProps) {
         router.push(cleanPath === '/' ? '/ukr/' : `/ukr${cleanPath}`);
       } else if (lang === 'en') {
         router.push(cleanPath === '/' ? '/en/' : `/en${cleanPath}`);
+      } else if (lang === 'de') {
+        router.push(cleanPath === '/' ? '/de/' : `/de${cleanPath}`);
       } else {
         router.push(cleanPath);
       }

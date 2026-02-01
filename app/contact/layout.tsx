@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     url: "https://freelancer.org.pl/contact/",
     images: [
       {
-        url: "/images/hero-accountants.png",
+        url: "/images/dashboard-screenshot.jpg",
         width: 1200,
         height: 630,
         alt: "Kontakt Freelancer.org.pl",

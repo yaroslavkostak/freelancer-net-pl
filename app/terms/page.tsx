@@ -476,15 +476,16 @@ export default function TermsPage() {
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.quickLinks}</h3>
               <ul className="space-y-2">
-                <li><Link href={language === 'pl' ? '/contact/' : '/ukr/contact/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
-                <li><Link href={language === 'pl' ? '/privacy-policy/' : '/ukr/privacy-policy/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
-                <li><Link href={language === 'pl' ? '/terms/' : '/ukr/terms/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
+                <li><Link href={language === 'pl' ? '/contact/' : '/en/contact/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{t.footer.contact}</Link></li>
+                <li><Link href={language === 'pl' ? '/privacy-policy/' : '/en/privacy-policy/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.privacy}</Link></li>
+                <li><Link href={language === 'pl' ? '/terms/' : '/en/terms/'} className="text-sm md:text-base text-gray-400 hover:text-white transition-colors">{content.footer.terms}</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-3 md:mb-4 text-base md:text-lg">{t.footer.contact}</h3>
               <ul className="space-y-2 text-gray-400">
                 <li className="text-sm md:text-base">Email: info@freelancer.org.pl</li>
+                <li className="text-sm md:text-base">{t.footer.addressLabel}: {t.footer.address}</li>
               </ul>
             </div>
           </div>
