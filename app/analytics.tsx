@@ -2,11 +2,10 @@
 
 import Script from 'next/script'
 
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
+// Google tag (gtag.js) — ID з env або за замовчуванням для freelancer.org.pl
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-QC58N4S7WS'
 
 export default function Analytics() {
-  if (!GA_MEASUREMENT_ID) return null
-
   return (
     <>
       <Script
