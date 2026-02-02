@@ -7,6 +7,3 @@ Sitemap: https://freelancer.org.pl/sitemap.xml
 # Disallow admin areas (if any)
 Disallow: /admin/
 Disallow: /api/
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1 

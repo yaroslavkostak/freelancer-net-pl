@@ -64,6 +64,14 @@ const nextConfig = {
       { source: '/index.php/feed/', destination: '/', permanent: true },
       { source: '/blog', destination: '/', permanent: true },
       { source: '/blog/', destination: '/', permanent: true },
+      // --- Старі favicon та картинки (зменшення 404 у Search Console) ---
+      { source: '/favicon-16x16.png', destination: '/favicon.ico', permanent: true },
+      { source: '/favicon-32x32.png', destination: '/favicon.ico', permanent: true },
+      { source: '/apple-touch-icon.png', destination: '/favicon.ico', permanent: true },
+      { source: '/images/hero-accountants.png', destination: '/images/dashboard-screenshot.jpg', permanent: true },
+      { source: '/images/logo.png', destination: '/placeholder-logo.svg', permanent: true },
+      { source: '/images/stawki-ryczalt-2025-og.jpg', destination: '/images/stawki-ryczalt-2025.jpg', permanent: true },
+      { source: '/kalkulator_freelancera.htm', destination: '/', permanent: true },
       // --- Редірект зі старих URL на нові ---
       {
         source: '/contact.tsx',
